@@ -1,0 +1,107 @@
+<CodeGenerationInfo>
+  <ToolchainSettings>
+    <option>
+      <name>PE_G_4PEx_ToolChain_C_Compiler_Includes</name>
+      <values lines_count="7">
+        <Line>"${ProjDirPath}/SDK/platform/drivers/src/clock/MPC57xx"</Line>
+        <Line>"${ProjDirPath}/SDK/rtos/osif/"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/devices"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/devices/common"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/devices/MPC5748G/include"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/devices/MPC5748G/startup"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/drivers/inc"</Line>
+      </values>
+    </option>
+    <option>
+      <name>PE_G_4PEx_ToolChain_C_Compiler_Symbols</name>
+      <values lines_count="1">
+        <Line>CPU_MPC5748G</Line>
+      </values>
+    </option>
+    <option>
+      <name>PE_G_4PEx_ilg_gnuarmeclipse_managedbuild_cross_option_c_compiler_defs</name>
+      <values lines_count="1">
+        <Line>"CPU_MPC5748G_324"</Line>
+      </values>
+    </option>
+  </ToolchainSettings>
+  <GeneratedFilesList>
+    <GeneratedByPE>
+      <File Name="SDK/platform/drivers/src/emios/emios_pwm_driver.c" FileDate="2020-05-11, 18:26:58" FileAge="1589218018129" FileType="1048576" />
+      <File Name="SDK/platform/drivers/inc/clock_manager.h" FileDate="2020-05-11, 18:26:58" FileAge="1589218018098" FileType="1048576" />
+      <File Name="SDK/platform/drivers/src/interrupt/interrupt_manager_MPC57xx.c" FileDate="2020-05-11, 18:26:58" FileAge="1589218018060" FileType="1048576" />
+      <File Name="SDK/platform/drivers/src/linflexd/linflexd_uart_irq.h" FileDate="2020-05-11, 18:26:58" FileAge="1589218018157" FileType="1048576" />
+      <File Name="SDK/rtos/osif/osif_baremetal.c" FileDate="2020-05-11, 18:26:58" FileAge="1589218018192" FileType="1048576" />
+      <File Name="SDK/platform/drivers/src/linflexd/linflexd_uart_irq.c" FileDate="2020-05-11, 18:26:58" FileAge="1589218018144" FileType="1048576" />
+      <File Name="SDK/platform/drivers/inc/interrupt_manager.h" FileDate="2020-05-11, 18:26:58" FileAge="1589218018064" FileType="1048576" />
+      <File Name="SDK/platform/drivers/src/clock/MPC57xx/cgm_hw_access.h" FileDate="2020-05-11, 18:26:58" FileAge="1589218018078" FileType="1048576" />
+      <File Name="SDK/platform/drivers/src/pins/siul2/pins_siul2_driver.h" FileDate="2020-05-11, 18:26:58" FileAge="1589218018050" FileType="1048576" />
+      <File Name="SDK/platform/drivers/src/pins/siul2/pins_siul2_driver.c" FileDate="2020-05-11, 18:26:58" FileAge="1589218018043" FileType="1048576" />
+      <File Name="Project_Settings/Startup_Code/core0_intc_sw_handlers.S" FileDate="2020-02-16, 13:54:58" FileAge="1581861298123" FileType="1048576" />
+      <File Name="SDK/platform/devices/callbacks.h" FileDate="2020-05-11, 18:26:58" FileAge="1589218018207" FileType="1048576" />
+      <File Name="Sources/main.c" FileDate="2020-03-20, 23:54:11" FileAge="1584748451982" FileType="128" />
+      <File Name="SDK/platform/drivers/src/edma/edma_driver.c" FileDate="2020-05-11, 18:26:58" FileAge="1589218018162" FileType="1048576" />
+      <File Name="SDK/platform/drivers/src/pins/siul2/siul2_hw_access.h" FileDate="2020-05-11, 18:26:58" FileAge="1589218018054" FileType="1048576" />
+      <File Name="Generated_Code/eMIOS_Mc2.h" FileDate="2020-05-11, 18:26:58" FileAge="1589218018277" FileType="45637" CompNumb="11" />
+      <File Name="SDK/platform/drivers/src/emios/emios_mc_driver.c" FileDate="2020-05-11, 18:26:58" FileAge="1589218018115" FileType="1048576" />
+      <File Name="SDK/platform/drivers/src/pins/siul2/siul2_hw_access.c" FileDate="2020-05-11, 18:26:58" FileAge="1589218018046" FileType="1048576" />
+      <File Name="Generated_Code/eMIOS_Mc2.c" FileDate="2020-05-11, 18:26:58" FileAge="1589218018275" FileType="45637" CompNumb="11" />
+      <File Name="SDK/platform/drivers/src/clock/MPC57xx/mc_me_hw_access.h" FileDate="2020-05-11, 18:26:58" FileAge="1589218018091" FileType="1048576" />
+      <File Name="Project_Settings/Startup_Code/startup_MPC5748G.S" FileDate="2020-02-16, 13:54:58" FileAge="1581861298120" FileType="1048576" />
+      <File Name="Generated_Code/eMIOS_Mc0.h" FileDate="2020-05-11, 18:26:58" FileAge="1589218018285" FileType="45637" CompNumb="6" />
+      <File Name="Generated_Code/clockMan1.h" FileDate="2020-05-11, 18:26:58" FileAge="1589218018289" FileType="45637" CompNumb="3" />
+      <File Name="SDK/platform/devices/MPC5748G/include/MPC5748G.h" FileDate="2020-05-11, 18:26:58" FileAge="1589218018239" FileType="1048576" />
+      <File Name="Generated_Code/eMIOS_Mc0.c" FileDate="2020-05-11, 18:26:58" FileAge="1589218018283" FileType="45637" CompNumb="6" />
+      <File Name="Generated_Code/clockMan1.c" FileDate="2020-05-11, 18:26:58" FileAge="1589218018287" FileType="45637" CompNumb="3" />
+      <File Name="SDK/platform/drivers/inc/emios_oc_driver.h" FileDate="2020-05-11, 18:26:58" FileAge="1589218018125" FileType="1048576" />
+      <File Name="SDK/platform/devices/device_registers.h" FileDate="2020-05-11, 18:26:58" FileAge="1589218018203" FileType="1048576" />
+      <File Name="Generated_Code/linflexd_uart1.h" FileDate="2020-05-11, 18:26:58" FileAge="1589218018267" FileType="45637" CompNumb="12" />
+      <File Name="SDK/platform/drivers/src/clock/MPC57xx/cmu_hw_access.h" FileDate="2020-05-11, 18:26:58" FileAge="1589218018087" FileType="1048576" />
+      <File Name="Generated_Code/linflexd_uart1.c" FileDate="2020-05-11, 18:26:58" FileAge="1589218018265" FileType="45637" CompNumb="12" />
+      <File Name="SDK/platform/drivers/src/emios/emios_common.c" FileDate="2020-05-11, 18:26:58" FileAge="1589218018104" FileType="1048576" />
+      <File Name="SDK/platform/devices/startup.h" FileDate="2020-05-11, 18:26:58" FileAge="1589218018216" FileType="1048576" />
+      <File Name="SDK/platform/drivers/inc/linflexd_uart_driver.h" FileDate="2020-05-11, 18:26:58" FileAge="1589218018148" FileType="1048576" />
+      <File Name="SDK/platform/drivers/inc/pins_driver.h" FileDate="2020-05-11, 18:26:58" FileAge="1589218018037" FileType="1048576" />
+      <File Name="SDK/platform/devices/startup.c" FileDate="2020-05-11, 18:26:58" FileAge="1589218018219" FileType="1048576" />
+      <File Name="SDK/platform/drivers/inc/emios_mc_driver.h" FileDate="2020-05-11, 18:26:58" FileAge="1589218018123" FileType="1048576" />
+      <File Name="SDK/platform/drivers/src/clock/MPC57xx/clock_MPC57xx.h" FileDate="2020-05-11, 18:26:58" FileAge="1589218018082" FileType="1048576" />
+      <File Name="SDK/platform/drivers/src/clock/MPC57xx/clock_MPC57xx.c" FileDate="2020-05-11, 18:26:58" FileAge="1589218018070" FileType="1048576" />
+      <File Name="Project_Settings/Startup_Code/interrupt_vectors.S" FileDate="2020-02-16, 13:54:58" FileAge="1581861298122" FileType="1048576" />
+      <File Name="SDK/platform/devices/MPC5748G/startup/system_MPC5748G.h" FileDate="2020-05-11, 18:26:58" FileAge="1589218018223" FileType="1048576" />
+      <File Name="Generated_Code/eMIOS_Pwm2.h" FileDate="2020-05-11, 18:26:58" FileAge="1589218018273" FileType="45637" CompNumb="10" />
+      <File Name="SDK/platform/drivers/inc/emios_common.h" FileDate="2020-05-11, 18:26:58" FileAge="1589218018120" FileType="1048576" />
+      <File Name="SDK/platform/devices/MPC5748G/startup/system_MPC5748G.c" FileDate="2020-05-11, 18:26:58" FileAge="1589218018226" FileType="1048576" />
+      <File Name="SDK/platform/devices/common/s32_core_e200.h" FileDate="2020-05-11, 18:26:58" FileAge="1589218018211" FileType="1048576" />
+      <File Name="Generated_Code/eMIOS_Pwm2.c" FileDate="2020-05-11, 18:26:58" FileAge="1589218018271" FileType="45637" CompNumb="10" />
+      <File Name="SDK/platform/drivers/inc/emios_pwm_driver.h" FileDate="2020-05-11, 18:26:58" FileAge="1589218018134" FileType="1048576" />
+      <File Name="SDK/platform/drivers/src/emios/emios_hw_access.h" FileDate="2020-05-11, 18:26:58" FileAge="1589218018111" FileType="1048576" />
+      <File Name="Generated_Code/dmaController1.h" FileDate="2020-05-11, 18:26:58" FileAge="1589218018262" FileType="45637" CompNumb="13" />
+      <File Name="Generated_Code/eMIOS_Pwm0.h" FileDate="2020-05-11, 18:26:58" FileAge="1589218018281" FileType="45637" CompNumb="5" />
+      <File Name="Project_Settings/Linker_Files/linker_ram.ld" FileDate="2020-02-16, 13:54:58" FileAge="1581861298117" FileType="1048576" />
+      <File Name="Generated_Code/Cpu.h" FileDate="2020-05-11, 18:26:58" FileAge="1589218018256" FileType="45637" CompNumb="1" />
+      <File Name="SDK/platform/drivers/inc/clock.h" FileDate="2020-05-11, 18:26:58" FileAge="1589218018095" FileType="1048576" />
+      <File Name="SDK/platform/drivers/src/emios/emios_hw_access.c" FileDate="2020-05-11, 18:26:58" FileAge="1589218018107" FileType="1048576" />
+      <File Name="Generated_Code/dmaController1.c" FileDate="2020-05-11, 18:26:58" FileAge="1589218018260" FileType="45637" CompNumb="13" />
+      <File Name="Generated_Code/eMIOS_Pwm0.c" FileDate="2020-05-11, 18:26:58" FileAge="1589218018279" FileType="45637" CompNumb="5" />
+      <File Name="Generated_Code/Cpu.c" FileDate="2020-05-11, 18:26:58" FileAge="1589218018254" FileType="45637" CompNumb="1" />
+      <File Name="SDK/platform/drivers/src/edma/edma_hw_access.h" FileDate="2020-05-11, 18:26:58" FileAge="1589218018176" FileType="1048576" />
+      <File Name="SDK/platform/drivers/inc/edma_driver.h" FileDate="2020-05-11, 18:26:58" FileAge="1589218018184" FileType="1048576" />
+      <File Name="SDK/platform/devices/status.h" FileDate="2020-05-11, 18:26:58" FileAge="1589218018200" FileType="1048576" />
+      <File Name="SDK/platform/drivers/src/edma/edma_hw_access.c" FileDate="2020-05-11, 18:26:58" FileAge="1589218018166" FileType="1048576" />
+      <File Name="Documentation/LWFA-V3_Z4_0_Settings.xml" FileDate="2020-05-11, 18:26:58" FileAge="1589218018317" FileType="3072" />
+      <File Name="SDK/platform/drivers/src/linflexd/linflexd_uart_driver.c" FileDate="2020-05-11, 18:26:58" FileAge="1589218018139" FileType="1048576" />
+      <File Name="Project_Settings/Linker_Files/linker_flash.ld" FileDate="2020-02-16, 13:54:58" FileAge="1581861298115" FileType="1048576" />
+      <File Name="SDK/platform/devices/MPC5748G/include/MPC5748G_features.h" FileDate="2020-05-11, 18:26:58" FileAge="1589218018232" FileType="1048576" />
+      <File Name="SDK/platform/drivers/src/linflexd/linflexd_hw_access.h" FileDate="2020-05-11, 18:26:58" FileAge="1589218018154" FileType="1048576" />
+      <File Name="SDK/platform/devices/devassert.h" FileDate="2020-05-11, 18:26:58" FileAge="1589218018197" FileType="1048576" />
+      <File Name="SDK/platform/drivers/src/clock/MPC57xx/cgmcs_hw_access.h" FileDate="2020-05-11, 18:26:58" FileAge="1589218018073" FileType="1048576" />
+      <File Name="SDK/rtos/osif/osif.h" FileDate="2020-05-11, 18:26:58" FileAge="1589218018188" FileType="1048576" />
+      <File Name="SDK/platform/drivers/src/edma/edma_irq.h" FileDate="2020-05-11, 18:26:58" FileAge="1589218018179" FileType="1048576" />
+      <File Name="Documentation/LWFA-V3_Z4_0.txt" FileDate="2020-05-11, 18:26:58" FileAge="1589218018336" FileType="3072" />
+      <File Name="Generated_Code/pin_mux.h" FileDate="2020-05-11, 18:26:58" FileAge="1589218018294" FileType="45637" CompNumb="2" />
+      <File Name="SDK/platform/drivers/src/edma/edma_irq.c" FileDate="2020-05-11, 18:26:58" FileAge="1589218018171" FileType="1048576" />
+      <File Name="Generated_Code/pin_mux.c" FileDate="2020-05-11, 18:26:58" FileAge="1589218018291" FileType="45637" CompNumb="2" />
+    </GeneratedByPE>
+  </GeneratedFilesList>
+  <CodeGenReference>7</CodeGenReference>
+</CodeGenerationInfo>
