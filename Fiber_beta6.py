@@ -1,6 +1,5 @@
+# -*- coding: utf-8 -*-
 """
-.-*- coding: utf-8 -*-.
-
 Created on Sun Oct 20 00:09:30 2019
 
 @author: Varela
@@ -14,9 +13,70 @@ import threading
 import serial.tools.list_ports
 import serial
 from CalcV2 import calc
+from wslFix import in_wsl, serial_ports
 
 open_port = 0
-ser = []
+ser = serial.Serial()
+
+
+class popupWindow(tk.Frame):
+    """Add Popup Window."""
+
+    def __init__(self, parent):
+        tk.Frame.__init__(self, parent)
+
+        self.port_name = ""
+
+        top = self.top = tk.Toplevel(parent)
+        top.wm_title("WSL System")
+        ttk.Label(top, text="This GUI has detected a WSL System.\n",
+                  foreground="red").grid(column=0, row=0, padx=30,
+                                         pady=10, columnspan=2)
+        ttk.Label(top, text="-> The user can insert the name of the" +
+                  " port manually.\n" +
+                  "-> Alternatively, the \"Find\" button can try to" +
+                  " find the device automatically.\n\n -> Please fill in " +
+                  "the box and click \"Submit\" to continue the process.\n" +
+                  "-> Otherwise, please click on \"Skip\" " +
+                  "to exit.\n").grid(column=0, row=1, padx=30,
+                                     pady=10, columnspan=2)
+        self.port = ttk.Entry(top)
+        self.port.grid(column=0, row=2, columnspan=2, ipadx=110)
+        self.label = ttk.Label(top, text="Example: /dev/ttyS3")
+        self.label.grid(column=0, row=3, columnspan=2, ipadx=120)
+
+        find = tk.Button(top, text='Find', relief='groove',
+                         command=lambda: [self.find()])
+        find.grid(column=0, row=5, columnspan=2, ipadx=168, pady=10)
+
+        submit = tk.Button(top, text='Submit', relief='groove',
+                           command=lambda: [self.submit()])
+        submit.grid(column=0, row=6, ipadx=50, pady=10)
+        skip = tk.Button(top, text='Skip', relief='groove',
+                         command=lambda: [self.skip()])
+        skip.grid(column=1, row=6, ipadx=50, pady=10)
+
+    def find(self):
+        """Automatically Find Port."""
+        self.port_name = serial_ports()
+        self.port.delete(0, tk.END)
+        self.port.insert(0, self.port_name)
+
+    def submit(self):
+        """Load String to Var."""
+        self.port_name = self.port.get()
+
+        if "/dev/tty" not in self.port_name:
+            self.label.config(text="No support for inserted port. Please " +
+                              "check the port name format.", foreground="red")
+            self.label.grid(column=0, row=3, columnspan=2, ipadx=0)
+        else:
+            self.top.destroy()
+
+    def skip(self):
+        """Load String to Var."""
+        self.port_name = ""
+        self.top.destroy()
 
 
 class Image(tk.Frame):
@@ -188,6 +248,14 @@ class MainPage(tk.Frame):
         btn_frame.pack(expand=1, fill="both")  # Pack to make visible
 
         def connect():
+
+            def popup():
+                window = popupWindow(self.master)
+                connect_btn.configure(state="disabled")
+                self.master.wait_window(window.top)
+                connect_btn.configure(state="normal")
+                return window.port_name
+
             global open_port
             global ser
             self.scr.tag_config('error', foreground="red")
@@ -201,17 +269,21 @@ class MainPage(tk.Frame):
                                  for p in serial.tools.list_ports.comports()
                                  if 'OpenSDA' in p.description
                                 ]
+
+                if not self.nxp_port and in_wsl():
+                    self.nxp_port = [popup()]
+
                 if not self.nxp_port:
                     open_port = 0
-                    submit_btn.configure(state="disabled")
-                    io_btn.configure(state="disabled")
+                    upload_btn.configure(state="disabled")
+                    start_btn.configure(state="disabled")
                     connect_btn.configure(text="Connect")
-                    self.scr.insert(tk.END, "No compatible device found!\n",
-                                    'error')
+                    self.scr.insert(tk.END, "No compatible device" +
+                                    " found!\n", 'error')
                 else:
                     open_port = 1
-                    submit_btn.configure(state="normal")
-                    io_btn.configure(state="normal")
+                    upload_btn.configure(state="normal")
+                    start_btn.configure(state="normal")
                     connect_btn.configure(text="Disconnect")
 
                     ser = serial.Serial(port=self.nxp_port[0],
@@ -225,8 +297,8 @@ class MainPage(tk.Frame):
             else:
                 ser.close()
                 open_port = 0
-                submit_btn.configure(state="disabled")
-                io_btn.configure(state="disabled")
+                upload_btn.configure(state="disabled")
+                start_btn.configure(state="disabled")
                 connect_btn.configure(text="Connect")
                 self.scr.insert(tk.END, "Connection Terminated!\n",
                                 'pass')
@@ -394,6 +466,7 @@ class MainPage(tk.Frame):
                 string += "," + str(int(lead[value]))
                 string += "," + str(int(trail[value]))
             string += ",\n"
+            print(string)
             return string
 
         def upload(fiber_config):
@@ -410,7 +483,7 @@ class MainPage(tk.Frame):
             self.scr.insert(tk.END, ">>> Uploading...")
 
             # Send Button option and establish connection.
-            ser.write("s".encode())
+            ser.write("u".encode())
             wait()
             # Send General Preferences and wait to recieve confirmation.
             ser.write(fiber_config.encode())
@@ -457,7 +530,7 @@ class MainPage(tk.Frame):
                 self.scr.insert(tk.END, "An error occurred in fiber " +
                                 str(error) + ".\n Cannot Finish the Upload.\n")
 
-        run_progress.stop()
+                run_progress.stop()
 
         def threads():
             i_ = validate()
@@ -465,45 +538,46 @@ class MainPage(tk.Frame):
                 run_progress.start(25)
                 up_thread = threading.Thread(target=upload_master, daemon=True)
                 up_thread.start()
+                self.configuration = 1
 
-        submit_btn = self.button(btn_frame, "Upload", threads,
+        self.configuration = 0
+        upload_btn = self.button(btn_frame, "Upload", threads,
                                  1, 0, 65, 1, "disabled")
 
         def upload_io():
             global ser
 
+            # Wait to recieve confirmation from the micro-controller.
+            def wait():
+
+                while True:
+                    mpc = ser.read()
+                    if mpc.decode() == ".":
+                        break
+
+            # Send Button option and establish connection.
+            ser.write("s".encode())
+            wait()
+
+            start_btn.configure(state='disabled')
+            upload_btn.configure(state='disabled')
+            wait()
+
+            start_btn.configure(state='normal')
+            upload_btn.configure(state='normal')
+
+        def start_io():
             if First.get() == 0:
-                # Wait to recieve confirmation from the micro-controller.
-                def wait():
-
-                    while True:
-                        mpc = ser.read()
-                        if mpc.decode() == ".":
-                            break
-
-                # Send Button option and establish connection.
-                ser.write("i".encode())
-                wait()
-
-                io_btn.configure(state='disabled')
-                submit_btn.configure(state='disabled')
-                wait()
-
-                io_btn.configure(state='normal')
-                submit_btn.configure(state='normal')
-
+                io_thread = threading.Thread(target=upload_io(), daemon=True)
+                io_thread.start()
             else:
                 self.scr.configure(state="normal")
                 self.scr.insert(tk.END, "No Configuration Detected!\n")
                 self.scr.see(tk.END)
                 self.scr.configure(state="disabled")
 
-        def start_io():
-            io_thread = threading.Thread(target=upload_io(), daemon=True)
-            io_thread.start()
-
-        io_btn = self.button(btn_frame, "Start", start_io,
-                             1, 1, 65, 1, "disabled")
+        start_btn = self.button(btn_frame, "Start", start_io,
+                                1, 1, 65, 1, "disabled")
 
 
 class MainGUI(tk.Tk):
