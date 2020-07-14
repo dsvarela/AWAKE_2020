@@ -1,13 +1,22 @@
-# Ignore everything
-*
-
-# But not these files...
-!.gitignore
-!TestSD/
-!AWAKE3/
-!AWAKE3_V2_Z4_0/
-!AWAKE3_SINGLE_Z4_0/
-!Test_Dual_Core/
-
-# ...even if they are in subdirectories
-!*/
+All_Bran_XG_Z4_0/
+All_Bran_XGHY/
+All_Bran_XGHY_LED/
+All_Divres/
+All_Drives_LED/
+emios_ic_mpc5746c/
+emios_ic_mpc5746r/
+emios_ic_mpc5748g/
+enet_ping_mpc5748g/
+eTimer_MPC5744P/
+Fiber_beta2/
+flexcan_mpc5748g/
+flexpwm_pwm_mpc5744p/
+FreeRTOS_TAD_logs/
+IC_TEST_1/
+RemoteSystemsTempFiles/
+sdhc_fatfs_mpc5748g/
+stm_periodic_interrupt_mpc5744p/
+usb_msd_fatfs_mpc5748g/
+.metadata/
+.git/
+.gitignore
