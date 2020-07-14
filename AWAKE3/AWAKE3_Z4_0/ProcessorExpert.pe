@@ -3,7 +3,7 @@
   <Header>
     <Name>AWAKE3_Z4_0</Name>
     <SavedBy>danie</SavedBy>
-    <ModificationStamp>6</ModificationStamp>
+    <ModificationStamp>8</ModificationStamp>
     <Date>2020-02-16</Date>
     <IDE>Eclipse IDE</IDE>
     <PEversion>1.12.2.RT7_b1743-0713</PEversion>
@@ -5228,14 +5228,14 @@
         <ItemSymbol>SIUL2_gpio_0</ItemSymbol>
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
-        <Value>PA[0]</Value>
+        <Value>&lt;Automatic&gt;</Value>
         <SharedPrphMode>false</SharedPrphMode>
       </ItemState>
       <ItemState>
         <ItemSymbol>SIUL2_gpio_0_Dir</ItemSymbol>
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
-        <Value>Output</Value>
+        <Value>&lt;Automatic&gt;</Value>
       </ItemState>
       <ItemState>
         <ItemSymbol>SIUL2_gpio_1</ItemSymbol>
@@ -5280,14 +5280,14 @@
         <ItemSymbol>SIUL2_gpio_4</ItemSymbol>
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
-        <Value>PA[4]</Value>
+        <Value>&lt;Automatic&gt;</Value>
         <SharedPrphMode>false</SharedPrphMode>
       </ItemState>
       <ItemState>
         <ItemSymbol>SIUL2_gpio_4_Dir</ItemSymbol>
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
-        <Value>Output</Value>
+        <Value>&lt;Automatic&gt;</Value>
       </ItemState>
       <ItemState>
         <ItemSymbol>SIUL2_gpio_5</ItemSymbol>
@@ -5319,14 +5319,14 @@
         <ItemSymbol>SIUL2_gpio_7</ItemSymbol>
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
-        <Value>PA[7]</Value>
+        <Value>&lt;Automatic&gt;</Value>
         <SharedPrphMode>false</SharedPrphMode>
       </ItemState>
       <ItemState>
         <ItemSymbol>SIUL2_gpio_7_Dir</ItemSymbol>
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
-        <Value>Output</Value>
+        <Value>&lt;Automatic&gt;</Value>
       </ItemState>
       <ItemState>
         <ItemSymbol>SIUL2_gpio_8</ItemSymbol>
@@ -5358,14 +5358,14 @@
         <ItemSymbol>SIUL2_gpio_10</ItemSymbol>
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
-        <Value>PA[10]</Value>
+        <Value>&lt;Automatic&gt;</Value>
         <SharedPrphMode>false</SharedPrphMode>
       </ItemState>
       <ItemState>
         <ItemSymbol>SIUL2_gpio_10_Dir</ItemSymbol>
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
-        <Value>Output</Value>
+        <Value>&lt;Automatic&gt;</Value>
       </ItemState>
       <ItemState>
         <ItemSymbol>SIUL2_gpio_11</ItemSymbol>

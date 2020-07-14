@@ -173,8 +173,8 @@ Discarded input sections
  .debug_macro   0x00000000       0x10 ./Generated_Code/Cpu.o
  .debug_macro   0x00000000       0x22 ./Generated_Code/Cpu.o
  .debug_macro   0x00000000       0x16 ./Generated_Code/Cpu.o
- .debug_line    0x00000000      0x6b1 ./Generated_Code/Cpu.o
- .debug_str     0x00000000   0x106fa3 ./Generated_Code/Cpu.o
+ .debug_line    0x00000000      0x6ad ./Generated_Code/Cpu.o
+ .debug_str     0x00000000   0x106f9f ./Generated_Code/Cpu.o
  .comment       0x00000000       0x83 ./Generated_Code/Cpu.o
  .group         0x00000000        0x8 ./Generated_Code/clockMan1.o
  .group         0x00000000        0x8 ./Generated_Code/clockMan1.o
@@ -324,8 +324,8 @@ Discarded input sections
  .debug_macro   0x00000000       0x22 ./Generated_Code/dmaController1.o
  .debug_macro   0x00000000       0x10 ./Generated_Code/dmaController1.o
  .debug_macro   0x00000000       0x10 ./Generated_Code/dmaController1.o
- .debug_line    0x00000000      0x6bc ./Generated_Code/dmaController1.o
- .debug_str     0x00000000   0x109cab ./Generated_Code/dmaController1.o
+ .debug_line    0x00000000      0x6b8 ./Generated_Code/dmaController1.o
+ .debug_str     0x00000000   0x109ca7 ./Generated_Code/dmaController1.o
  .comment       0x00000000       0x83 ./Generated_Code/dmaController1.o
  .group         0x00000000        0x8 ./Generated_Code/eMIOS_Mc0.o
  .group         0x00000000        0x8 ./Generated_Code/eMIOS_Mc0.o
@@ -1637,6 +1637,8 @@ Discarded input sections
                 0x00000000       0x4c ./SDK/platform/drivers/src/pins/siul2/pins_siul2_driver.o
  .text.PINS_DRV_ClearPins
                 0x00000000       0x4c ./SDK/platform/drivers/src/pins/siul2/pins_siul2_driver.o
+ .text.PINS_DRV_TogglePins
+                0x00000000       0x4c ./SDK/platform/drivers/src/pins/siul2/pins_siul2_driver.o
  .text.PINS_DRV_ReadPins
                 0x00000000       0x3e ./SDK/platform/drivers/src/pins/siul2/pins_siul2_driver.o
  .text.PINS_DRV_SetPullSel
@@ -2915,7 +2917,7 @@ LOAD c:/nxp/s32ds_power_v2.1/s32ds/build_tools/powerpc-eabivle-4_9/bin/../lib/gc
                 0x40002bcc                __customSection_end__ = .
                 0x40002bcc                __customSectionEnd = .
 
-.text           0x40002bd0     0x52f0
+.text           0x40002bd0     0x5210
  *(.text.startup)
  *(.text)
  .text          0x40002bd0      0x16c c:/nxp/s32ds_power_v2.1/s32ds/build_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.4/e200z4/fp/crtbegin.o
@@ -3560,557 +3562,553 @@ LOAD c:/nxp/s32ds_power_v2.1/s32ds/build_tools/powerpc-eabivle-4_9/bin/../lib/gc
  .text.PINS_DRV_Init
                 0x40006d2c       0x38 ./SDK/platform/drivers/src/pins/siul2/pins_siul2_driver.o
                 0x40006d2c                PINS_DRV_Init
- .text.PINS_DRV_TogglePins
-                0x40006d64       0x4c ./SDK/platform/drivers/src/pins/siul2/pins_siul2_driver.o
-                0x40006d64                PINS_DRV_TogglePins
  .text.PINS_Init
-                0x40006db0      0x14a ./SDK/platform/drivers/src/pins/siul2/siul2_hw_access.o
-                0x40006db0                PINS_Init
- *fill*         0x40006efa        0x2 
+                0x40006d64      0x14a ./SDK/platform/drivers/src/pins/siul2/siul2_hw_access.o
+                0x40006d64                PINS_Init
+ *fill*         0x40006eae        0x2 
  .text.OSIF_SemaPost
-                0x40006efc       0x3a ./SDK/rtos/osif/osif_baremetal.o
-                0x40006efc                OSIF_SemaPost
- *fill*         0x40006f36        0x2 
+                0x40006eb0       0x3a ./SDK/rtos/osif/osif_baremetal.o
+                0x40006eb0                OSIF_SemaPost
+ *fill*         0x40006eea        0x2 
  .text.OSIF_SemaCreate
-                0x40006f38       0x28 ./SDK/rtos/osif/osif_baremetal.o
-                0x40006f38                OSIF_SemaCreate
- .text.sysInit  0x40006f60       0x7c ./Sources/main.o
-                0x40006f60                sysInit
+                0x40006eec       0x28 ./SDK/rtos/osif/osif_baremetal.o
+                0x40006eec                OSIF_SemaCreate
+ .text.sysInit  0x40006f14       0x54 ./Sources/main.o
+                0x40006f14                sysInit
  .text.eMIOSConfig
-                0x40006fdc      0x1ae ./Sources/main.o
-                0x40006fdc                eMIOSConfig
- *fill*         0x4000718a        0x2 
+                0x40006f68      0x1ae ./Sources/main.o
+                0x40006f68                eMIOSConfig
+ *fill*         0x40007116        0x2 
  .text.eMIOSReset
-                0x4000718c       0x70 ./Sources/main.o
-                0x4000718c                eMIOSReset
- .text.print    0x400071fc       0x3e ./Sources/main.o
-                0x400071fc                print
- *fill*         0x4000723a        0x2 
+                0x40007118       0x70 ./Sources/main.o
+                0x40007118                eMIOSReset
+ .text.print    0x40007188       0x3e ./Sources/main.o
+                0x40007188                print
+ *fill*         0x400071c6        0x2 
  .text.readOption
-                0x4000723c       0x62 ./Sources/main.o
-                0x4000723c                readOption
- *fill*         0x4000729e        0x2 
+                0x400071c8       0x62 ./Sources/main.o
+                0x400071c8                readOption
+ *fill*         0x4000722a        0x2 
  .text.readCycles
-                0x400072a0      0x1b8 ./Sources/main.o
-                0x400072a0                readCycles
+                0x4000722c      0x1b8 ./Sources/main.o
+                0x4000722c                readCycles
  .text.max_index
-                0x40007458       0x2e ./Sources/main.o
-                0x40007458                max_index
- *fill*         0x40007486        0x2 
- .text.main     0x40007488      0x31a ./Sources/main.o
-                0x40007488                main
- .text.sbrk     0x400077a2       0x3a C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(alloc.o)
-                0x400077a2                sbrk
- .text.malloc   0x400077dc      0x158 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(alloc.o)
-                0x400077dc                malloc
- .text.free     0x40007934       0x16 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(alloc.o)
-                0x40007934                free
- .text.isalpha  0x4000794a       0x1e C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(atoi.o)
-                0x4000794a                isalpha
- .text.isspace  0x40007968       0x22 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(atoi.o)
-                0x40007968                isspace
- .text.toupper  0x4000798a       0x16 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(atoi.o)
-                0x4000798a                toupper
- .text.strtol   0x400079a0       0x86 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(atoi.o)
-                0x400079a0                strtol
- .text.atoi     0x40007a26        0x8 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(atoi.o)
-                0x40007a26                atoi
+                0x400073e4       0x2e ./Sources/main.o
+                0x400073e4                max_index
+ *fill*         0x40007412        0x2 
+ .text.main     0x40007414      0x2a4 ./Sources/main.o
+                0x40007414                main
+ .text.sbrk     0x400076b8       0x3a C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(alloc.o)
+                0x400076b8                sbrk
+ .text.malloc   0x400076f2      0x158 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(alloc.o)
+                0x400076f2                malloc
+ .text.free     0x4000784a       0x16 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(alloc.o)
+                0x4000784a                free
+ .text.isalpha  0x40007860       0x1e C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(atoi.o)
+                0x40007860                isalpha
+ .text.isspace  0x4000787e       0x22 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(atoi.o)
+                0x4000787e                isspace
+ .text.toupper  0x400078a0       0x16 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(atoi.o)
+                0x400078a0                toupper
+ .text.strtol   0x400078b6       0x86 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(atoi.o)
+                0x400078b6                strtol
+ .text.atoi     0x4000793c        0x8 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(atoi.o)
+                0x4000793c                atoi
  .text.__strtoul
-                0x40007a2e      0x24a C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(__strtoul.o)
-                0x40007a2e                __strtoul
- .text.memset   0x40007c78       0x1a C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(memset.o)
-                0x40007c78                memset
- .text.strcpy   0x40007c92       0x14 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(strcpy.o)
-                0x40007c92                strcpy
- .text.strlen   0x40007ca6       0x12 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(strlen.o)
-                0x40007ca6                strlen
- .text.strtok   0x40007cb8       0xde C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(strtok.o)
-                0x40007cb8                strtok
+                0x40007944      0x24a C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(__strtoul.o)
+                0x40007944                __strtoul
+ .text.memset   0x40007b8e       0x1a C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(memset.o)
+                0x40007b8e                memset
+ .text.strcpy   0x40007ba8       0x14 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(strcpy.o)
+                0x40007ba8                strcpy
+ .text.strlen   0x40007bbc       0x12 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(strlen.o)
+                0x40007bbc                strlen
+ .text.strtok   0x40007bce       0xde C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(strtok.o)
+                0x40007bce                strtok
  .text.__StringRead
-                0x40007d96       0x4a C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(__StringRead.o)
-                0x40007d96                __StringRead
+                0x40007cac       0x4a C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(__StringRead.o)
+                0x40007cac                __StringRead
  .text.__fill_mem
-                0x40007de0       0xa0 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(__filll_mem.o)
-                0x40007de0                __fill_mem
+                0x40007cf6       0xa0 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(__filll_mem.o)
+                0x40007cf6                __fill_mem
  *(.init)
- .init          0x40007e80        0xc c:/nxp/s32ds_power_v2.1/s32ds/build_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.4/e200z4/fp/ecrti.o
-                0x40007e80                __init
- .init          0x40007e8c        0x4 c:/nxp/s32ds_power_v2.1/s32ds/build_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.4/e200z4/fp/crtbegin.o
- .init          0x40007e90        0x4 c:/nxp/s32ds_power_v2.1/s32ds/build_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.4/e200z4/fp/crtend.o
- .init          0x40007e94        0xa c:/nxp/s32ds_power_v2.1/s32ds/build_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.4/e200z4/fp/ecrtn.o
+ *fill*         0x40007d96        0x2 
+ .init          0x40007d98        0xc c:/nxp/s32ds_power_v2.1/s32ds/build_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.4/e200z4/fp/ecrti.o
+                0x40007d98                __init
+ .init          0x40007da4        0x4 c:/nxp/s32ds_power_v2.1/s32ds/build_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.4/e200z4/fp/crtbegin.o
+ .init          0x40007da8        0x4 c:/nxp/s32ds_power_v2.1/s32ds/build_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.4/e200z4/fp/crtend.o
+ .init          0x40007dac        0xa c:/nxp/s32ds_power_v2.1/s32ds/build_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.4/e200z4/fp/ecrtn.o
  *(.fini)
- *fill*         0x40007e9e        0x2 
- .fini          0x40007ea0        0xc c:/nxp/s32ds_power_v2.1/s32ds/build_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.4/e200z4/fp/ecrti.o
-                0x40007ea0                __fini
- .fini          0x40007eac        0x4 c:/nxp/s32ds_power_v2.1/s32ds/build_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.4/e200z4/fp/crtbegin.o
- .fini          0x40007eb0        0xa c:/nxp/s32ds_power_v2.1/s32ds/build_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.4/e200z4/fp/ecrtn.o
+ *fill*         0x40007db6        0x2 
+ .fini          0x40007db8        0xc c:/nxp/s32ds_power_v2.1/s32ds/build_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.4/e200z4/fp/ecrti.o
+                0x40007db8                __fini
+ .fini          0x40007dc4        0x4 c:/nxp/s32ds_power_v2.1/s32ds/build_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.4/e200z4/fp/crtbegin.o
+ .fini          0x40007dc8        0xa c:/nxp/s32ds_power_v2.1/s32ds/build_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.4/e200z4/fp/ecrtn.o
  *(.rchw)
  *(.cpu0_reset_vector)
  *(.cpu1_reset_vector)
  *(.cpu2_reset_vector)
-                0x40007ec0                . = ALIGN (0x10)
- *fill*         0x40007eba        0x6 
+                0x40007de0                . = ALIGN (0x10)
+ *fill*         0x40007dd2        0xe 
 
-.glink          0x40007ec0        0x0
- .glink         0x40007ec0        0x0 c:/nxp/s32ds_power_v2.1/s32ds/build_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.4/e200z4/fp/crtbegin.o
+.glink          0x40007de0        0x0
+ .glink         0x40007de0        0x0 c:/nxp/s32ds_power_v2.1/s32ds/build_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.4/e200z4/fp/crtbegin.o
 
-.sdata2         0x40007ec0        0x0
-                0x40007ec0                . = ALIGN (0x4)
-                0x40007ec0                __sdata2_start__ = .
+.sdata2         0x40007de0        0x0
+                0x40007de0                . = ALIGN (0x4)
+                0x40007de0                __sdata2_start__ = .
  *(.sdata2)
- .sdata2        0x40007ec0        0x0 c:/nxp/s32ds_power_v2.1/s32ds/build_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.4/e200z4/fp/ecrti.o
-                0x40007ec0                __SDATA2_START__
- .sdata2        0x40007ec0        0x0 c:/nxp/s32ds_power_v2.1/s32ds/build_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.4/e200z4/fp/crtbegin.o
-                0x4000fec0                _SDA2_BASE_
+ .sdata2        0x40007de0        0x0 c:/nxp/s32ds_power_v2.1/s32ds/build_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.4/e200z4/fp/ecrti.o
+                0x40007de0                __SDATA2_START__
+ .sdata2        0x40007de0        0x0 c:/nxp/s32ds_power_v2.1/s32ds/build_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.4/e200z4/fp/crtbegin.o
+                0x4000fde0                _SDA2_BASE_
  *(.sdata2.*)
-                0x40007ec0                . = ALIGN (0x4)
-                0x40007ec0                __sdata2_end__ = .
+                0x40007de0                . = ALIGN (0x4)
+                0x40007de0                __sdata2_end__ = .
 
-.preinit_array  0x40007ec0        0x0
+.preinit_array  0x40007de0        0x0
                 [!provide]                PROVIDE (__preinit_array_start, .)
  *(.preinit_array)
                 [!provide]                PROVIDE (__preinit_array_end, .)
 
-.init_array     0x40007ec0        0x0
+.init_array     0x40007de0        0x0
                 [!provide]                PROVIDE (__init_array_start, .)
  *(SORT(.init_array.*))
  *(.init_array)
                 [!provide]                PROVIDE (__init_array_end, .)
 
-.fini_array     0x40007ec0        0x0
+.fini_array     0x40007de0        0x0
                 [!provide]                PROVIDE (__fini_array_start, .)
  *(SORT(.fini_array.*))
  *(.fini_array)
                 [!provide]                PROVIDE (__fini_array_end, .)
 
-.dtors          0x40007ec0        0x8
+.dtors          0x40007de0        0x8
  *crtbegin.o(.dtors)
- .dtors         0x40007ec0        0x4 c:/nxp/s32ds_power_v2.1/s32ds/build_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.4/e200z4/fp/crtbegin.o
+ .dtors         0x40007de0        0x4 c:/nxp/s32ds_power_v2.1/s32ds/build_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.4/e200z4/fp/crtbegin.o
  *crtbegin?.o(.dtors)
  *(EXCLUDE_FILE(*crtend?.o *crtend.o) .dtors)
- .dtors         0x40007ec4        0x0 c:/nxp/s32ds_power_v2.1/s32ds/build_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.4/e200z4/fp/ecrti.o
-                0x40007ec4                __DTOR_LIST__
- .dtors         0x40007ec4        0x0 c:/nxp/s32ds_power_v2.1/s32ds/build_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.4/e200z4/fp/ecrtn.o
+ .dtors         0x40007de4        0x0 c:/nxp/s32ds_power_v2.1/s32ds/build_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.4/e200z4/fp/ecrti.o
+                0x40007de4                __DTOR_LIST__
+ .dtors         0x40007de4        0x0 c:/nxp/s32ds_power_v2.1/s32ds/build_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.4/e200z4/fp/ecrtn.o
  *(SORT(.dtors.*))
  *(.dtors)
- .dtors         0x40007ec4        0x4 c:/nxp/s32ds_power_v2.1/s32ds/build_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.4/e200z4/fp/crtend.o
-                0x40007ec4                __DTOR_END__
+ .dtors         0x40007de4        0x4 c:/nxp/s32ds_power_v2.1/s32ds/build_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.4/e200z4/fp/crtend.o
+                0x40007de4                __DTOR_END__
 
-.ctors          0x40007ec8        0x8
+.ctors          0x40007de8        0x8
  *crtbegin.o(.ctors)
- .ctors         0x40007ec8        0x4 c:/nxp/s32ds_power_v2.1/s32ds/build_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.4/e200z4/fp/crtbegin.o
+ .ctors         0x40007de8        0x4 c:/nxp/s32ds_power_v2.1/s32ds/build_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.4/e200z4/fp/crtbegin.o
  *crtbegin?.o(.ctors)
  *(EXCLUDE_FILE(*crtend?.o *crtend.o) .ctors)
- .ctors         0x40007ecc        0x0 c:/nxp/s32ds_power_v2.1/s32ds/build_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.4/e200z4/fp/ecrti.o
-                0x40007ecc                __CTOR_LIST__
- .ctors         0x40007ecc        0x0 c:/nxp/s32ds_power_v2.1/s32ds/build_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.4/e200z4/fp/ecrtn.o
-                0x40007ecc                __CTOR_END__
+ .ctors         0x40007dec        0x0 c:/nxp/s32ds_power_v2.1/s32ds/build_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.4/e200z4/fp/ecrti.o
+                0x40007dec                __CTOR_LIST__
+ .ctors         0x40007dec        0x0 c:/nxp/s32ds_power_v2.1/s32ds/build_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.4/e200z4/fp/ecrtn.o
+                0x40007dec                __CTOR_END__
  *(SORT(.ctors.*))
  *(.ctors)
- .ctors         0x40007ecc        0x4 c:/nxp/s32ds_power_v2.1/s32ds/build_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.4/e200z4/fp/crtend.o
+ .ctors         0x40007dec        0x4 c:/nxp/s32ds_power_v2.1/s32ds/build_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.4/e200z4/fp/crtend.o
                 0x00000000                __CODE_ROM = 0x0
                 0x00000000                __CODE_END = 0x0
 
-.code_ram       0x40007ed0        0x0
-                0x40007ed0                . = ALIGN (0x4)
-                0x40007ed0                __CODE_RAM = .
-                0x40007ed0                __code_ram_start__ = .
+.code_ram       0x40007df0        0x0
+                0x40007df0                . = ALIGN (0x4)
+                0x40007df0                __CODE_RAM = .
+                0x40007df0                __code_ram_start__ = .
  *(.code_ram)
-                0x40007ed0                __code_ram_end__ = .
-                0x40007ed0                . = ALIGN (0x4)
+                0x40007df0                __code_ram_end__ = .
+                0x40007df0                . = ALIGN (0x4)
 
-.rodata         0x40007ed0      0xc7c
+.rodata         0x40007df0      0xc7c
  *(.rodata)
  *(.rodata.*)
  .rodata.linflexd_uart1_InitConfig0
-                0x40007ed0       0x1c ./Generated_Code/linflexd_uart1.o
-                0x40007ed0                linflexd_uart1_InitConfig0
+                0x40007df0       0x1c ./Generated_Code/linflexd_uart1.o
+                0x40007df0                linflexd_uart1_InitConfig0
  .rodata.s_vectors
-                0x40007eec        0xc ./SDK/platform/devices/startup.o
+                0x40007e0c        0xc ./SDK/platform/devices/startup.o
  .rodata.CLOCK_DRV_GetFreq
-                0x40007ef8       0x6c ./SDK/platform/drivers/src/clock/MPC57xx/clock_MPC57xx.o
+                0x40007e18       0x6c ./SDK/platform/drivers/src/clock/MPC57xx/clock_MPC57xx.o
  .rodata.CLOCK_DRV_Init
-                0x40007f64       0xe8 ./SDK/platform/drivers/src/clock/MPC57xx/clock_MPC57xx.o
+                0x40007e84       0xe8 ./SDK/platform/drivers/src/clock/MPC57xx/clock_MPC57xx.o
  .rodata.interfaceClocks
-                0x4000804c      0x218 ./SDK/platform/drivers/src/clock/MPC57xx/clock_MPC57xx.o
+                0x40007f6c      0x218 ./SDK/platform/drivers/src/clock/MPC57xx/clock_MPC57xx.o
  .rodata.monitoredClocks
-                0x40008264      0x218 ./SDK/platform/drivers/src/clock/MPC57xx/clock_MPC57xx.o
+                0x40008184      0x218 ./SDK/platform/drivers/src/clock/MPC57xx/clock_MPC57xx.o
  .rodata.clockNameMappings
-                0x4000847c      0x10c ./SDK/platform/drivers/src/clock/MPC57xx/clock_MPC57xx.o
-                0x4000847c                clockNameMappings
+                0x4000839c      0x10c ./SDK/platform/drivers/src/clock/MPC57xx/clock_MPC57xx.o
+                0x4000839c                clockNameMappings
  .rodata.EDMA_DRV_ConfigSingleBlockTransfer
-                0x40008588       0x10 ./SDK/platform/drivers/src/edma/edma_driver.o
- .rodata.eMIOS  0x40008598        0xc ./SDK/platform/drivers/src/emios/emios_common.o
-                0x40008598                eMIOS
+                0x400084a8       0x10 ./SDK/platform/drivers/src/edma/edma_driver.o
+ .rodata.eMIOS  0x400084b8        0xc ./SDK/platform/drivers/src/emios/emios_common.o
+                0x400084b8                eMIOS
  .rodata.eMIOSModeAccept
-                0x400085a4       0x90 ./SDK/platform/drivers/src/emios/emios_hw_access.o
+                0x400084c4       0x90 ./SDK/platform/drivers/src/emios/emios_hw_access.o
  .rodata.EMIOS_DRV_PWM_InitMode
-                0x40008634       0xf4 ./SDK/platform/drivers/src/emios/emios_pwm_driver.o
+                0x40008554       0xf4 ./SDK/platform/drivers/src/emios/emios_pwm_driver.o
  .rodata.s_uartLINFlexDRxIntVec
-                0x40008728       0x48 ./SDK/platform/drivers/src/linflexd/linflexd_uart_driver.o
+                0x40008648       0x48 ./SDK/platform/drivers/src/linflexd/linflexd_uart_driver.o
  .rodata.s_uartLINFlexDErrIntVec
-                0x40008770       0x48 ./SDK/platform/drivers/src/linflexd/linflexd_uart_driver.o
+                0x40008690       0x48 ./SDK/platform/drivers/src/linflexd/linflexd_uart_driver.o
  .rodata.s_uartLINFlexDTxIntVec
-                0x400087b8       0x48 ./SDK/platform/drivers/src/linflexd/linflexd_uart_driver.o
+                0x400086d8       0x48 ./SDK/platform/drivers/src/linflexd/linflexd_uart_driver.o
  .rodata.s_uartLINFlexDClkNames
-                0x40008800       0x48 ./SDK/platform/drivers/src/linflexd/linflexd_uart_driver.o
+                0x40008720       0x48 ./SDK/platform/drivers/src/linflexd/linflexd_uart_driver.o
  .rodata.s_LINFlexDBase
-                0x40008848       0x48 ./SDK/platform/drivers/src/linflexd/linflexd_uart_driver.o
+                0x40008768       0x48 ./SDK/platform/drivers/src/linflexd/linflexd_uart_driver.o
  .rodata.s_LINFlexDInstHasFilters
-                0x40008890       0x12 ./SDK/platform/drivers/src/linflexd/linflexd_uart_driver.o
- *fill*         0x400088a2        0x2 
+                0x400087b0       0x12 ./SDK/platform/drivers/src/linflexd/linflexd_uart_driver.o
+ *fill*         0x400087c2        0x2 
  .rodata.g_uartLINFlexDTxIsr
-                0x400088a4       0x48 ./SDK/platform/drivers/src/linflexd/linflexd_uart_irq.o
-                0x400088a4                g_uartLINFlexDTxIsr
+                0x400087c4       0x48 ./SDK/platform/drivers/src/linflexd/linflexd_uart_irq.o
+                0x400087c4                g_uartLINFlexDTxIsr
  .rodata.g_uartLINFlexDErrIsr
-                0x400088ec       0x48 ./SDK/platform/drivers/src/linflexd/linflexd_uart_irq.o
-                0x400088ec                g_uartLINFlexDErrIsr
+                0x4000880c       0x48 ./SDK/platform/drivers/src/linflexd/linflexd_uart_irq.o
+                0x4000880c                g_uartLINFlexDErrIsr
  .rodata.g_uartLINFlexDRxIsr
-                0x40008934       0x48 ./SDK/platform/drivers/src/linflexd/linflexd_uart_irq.o
-                0x40008934                g_uartLINFlexDRxIsr
+                0x40008854       0x48 ./SDK/platform/drivers/src/linflexd/linflexd_uart_irq.o
+                0x40008854                g_uartLINFlexDRxIsr
  .rodata.str1.4
-                0x4000897c        0xc ./Sources/main.o
+                0x4000889c        0xc ./Sources/main.o
                                   0xa (size before relaxing)
  .rodata.__strtoul
-                0x40008988       0x40 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(__strtoul.o)
+                0x400088a8       0x40 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(__strtoul.o)
  .rodata.str1.1
-                0x400089c8        0x1 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(strtok.o)
- *fill*         0x400089c9        0x3 
+                0x400088e8        0x1 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(strtok.o)
+ *fill*         0x400088e9        0x3 
  .rodata.__upper_mapC
-                0x400089cc       0x80 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(ctype.o)
-                0x400089cc                __upper_mapC
+                0x400088ec       0x80 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(ctype.o)
+                0x400088ec                __upper_mapC
  .rodata.__ctype_mapC
-                0x40008a4c      0x100 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(ctype.o)
-                0x40008a4c                __ctype_mapC
+                0x4000896c      0x100 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(ctype.o)
+                0x4000896c                __ctype_mapC
 
-.sbss2          0x40008b4c        0x0
- .sbss2         0x40008b4c        0x0 c:/nxp/s32ds_power_v2.1/s32ds/build_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.4/e200z4/fp/ecrtn.o
+.sbss2          0x40008a6c        0x0
+ .sbss2         0x40008a6c        0x0 c:/nxp/s32ds_power_v2.1/s32ds/build_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.4/e200z4/fp/ecrtn.o
 
-.eh_frame_hdr   0x40008b4c       0x14
+.eh_frame_hdr   0x40008a6c       0x14
  *(.eh_frame_hdr)
- .eh_frame_hdr  0x40008b4c       0x14 c:/nxp/s32ds_power_v2.1/s32ds/build_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.4/e200z4/fp\libgcc.a(_divdi3.o)
-                0x40008b4c                __GNU_EH_FRAME_HDR
+ .eh_frame_hdr  0x40008a6c       0x14 c:/nxp/s32ds_power_v2.1/s32ds/build_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.4/e200z4/fp\libgcc.a(_divdi3.o)
+                0x40008a6c                __GNU_EH_FRAME_HDR
 
-.eh_frame       0x40008b60       0x84
+.eh_frame       0x40008a80       0x84
  *(.eh_frame)
- .eh_frame      0x40008b60        0x0 c:/nxp/s32ds_power_v2.1/s32ds/build_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.4/e200z4/fp/ecrti.o
-                0x40008b60                __EH_FRAME_BEGIN__
- .eh_frame      0x40008b60        0x0 c:/nxp/s32ds_power_v2.1/s32ds/build_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.4/e200z4/fp/crtbegin.o
- .eh_frame      0x40008b60        0x0 c:/nxp/s32ds_power_v2.1/s32ds/build_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.4/e200z4/fp/crtbegin.o
- .eh_frame      0x40008b60        0x0 c:/nxp/s32ds_power_v2.1/s32ds/build_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.4/e200z4/fp\libgcc.a(_divdi3.o)
+ .eh_frame      0x40008a80        0x0 c:/nxp/s32ds_power_v2.1/s32ds/build_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.4/e200z4/fp/ecrti.o
+                0x40008a80                __EH_FRAME_BEGIN__
+ .eh_frame      0x40008a80        0x0 c:/nxp/s32ds_power_v2.1/s32ds/build_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.4/e200z4/fp/crtbegin.o
+ .eh_frame      0x40008a80        0x0 c:/nxp/s32ds_power_v2.1/s32ds/build_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.4/e200z4/fp/crtbegin.o
+ .eh_frame      0x40008a80        0x0 c:/nxp/s32ds_power_v2.1/s32ds/build_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.4/e200z4/fp\libgcc.a(_divdi3.o)
                                  0x40 (size before relaxing)
- .eh_frame      0x40008b60        0x0 c:/nxp/s32ds_power_v2.1/s32ds/build_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.4/e200z4/fp\libgcc.a(_udivdi3.o)
+ .eh_frame      0x40008a80        0x0 c:/nxp/s32ds_power_v2.1/s32ds/build_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.4/e200z4/fp\libgcc.a(_udivdi3.o)
                                  0x48 (size before relaxing)
- .eh_frame      0x40008b60       0x7c c:/nxp/s32ds_power_v2.1/s32ds/build_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.4/e200z4/fp\libgcc.a(e200crtresxgpr.o)
- .eh_frame      0x40008bdc        0x4 c:/nxp/s32ds_power_v2.1/s32ds/build_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.4/e200z4/fp/crtend.o
- .eh_frame      0x40008be0        0x4 c:/nxp/s32ds_power_v2.1/s32ds/build_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.4/e200z4/fp/ecrtn.o
-                0x40008be0                __EH_FRAME_END__
+ .eh_frame      0x40008a80       0x7c c:/nxp/s32ds_power_v2.1/s32ds/build_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.4/e200z4/fp\libgcc.a(e200crtresxgpr.o)
+ .eh_frame      0x40008afc        0x4 c:/nxp/s32ds_power_v2.1/s32ds/build_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.4/e200z4/fp/crtend.o
+ .eh_frame      0x40008b00        0x4 c:/nxp/s32ds_power_v2.1/s32ds/build_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.4/e200z4/fp/ecrtn.o
+                0x40008b00                __EH_FRAME_END__
 
-.init_table     0x40008be4       0x40
-                0x40008be4                . = ALIGN (0x4)
-                0x40008be4                __COPY_TABLE = .
+.init_table     0x40008b04       0x40
+                0x40008b04                . = ALIGN (0x4)
+                0x40008b04                __COPY_TABLE = .
  *(.init_table)
- .init_table    0x40008be4       0x40 ./Project_Settings/Startup_Code/startup_MPC5748G.o
+ .init_table    0x40008b04       0x40 ./Project_Settings/Startup_Code/startup_MPC5748G.o
 
-.zero_table     0x40008c24       0x14
-                0x40008c24                . = ALIGN (0x4)
-                0x40008c24                __ZERO_TABLE = .
+.zero_table     0x40008b44       0x14
+                0x40008b44                . = ALIGN (0x4)
+                0x40008b44                __ZERO_TABLE = .
  *(.zero_table)
- .zero_table    0x40008c24       0x14 ./Project_Settings/Startup_Code/startup_MPC5748G.o
-                0x40008c38                __TEXT_END = .
+ .zero_table    0x40008b44       0x14 ./Project_Settings/Startup_Code/startup_MPC5748G.o
+                0x40008b58                __TEXT_END = .
                 0x00000000                __DATA_ROM = 0x0
                 0x00000000                __DATA_END = 0x0
 
-.rela.dyn       0x40008c38        0x0
- .rela.iplt     0x40008c38        0x0 c:/nxp/s32ds_power_v2.1/s32ds/build_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.4/e200z4/fp/crtbegin.o
- .rela.text     0x40008c38        0x0 c:/nxp/s32ds_power_v2.1/s32ds/build_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.4/e200z4/fp/crtbegin.o
+.rela.dyn       0x40008b58        0x0
+ .rela.iplt     0x40008b58        0x0 c:/nxp/s32ds_power_v2.1/s32ds/build_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.4/e200z4/fp/crtbegin.o
+ .rela.text     0x40008b58        0x0 c:/nxp/s32ds_power_v2.1/s32ds/build_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.4/e200z4/fp/crtbegin.o
  .rela.init_table
-                0x40008c38        0x0 c:/nxp/s32ds_power_v2.1/s32ds/build_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.4/e200z4/fp/crtbegin.o
+                0x40008b58        0x0 c:/nxp/s32ds_power_v2.1/s32ds/build_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.4/e200z4/fp/crtbegin.o
  .rela.zero_table
-                0x40008c38        0x0 c:/nxp/s32ds_power_v2.1/s32ds/build_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.4/e200z4/fp/crtbegin.o
+                0x40008b58        0x0 c:/nxp/s32ds_power_v2.1/s32ds/build_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.4/e200z4/fp/crtbegin.o
  .rela.cpu0_reset_vector
-                0x40008c38        0x0 c:/nxp/s32ds_power_v2.1/s32ds/build_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.4/e200z4/fp/crtbegin.o
+                0x40008b58        0x0 c:/nxp/s32ds_power_v2.1/s32ds/build_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.4/e200z4/fp/crtbegin.o
  .rela.intc_vector_table
-                0x40008c38        0x0 c:/nxp/s32ds_power_v2.1/s32ds/build_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.4/e200z4/fp/crtbegin.o
+                0x40008b58        0x0 c:/nxp/s32ds_power_v2.1/s32ds/build_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.4/e200z4/fp/crtbegin.o
  .rela.text.init_data_bss
-                0x40008c38        0x0 c:/nxp/s32ds_power_v2.1/s32ds/build_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.4/e200z4/fp/crtbegin.o
+                0x40008b58        0x0 c:/nxp/s32ds_power_v2.1/s32ds/build_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.4/e200z4/fp/crtbegin.o
  .rela.text.INT_SYS_InstallHandler
-                0x40008c38        0x0 c:/nxp/s32ds_power_v2.1/s32ds/build_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.4/e200z4/fp/crtbegin.o
+                0x40008b58        0x0 c:/nxp/s32ds_power_v2.1/s32ds/build_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.4/e200z4/fp/crtbegin.o
  .rela.text.LINFLEXD_UART_DRV_Init
-                0x40008c38        0x0 c:/nxp/s32ds_power_v2.1/s32ds/build_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.4/e200z4/fp/crtbegin.o
+                0x40008b58        0x0 c:/nxp/s32ds_power_v2.1/s32ds/build_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.4/e200z4/fp/crtbegin.o
  .rela.text.LINFLEXD_UART_DRV_Deinit
-                0x40008c38        0x0 c:/nxp/s32ds_power_v2.1/s32ds/build_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.4/e200z4/fp/crtbegin.o
+                0x40008b58        0x0 c:/nxp/s32ds_power_v2.1/s32ds/build_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.4/e200z4/fp/crtbegin.o
  .rela.text.sbrk
-                0x40008c38        0x0 c:/nxp/s32ds_power_v2.1/s32ds/build_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.4/e200z4/fp/crtbegin.o
+                0x40008b58        0x0 c:/nxp/s32ds_power_v2.1/s32ds/build_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.4/e200z4/fp/crtbegin.o
  .rela.text.isalnum
-                0x40008c38        0x0 c:/nxp/s32ds_power_v2.1/s32ds/build_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.4/e200z4/fp/crtbegin.o
+                0x40008b58        0x0 c:/nxp/s32ds_power_v2.1/s32ds/build_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.4/e200z4/fp/crtbegin.o
  .rela.text.isalpha
-                0x40008c38        0x0 c:/nxp/s32ds_power_v2.1/s32ds/build_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.4/e200z4/fp/crtbegin.o
+                0x40008b58        0x0 c:/nxp/s32ds_power_v2.1/s32ds/build_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.4/e200z4/fp/crtbegin.o
  .rela.text.isblank
-                0x40008c38        0x0 c:/nxp/s32ds_power_v2.1/s32ds/build_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.4/e200z4/fp/crtbegin.o
+                0x40008b58        0x0 c:/nxp/s32ds_power_v2.1/s32ds/build_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.4/e200z4/fp/crtbegin.o
  .rela.text.iscntrl
-                0x40008c38        0x0 c:/nxp/s32ds_power_v2.1/s32ds/build_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.4/e200z4/fp/crtbegin.o
+                0x40008b58        0x0 c:/nxp/s32ds_power_v2.1/s32ds/build_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.4/e200z4/fp/crtbegin.o
  .rela.text.isdigit
-                0x40008c38        0x0 c:/nxp/s32ds_power_v2.1/s32ds/build_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.4/e200z4/fp/crtbegin.o
+                0x40008b58        0x0 c:/nxp/s32ds_power_v2.1/s32ds/build_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.4/e200z4/fp/crtbegin.o
  .rela.text.isgraph
-                0x40008c38        0x0 c:/nxp/s32ds_power_v2.1/s32ds/build_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.4/e200z4/fp/crtbegin.o
+                0x40008b58        0x0 c:/nxp/s32ds_power_v2.1/s32ds/build_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.4/e200z4/fp/crtbegin.o
  .rela.text.islower
-                0x40008c38        0x0 c:/nxp/s32ds_power_v2.1/s32ds/build_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.4/e200z4/fp/crtbegin.o
+                0x40008b58        0x0 c:/nxp/s32ds_power_v2.1/s32ds/build_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.4/e200z4/fp/crtbegin.o
  .rela.text.isprint
-                0x40008c38        0x0 c:/nxp/s32ds_power_v2.1/s32ds/build_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.4/e200z4/fp/crtbegin.o
+                0x40008b58        0x0 c:/nxp/s32ds_power_v2.1/s32ds/build_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.4/e200z4/fp/crtbegin.o
  .rela.text.ispunct
-                0x40008c38        0x0 c:/nxp/s32ds_power_v2.1/s32ds/build_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.4/e200z4/fp/crtbegin.o
+                0x40008b58        0x0 c:/nxp/s32ds_power_v2.1/s32ds/build_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.4/e200z4/fp/crtbegin.o
  .rela.text.isspace
-                0x40008c38        0x0 c:/nxp/s32ds_power_v2.1/s32ds/build_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.4/e200z4/fp/crtbegin.o
+                0x40008b58        0x0 c:/nxp/s32ds_power_v2.1/s32ds/build_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.4/e200z4/fp/crtbegin.o
  .rela.text.isupper
-                0x40008c38        0x0 c:/nxp/s32ds_power_v2.1/s32ds/build_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.4/e200z4/fp/crtbegin.o
+                0x40008b58        0x0 c:/nxp/s32ds_power_v2.1/s32ds/build_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.4/e200z4/fp/crtbegin.o
  .rela.text.isxdigit
-                0x40008c38        0x0 c:/nxp/s32ds_power_v2.1/s32ds/build_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.4/e200z4/fp/crtbegin.o
+                0x40008b58        0x0 c:/nxp/s32ds_power_v2.1/s32ds/build_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.4/e200z4/fp/crtbegin.o
  .rela.text.tolower
-                0x40008c38        0x0 c:/nxp/s32ds_power_v2.1/s32ds/build_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.4/e200z4/fp/crtbegin.o
+                0x40008b58        0x0 c:/nxp/s32ds_power_v2.1/s32ds/build_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.4/e200z4/fp/crtbegin.o
  .rela.text.toupper
-                0x40008c38        0x0 c:/nxp/s32ds_power_v2.1/s32ds/build_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.4/e200z4/fp/crtbegin.o
+                0x40008b58        0x0 c:/nxp/s32ds_power_v2.1/s32ds/build_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.4/e200z4/fp/crtbegin.o
  .rela.text.getwchar
-                0x40008c38        0x0 c:/nxp/s32ds_power_v2.1/s32ds/build_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.4/e200z4/fp/crtbegin.o
+                0x40008b58        0x0 c:/nxp/s32ds_power_v2.1/s32ds/build_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.4/e200z4/fp/crtbegin.o
  .rela.text.strtol
-                0x40008c38        0x0 c:/nxp/s32ds_power_v2.1/s32ds/build_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.4/e200z4/fp/crtbegin.o
+                0x40008b58        0x0 c:/nxp/s32ds_power_v2.1/s32ds/build_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.4/e200z4/fp/crtbegin.o
  .rela.text.strtoll
-                0x40008c38        0x0 c:/nxp/s32ds_power_v2.1/s32ds/build_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.4/e200z4/fp/crtbegin.o
+                0x40008b58        0x0 c:/nxp/s32ds_power_v2.1/s32ds/build_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.4/e200z4/fp/crtbegin.o
  .rela.text.strtoull
-                0x40008c38        0x0 c:/nxp/s32ds_power_v2.1/s32ds/build_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.4/e200z4/fp/crtbegin.o
+                0x40008b58        0x0 c:/nxp/s32ds_power_v2.1/s32ds/build_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.4/e200z4/fp/crtbegin.o
  .rela.text.__getwchar
-                0x40008c38        0x0 c:/nxp/s32ds_power_v2.1/s32ds/build_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.4/e200z4/fp/crtbegin.o
+                0x40008b58        0x0 c:/nxp/s32ds_power_v2.1/s32ds/build_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.4/e200z4/fp/crtbegin.o
  .rela.text.iswalnum
-                0x40008c38        0x0 c:/nxp/s32ds_power_v2.1/s32ds/build_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.4/e200z4/fp/crtbegin.o
+                0x40008b58        0x0 c:/nxp/s32ds_power_v2.1/s32ds/build_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.4/e200z4/fp/crtbegin.o
  .rela.text.iswalpha
-                0x40008c38        0x0 c:/nxp/s32ds_power_v2.1/s32ds/build_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.4/e200z4/fp/crtbegin.o
+                0x40008b58        0x0 c:/nxp/s32ds_power_v2.1/s32ds/build_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.4/e200z4/fp/crtbegin.o
  .rela.text.iswblank
-                0x40008c38        0x0 c:/nxp/s32ds_power_v2.1/s32ds/build_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.4/e200z4/fp/crtbegin.o
+                0x40008b58        0x0 c:/nxp/s32ds_power_v2.1/s32ds/build_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.4/e200z4/fp/crtbegin.o
  .rela.text.iswcntrl
-                0x40008c38        0x0 c:/nxp/s32ds_power_v2.1/s32ds/build_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.4/e200z4/fp/crtbegin.o
+                0x40008b58        0x0 c:/nxp/s32ds_power_v2.1/s32ds/build_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.4/e200z4/fp/crtbegin.o
  .rela.text.iswdigit
-                0x40008c38        0x0 c:/nxp/s32ds_power_v2.1/s32ds/build_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.4/e200z4/fp/crtbegin.o
+                0x40008b58        0x0 c:/nxp/s32ds_power_v2.1/s32ds/build_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.4/e200z4/fp/crtbegin.o
  .rela.text.iswgraph
-                0x40008c38        0x0 c:/nxp/s32ds_power_v2.1/s32ds/build_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.4/e200z4/fp/crtbegin.o
+                0x40008b58        0x0 c:/nxp/s32ds_power_v2.1/s32ds/build_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.4/e200z4/fp/crtbegin.o
  .rela.text.iswlower
-                0x40008c38        0x0 c:/nxp/s32ds_power_v2.1/s32ds/build_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.4/e200z4/fp/crtbegin.o
+                0x40008b58        0x0 c:/nxp/s32ds_power_v2.1/s32ds/build_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.4/e200z4/fp/crtbegin.o
  .rela.text.iswprint
-                0x40008c38        0x0 c:/nxp/s32ds_power_v2.1/s32ds/build_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.4/e200z4/fp/crtbegin.o
+                0x40008b58        0x0 c:/nxp/s32ds_power_v2.1/s32ds/build_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.4/e200z4/fp/crtbegin.o
  .rela.text.iswpunct
-                0x40008c38        0x0 c:/nxp/s32ds_power_v2.1/s32ds/build_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.4/e200z4/fp/crtbegin.o
+                0x40008b58        0x0 c:/nxp/s32ds_power_v2.1/s32ds/build_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.4/e200z4/fp/crtbegin.o
  .rela.text.iswspace
-                0x40008c38        0x0 c:/nxp/s32ds_power_v2.1/s32ds/build_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.4/e200z4/fp/crtbegin.o
+                0x40008b58        0x0 c:/nxp/s32ds_power_v2.1/s32ds/build_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.4/e200z4/fp/crtbegin.o
  .rela.text.iswupper
-                0x40008c38        0x0 c:/nxp/s32ds_power_v2.1/s32ds/build_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.4/e200z4/fp/crtbegin.o
+                0x40008b58        0x0 c:/nxp/s32ds_power_v2.1/s32ds/build_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.4/e200z4/fp/crtbegin.o
  .rela.text.iswxdigit
-                0x40008c38        0x0 c:/nxp/s32ds_power_v2.1/s32ds/build_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.4/e200z4/fp/crtbegin.o
+                0x40008b58        0x0 c:/nxp/s32ds_power_v2.1/s32ds/build_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.4/e200z4/fp/crtbegin.o
  .rela.text.towlower
-                0x40008c38        0x0 c:/nxp/s32ds_power_v2.1/s32ds/build_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.4/e200z4/fp/crtbegin.o
+                0x40008b58        0x0 c:/nxp/s32ds_power_v2.1/s32ds/build_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.4/e200z4/fp/crtbegin.o
  .rela.text.towupper
-                0x40008c38        0x0 c:/nxp/s32ds_power_v2.1/s32ds/build_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.4/e200z4/fp/crtbegin.o
+                0x40008b58        0x0 c:/nxp/s32ds_power_v2.1/s32ds/build_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.4/e200z4/fp/crtbegin.o
  .rela.text.wcstoll
-                0x40008c38        0x0 c:/nxp/s32ds_power_v2.1/s32ds/build_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.4/e200z4/fp/crtbegin.o
+                0x40008b58        0x0 c:/nxp/s32ds_power_v2.1/s32ds/build_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.4/e200z4/fp/crtbegin.o
  .rela.text.wcstoull
-                0x40008c38        0x0 c:/nxp/s32ds_power_v2.1/s32ds/build_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.4/e200z4/fp/crtbegin.o
+                0x40008b58        0x0 c:/nxp/s32ds_power_v2.1/s32ds/build_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.4/e200z4/fp/crtbegin.o
  .rela.data.__files
-                0x40008c38        0x0 c:/nxp/s32ds_power_v2.1/s32ds/build_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.4/e200z4/fp/crtbegin.o
+                0x40008b58        0x0 c:/nxp/s32ds_power_v2.1/s32ds/build_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.4/e200z4/fp/crtbegin.o
  .rela.text.mbrtowc
-                0x40008c38        0x0 c:/nxp/s32ds_power_v2.1/s32ds/build_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.4/e200z4/fp/crtbegin.o
- .rela.got2     0x40008c38        0x0 c:/nxp/s32ds_power_v2.1/s32ds/build_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.4/e200z4/fp/crtbegin.o
+                0x40008b58        0x0 c:/nxp/s32ds_power_v2.1/s32ds/build_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.4/e200z4/fp/crtbegin.o
+ .rela.got2     0x40008b58        0x0 c:/nxp/s32ds_power_v2.1/s32ds/build_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.4/e200z4/fp/crtbegin.o
 
-.data           0x40008c38      0xcf4
-                0x40008c38                . = ALIGN (0x4)
-                0x40008c38                __DATA_RAM = .
-                0x40008c38                __data_start__ = .
+.data           0x40008b58      0xae4
+                0x40008b58                . = ALIGN (0x4)
+                0x40008b58                __DATA_RAM = .
+                0x40008b58                __data_start__ = .
  *(.data)
- .data          0x40008c38        0x4 c:/nxp/s32ds_power_v2.1/s32ds/build_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.4/e200z4/fp\libgcc.a(eabivle.o)
+ .data          0x40008b58        0x4 c:/nxp/s32ds_power_v2.1/s32ds/build_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.4/e200z4/fp\libgcc.a(eabivle.o)
  *(.data.*)
  .data.peripheralClockMcMeConfig0
-                0x40008c3c      0x15c ./Generated_Code/clockMan1.o
-                0x40008c3c                peripheralClockMcMeConfig0
+                0x40008b5c      0x15c ./Generated_Code/clockMan1.o
+                0x40008b5c                peripheralClockMcMeConfig0
  .data.clockMan1_InitConfig0
-                0x40008d98      0x248 ./Generated_Code/clockMan1.o
-                0x40008d98                clockMan1_InitConfig0
+                0x40008cb8      0x248 ./Generated_Code/clockMan1.o
+                0x40008cb8                clockMan1_InitConfig0
  .data.eMIOS_Mc0_CntChnConfig0
-                0x40008fe0       0x1c ./Generated_Code/eMIOS_Mc0.o
-                0x40008fe0                eMIOS_Mc0_CntChnConfig0
+                0x40008f00       0x1c ./Generated_Code/eMIOS_Mc0.o
+                0x40008f00                eMIOS_Mc0_CntChnConfig0
  .data.eMIOS_Mc2_CntChnConfig0
-                0x40008ffc       0x1c ./Generated_Code/eMIOS_Mc2.o
-                0x40008ffc                eMIOS_Mc2_CntChnConfig0
+                0x40008f1c       0x1c ./Generated_Code/eMIOS_Mc2.o
+                0x40008f1c                eMIOS_Mc2_CntChnConfig0
  .data.eMIOS_Pwm0_PWMChnConfig0
-                0x40009018       0x28 ./Generated_Code/eMIOS_Pwm0.o
-                0x40009018                eMIOS_Pwm0_PWMChnConfig0
+                0x40008f38       0x28 ./Generated_Code/eMIOS_Pwm0.o
+                0x40008f38                eMIOS_Pwm0_PWMChnConfig0
  .data.eMIOS_Pwm0_PWMChnConfig1
-                0x40009040       0x28 ./Generated_Code/eMIOS_Pwm0.o
-                0x40009040                eMIOS_Pwm0_PWMChnConfig1
+                0x40008f60       0x28 ./Generated_Code/eMIOS_Pwm0.o
+                0x40008f60                eMIOS_Pwm0_PWMChnConfig1
  .data.eMIOS_Pwm2_PWMChnConfig3
-                0x40009068       0x28 ./Generated_Code/eMIOS_Pwm2.o
-                0x40009068                eMIOS_Pwm2_PWMChnConfig3
+                0x40008f88       0x28 ./Generated_Code/eMIOS_Pwm2.o
+                0x40008f88                eMIOS_Pwm2_PWMChnConfig3
  .data.eMIOS_Pwm2_PWMChnConfig4
-                0x40009090       0x28 ./Generated_Code/eMIOS_Pwm2.o
-                0x40009090                eMIOS_Pwm2_PWMChnConfig4
+                0x40008fb0       0x28 ./Generated_Code/eMIOS_Pwm2.o
+                0x40008fb0                eMIOS_Pwm2_PWMChnConfig4
  .data.eMIOS_Pwm2_PWMChnConfig0
-                0x400090b8       0x28 ./Generated_Code/eMIOS_Pwm2.o
-                0x400090b8                eMIOS_Pwm2_PWMChnConfig0
+                0x40008fd8       0x28 ./Generated_Code/eMIOS_Pwm2.o
+                0x40008fd8                eMIOS_Pwm2_PWMChnConfig0
  .data.eMIOS_Pwm2_PWMChnConfig1
-                0x400090e0       0x28 ./Generated_Code/eMIOS_Pwm2.o
-                0x400090e0                eMIOS_Pwm2_PWMChnConfig1
+                0x40009000       0x28 ./Generated_Code/eMIOS_Pwm2.o
+                0x40009000                eMIOS_Pwm2_PWMChnConfig1
  .data.eMIOS_Pwm2_PWMChnConfig2
-                0x40009108       0x28 ./Generated_Code/eMIOS_Pwm2.o
-                0x40009108                eMIOS_Pwm2_PWMChnConfig2
+                0x40009028       0x28 ./Generated_Code/eMIOS_Pwm2.o
+                0x40009028                eMIOS_Pwm2_PWMChnConfig2
  .data.g_pin_mux_InitConfigArr
-                0x40009130      0x7bc ./Generated_Code/pin_mux.o
-                0x40009130                g_pin_mux_InitConfigArr
- .data.Module   0x400098ec       0x1c ./Sources/main.o
-                0x400098ec                Module
- .data.Channel  0x40009908       0x1c ./Sources/main.o
-                0x40009908                Channel
- .data.tail     0x40009924        0x4 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(alloc.o)
+                0x40009050      0x5ac ./Generated_Code/pin_mux.o
+                0x40009050                g_pin_mux_InitConfigArr
+ .data.Module   0x400095fc       0x1c ./Sources/main.o
+                0x400095fc                Module
+ .data.Channel  0x40009618       0x1c ./Sources/main.o
+                0x40009618                Channel
+ .data.tail     0x40009634        0x4 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(alloc.o)
  .data.strtok_ds.2574
-                0x40009928        0x4 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(strtok.o)
-                0x4000992c                . = ALIGN (0x4)
-                0x4000992c                __data_end__ = .
+                0x40009638        0x4 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(strtok.o)
+                0x4000963c                . = ALIGN (0x4)
+                0x4000963c                __data_end__ = .
                 0x00000000                __SDATA_ROM = 0x0
                 0x00000000                __SDATA_END = 0x0
 
-.jcr            0x4000992c        0x0
- .jcr           0x4000992c        0x0 c:/nxp/s32ds_power_v2.1/s32ds/build_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.4/e200z4/fp/crtbegin.o
+.jcr            0x4000963c        0x0
+ .jcr           0x4000963c        0x0 c:/nxp/s32ds_power_v2.1/s32ds/build_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.4/e200z4/fp/crtbegin.o
 
 .tm_clone_table
-                0x4000992c        0x0
+                0x4000963c        0x0
  .tm_clone_table
-                0x4000992c        0x0 c:/nxp/s32ds_power_v2.1/s32ds/build_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.4/e200z4/fp/crtbegin.o
+                0x4000963c        0x0 c:/nxp/s32ds_power_v2.1/s32ds/build_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.4/e200z4/fp/crtbegin.o
  .tm_clone_table
-                0x4000992c        0x0 c:/nxp/s32ds_power_v2.1/s32ds/build_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.4/e200z4/fp/crtend.o
+                0x4000963c        0x0 c:/nxp/s32ds_power_v2.1/s32ds/build_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.4/e200z4/fp/crtend.o
 
-.got2           0x4000992c       0x1c
- .got2          0x4000992c       0x1c c:/nxp/s32ds_power_v2.1/s32ds/build_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.4/e200z4/fp\libgcc.a(eabivle.o)
+.got2           0x4000963c       0x1c
+ .got2          0x4000963c       0x1c c:/nxp/s32ds_power_v2.1/s32ds/build_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.4/e200z4/fp\libgcc.a(eabivle.o)
 
-.sdata          0x40009948       0x18
-                0x40009948                . = ALIGN (0x4)
-                0x40009948                __SDATA_RAM = .
-                0x40009948                __sdata_start__ = .
+.sdata          0x40009658       0x18
+                0x40009658                . = ALIGN (0x4)
+                0x40009658                __SDATA_RAM = .
+                0x40009658                __sdata_start__ = .
  *(.sdata)
- .sdata         0x40009948        0x0 c:/nxp/s32ds_power_v2.1/s32ds/build_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.4/e200z4/fp/ecrti.o
-                0x40009948                __SDATA_START__
- .sdata         0x40009948        0x0 c:/nxp/s32ds_power_v2.1/s32ds/build_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.4/e200z4/fp/crtbegin.o
-                0x40011948                _SDA_BASE_
+ .sdata         0x40009658        0x0 c:/nxp/s32ds_power_v2.1/s32ds/build_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.4/e200z4/fp/ecrti.o
+                0x40009658                __SDATA_START__
+ .sdata         0x40009658        0x0 c:/nxp/s32ds_power_v2.1/s32ds/build_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.4/e200z4/fp/crtbegin.o
+                0x40011658                _SDA_BASE_
  *(.sdata.*)
  .sdata.g_clockManConfigsArr
-                0x40009948        0x4 ./Generated_Code/clockMan1.o
-                0x40009948                g_clockManConfigsArr
+                0x40009658        0x4 ./Generated_Code/clockMan1.o
+                0x40009658                g_clockManConfigsArr
  .sdata.eMIOS_Mc0_InitConfig0
-                0x4000994c        0x6 ./Generated_Code/eMIOS_Mc0.o
-                0x4000994c                eMIOS_Mc0_InitConfig0
+                0x4000965c        0x6 ./Generated_Code/eMIOS_Mc0.o
+                0x4000965c                eMIOS_Mc0_InitConfig0
  .sdata.eMIOS_Mc2_InitConfig0
-                0x40009952        0x6 ./Generated_Code/eMIOS_Mc2.o
-                0x40009952                eMIOS_Mc2_InitConfig0
+                0x40009662        0x6 ./Generated_Code/eMIOS_Mc2.o
+                0x40009662                eMIOS_Mc2_InitConfig0
  .sdata.g_xtal0ClkFreq
-                0x40009958        0x4 ./SDK/platform/drivers/src/clock/MPC57xx/clock_MPC57xx.o
-                0x40009958                g_xtal0ClkFreq
+                0x40009668        0x4 ./SDK/platform/drivers/src/clock/MPC57xx/clock_MPC57xx.o
+                0x40009668                g_xtal0ClkFreq
  .sdata.g_xtal1ClkFreq
-                0x4000995c        0x4 ./SDK/platform/drivers/src/clock/MPC57xx/clock_MPC57xx.o
-                0x4000995c                g_xtal1ClkFreq
-                0x40009960                . = ALIGN (0x4)
-                0x40009960                __sdata_end__ = .
+                0x4000966c        0x4 ./SDK/platform/drivers/src/clock/MPC57xx/clock_MPC57xx.o
+                0x4000966c                g_xtal1ClkFreq
+                0x40009670                . = ALIGN (0x4)
+                0x40009670                __sdata_end__ = .
 
-.sbss           0x40009960       0x50
-                0x40009960                . = ALIGN (0x4)
-                0x40009960                __SBSS_START = .
-                0x40009960                __sbss_start__ = .
+.sbss           0x40009670       0x4c
+                0x40009670                . = ALIGN (0x4)
+                0x40009670                __SBSS_START = .
+                0x40009670                __sbss_start__ = .
  *(.sbss)
- .sbss          0x40009960        0x0 c:/nxp/s32ds_power_v2.1/s32ds/build_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.4/e200z4/fp/ecrti.o
-                0x40009960                __SBSS_START__
- .sbss          0x40009960        0x0 c:/nxp/s32ds_power_v2.1/s32ds/build_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.4/e200z4/fp/crtbegin.o
- .sbss          0x40009960        0x4 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(errno.o)
-                0x40009960                errno
- .sbss          0x40009964        0x0 c:/nxp/s32ds_power_v2.1/s32ds/build_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.4/e200z4/fp/ecrtn.o
-                0x40009964                __SBSS_END__
+ .sbss          0x40009670        0x0 c:/nxp/s32ds_power_v2.1/s32ds/build_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.4/e200z4/fp/ecrti.o
+                0x40009670                __SBSS_START__
+ .sbss          0x40009670        0x0 c:/nxp/s32ds_power_v2.1/s32ds/build_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.4/e200z4/fp/crtbegin.o
+ .sbss          0x40009670        0x4 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(errno.o)
+                0x40009670                errno
+ .sbss          0x40009674        0x0 c:/nxp/s32ds_power_v2.1/s32ds/build_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.4/e200z4/fp/ecrtn.o
+                0x40009674                __SBSS_END__
  *(.sbss.*)
  .sbss.g_clockManCallbacksArr
-                0x40009964        0x4 ./Generated_Code/clockMan1.o
-                0x40009964                g_clockManCallbacksArr
+                0x40009674        0x4 ./Generated_Code/clockMan1.o
+                0x40009674                g_clockManCallbacksArr
  .sbss.g_pllPhi1ClkFreq
-                0x40009968        0x4 ./SDK/platform/drivers/src/clock/MPC57xx/clock_MPC57xx.o
+                0x40009678        0x4 ./SDK/platform/drivers/src/clock/MPC57xx/clock_MPC57xx.o
  .sbss.g_enetRmiiClkFreq
-                0x4000996c        0x4 ./SDK/platform/drivers/src/clock/MPC57xx/clock_MPC57xx.o
+                0x4000967c        0x4 ./SDK/platform/drivers/src/clock/MPC57xx/clock_MPC57xx.o
  .sbss.g_fircClkUndividedFreq
-                0x40009970        0x4 ./SDK/platform/drivers/src/clock/MPC57xx/clock_MPC57xx.o
+                0x40009680        0x4 ./SDK/platform/drivers/src/clock/MPC57xx/clock_MPC57xx.o
  .sbss.g_sircClkUndividedFreq
-                0x40009974        0x4 ./SDK/platform/drivers/src/clock/MPC57xx/clock_MPC57xx.o
+                0x40009684        0x4 ./SDK/platform/drivers/src/clock/MPC57xx/clock_MPC57xx.o
  .sbss.g_fircClkFreq
-                0x40009978        0x4 ./SDK/platform/drivers/src/clock/MPC57xx/clock_MPC57xx.o
+                0x40009688        0x4 ./SDK/platform/drivers/src/clock/MPC57xx/clock_MPC57xx.o
  .sbss.g_sxoscClkFreq
-                0x4000997c        0x4 ./SDK/platform/drivers/src/clock/MPC57xx/clock_MPC57xx.o
+                0x4000968c        0x4 ./SDK/platform/drivers/src/clock/MPC57xx/clock_MPC57xx.o
  .sbss.g_pllPhi0ClkFreq
-                0x40009980        0x4 ./SDK/platform/drivers/src/clock/MPC57xx/clock_MPC57xx.o
+                0x40009690        0x4 ./SDK/platform/drivers/src/clock/MPC57xx/clock_MPC57xx.o
  .sbss.g_sircClkFreq
-                0x40009984        0x4 ./SDK/platform/drivers/src/clock/MPC57xx/clock_MPC57xx.o
+                0x40009694        0x4 ./SDK/platform/drivers/src/clock/MPC57xx/clock_MPC57xx.o
  .sbss.g_sxoscClkUndividedFreq
-                0x40009988        0x4 ./SDK/platform/drivers/src/clock/MPC57xx/clock_MPC57xx.o
+                0x40009698        0x4 ./SDK/platform/drivers/src/clock/MPC57xx/clock_MPC57xx.o
  .sbss.clockSourceFrequenciesAreCalculatedAndCached.6279
-                0x4000998c        0x1 ./SDK/platform/drivers/src/clock/MPC57xx/clock_MPC57xx.o
- *fill*         0x4000998d        0x3 
+                0x4000969c        0x1 ./SDK/platform/drivers/src/clock/MPC57xx/clock_MPC57xx.o
+ *fill*         0x4000969d        0x3 
  .sbss.g_fxoscClkUndividedFreq
-                0x40009990        0x4 ./SDK/platform/drivers/src/clock/MPC57xx/clock_MPC57xx.o
+                0x400096a0        0x4 ./SDK/platform/drivers/src/clock/MPC57xx/clock_MPC57xx.o
  .sbss.g_fxoscClkFreq
-                0x40009994        0x4 ./SDK/platform/drivers/src/clock/MPC57xx/clock_MPC57xx.o
+                0x400096a4        0x4 ./SDK/platform/drivers/src/clock/MPC57xx/clock_MPC57xx.o
  .sbss.s_virtEdmaState
-                0x40009998        0x4 ./SDK/platform/drivers/src/edma/edma_driver.o
+                0x400096a8        0x4 ./SDK/platform/drivers/src/edma/edma_driver.o
  .sbss.g_interruptDisableCount
-                0x4000999c        0x4 ./SDK/platform/drivers/src/interrupt/interrupt_manager_MPC57xx.o
+                0x400096ac        0x4 ./SDK/platform/drivers/src/interrupt/interrupt_manager_MPC57xx.o
  .sbss.s_osif_tick_cnt
-                0x400099a0        0x4 ./SDK/rtos/osif/osif_baremetal.o
- .sbss.Count    0x400099a4        0x4 ./Sources/main.o
-                0x400099a4                Count
+                0x400096b0        0x4 ./SDK/rtos/osif/osif_baremetal.o
+ .sbss.Count    0x400096b4        0x4 ./Sources/main.o
+                0x400096b4                Count
  .sbss.exit_code
-                0x400099a8        0x4 ./Sources/main.o
-                0x400099a8                exit_code
- .sbss.config   0x400099ac        0x4 ./Sources/main.o
-                0x400099ac                config
-                0x400099b0                . = ALIGN (0x4)
-                0x400099b0                __sbss_end__ = .
-                0x400099b0                __SBSS_END = .
+                0x400096b8        0x4 ./Sources/main.o
+                0x400096b8                exit_code
+                0x400096bc                . = ALIGN (0x4)
+                0x400096bc                __sbss_end__ = .
+                0x400096bc                __SBSS_END = .
 
-.bss            0x400099b0       0xc4
-                0x400099b0                . = ALIGN (0x4)
-                0x400099b0                __BSS_START = .
-                0x400099b0                __bss_start__ = .
+.bss            0x400096bc       0xc4
+                0x400096bc                . = ALIGN (0x4)
+                0x400096bc                __BSS_START = .
+                0x400096bc                __bss_start__ = .
  *(.bss)
- .bss           0x400099b0       0x20 c:/nxp/s32ds_power_v2.1/s32ds/build_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.4/e200z4/fp/crtbegin.o
+ .bss           0x400096bc       0x20 c:/nxp/s32ds_power_v2.1/s32ds/build_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.4/e200z4/fp/crtbegin.o
  *(.bss.*)
  .bss.linflexd_uart1_State
-                0x400099d0       0x44 ./Generated_Code/linflexd_uart1.o
-                0x400099d0                linflexd_uart1_State
+                0x400096dc       0x44 ./Generated_Code/linflexd_uart1.o
+                0x400096dc                linflexd_uart1_State
  .bss.g_clockState
-                0x40009a14       0x10 ./SDK/platform/drivers/src/clock/MPC57xx/clock_MPC57xx.o
+                0x40009720       0x10 ./SDK/platform/drivers/src/clock/MPC57xx/clock_MPC57xx.o
  .bss.s_uartLINFlexDStatePtr
-                0x40009a24       0x48 ./SDK/platform/drivers/src/linflexd/linflexd_uart_driver.o
- .bss.head      0x40009a6c        0x4 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(alloc.o)
+                0x40009730       0x48 ./SDK/platform/drivers/src/linflexd/linflexd_uart_driver.o
+ .bss.head      0x40009778        0x4 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(alloc.o)
  .bss.heap_end.2562
-                0x40009a70        0x4 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(alloc.o)
+                0x4000977c        0x4 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(alloc.o)
  *(COMMON)
-                0x40009a74                . = ALIGN (0x4)
-                0x40009a74                __bss_end__ = .
-                0x40009a74                __BSS_END = .
+                0x40009780                . = ALIGN (0x4)
+                0x40009780                __bss_end__ = .
+                0x40009780                __BSS_END = .
 
-.iplt           0x40009a80        0x0
- .iplt          0x40009a80        0x0 c:/nxp/s32ds_power_v2.1/s32ds/build_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.4/e200z4/fp/crtbegin.o
+.iplt           0x40009780        0x0
+ .iplt          0x40009780        0x0 c:/nxp/s32ds_power_v2.1/s32ds/build_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.4/e200z4/fp/crtbegin.o
 
-.stack          0x40009a80     0x1000
-                0x40009a80                __HEAP = .
-                0x40009a80                PROVIDE (_end, .)
+.stack          0x40009780     0x1000
+                0x40009780                __HEAP = .
+                0x40009780                PROVIDE (_end, .)
                 [!provide]                PROVIDE (end, .)
-                0x40009a80                . = (. + __HEAP_SIZE)
-                0x40009a80                __HEAP_END = .
-                0x40009a80                _stack_end = .
-                0x4000aa80                . = (. + __STACK_SIZE)
- *fill*         0x40009a80     0x1000 
-                0x4000aa80                . = ALIGN (0x4)
-                0x4000aa80                _stack_addr = .
-                0x4000aa80                __SP_INIT = .
-                0x000366a0                __SRAM_SIZE = (SRAM_SIZE - (__sdata_end__ - SRAM_BASE_ADDR))
-                0x40009960                __SRAM_BASE_ADDR = __sdata_end__
+                0x40009780                . = (. + __HEAP_SIZE)
+                0x40009780                __HEAP_END = .
+                0x40009780                _stack_end = .
+                0x4000a780                . = (. + __STACK_SIZE)
+ *fill*         0x40009780     0x1000 
+                0x4000a780                . = ALIGN (0x4)
+                0x4000a780                _stack_addr = .
+                0x4000a780                __SP_INIT = .
+                0x00036990                __SRAM_SIZE = (SRAM_SIZE - (__sdata_end__ - SRAM_BASE_ADDR))
+                0x40009670                __SRAM_BASE_ADDR = __sdata_end__
                 0x000000c4                __BSS_SIZE = (__BSS_END - __BSS_START)
 OUTPUT(AWAKE3_Z4_0.elf elf32-powerpc)
 
@@ -4315,7 +4313,7 @@ OUTPUT(AWAKE3_Z4_0.elf elf32-powerpc)
  .gnu.attributes
                 0x00000020       0x10 c:/nxp/s32ds_power_v2.1/s32ds/build_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.4/e200z4/fp\libgcc.a(_lt_df.o)
 
-.debug_info     0x00000000    0x3564d
+.debug_info     0x00000000    0x354b2
  .debug_info    0x00000000     0x286c ./Generated_Code/clockMan1.o
  .debug_info    0x0000286c      0xf65 ./Generated_Code/eMIOS_Mc0.o
  .debug_info    0x000037d1      0xf65 ./Generated_Code/eMIOS_Mc2.o
@@ -4323,58 +4321,58 @@ OUTPUT(AWAKE3_Z4_0.elf elf32-powerpc)
  .debug_info    0x0000563c      0xf39 ./Generated_Code/eMIOS_Pwm2.o
  .debug_info    0x00006575     0x12da ./Generated_Code/linflexd_uart1.o
  .debug_info    0x0000784f      0x781 ./Generated_Code/pin_mux.o
- .debug_info    0x00007fd0       0xa5 ./Project_Settings/Startup_Code/core0_intc_sw_handlers.o
- .debug_info    0x00008075       0xa0 ./Project_Settings/Startup_Code/interrupt_vectors.o
- .debug_info    0x00008115       0x9b ./Project_Settings/Startup_Code/startup_MPC5748G.o
- .debug_info    0x000081b0     0x16b3 ./SDK/platform/devices/MPC5748G/startup/system_MPC5748G.o
- .debug_info    0x00009863      0x397 ./SDK/platform/devices/startup.o
- .debug_info    0x00009bfa     0x689c ./SDK/platform/drivers/src/clock/MPC57xx/clock_MPC57xx.o
- .debug_info    0x00010496     0x3c90 ./SDK/platform/drivers/src/edma/edma_driver.o
- .debug_info    0x00014126     0x1369 ./SDK/platform/drivers/src/edma/edma_hw_access.o
- .debug_info    0x0001548f      0x94f ./SDK/platform/drivers/src/edma/edma_irq.o
- .debug_info    0x00015dde     0x18d6 ./SDK/platform/drivers/src/emios/emios_common.o
- .debug_info    0x000176b4      0x311 ./SDK/platform/drivers/src/emios/emios_hw_access.o
- .debug_info    0x000179c5     0x1408 ./SDK/platform/drivers/src/emios/emios_mc_driver.o
- .debug_info    0x00018dcd     0x353c ./SDK/platform/drivers/src/emios/emios_pwm_driver.o
- .debug_info    0x0001c309     0x159a ./SDK/platform/drivers/src/interrupt/interrupt_manager_MPC57xx.o
- .debug_info    0x0001d8a3     0x40fe ./SDK/platform/drivers/src/linflexd/linflexd_uart_driver.o
- .debug_info    0x000219a1      0x94c ./SDK/platform/drivers/src/linflexd/linflexd_uart_irq.o
- .debug_info    0x000222ed     0x14a7 ./SDK/platform/drivers/src/pins/siul2/pins_siul2_driver.o
- .debug_info    0x00023794      0x8c0 ./SDK/platform/drivers/src/pins/siul2/siul2_hw_access.o
- .debug_info    0x00024054     0x1b14 ./SDK/rtos/osif/osif_baremetal.o
- .debug_info    0x00025b68     0x4821 ./Sources/main.o
- .debug_info    0x0002a389      0x3ff C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(alloc.o)
- .debug_info    0x0002a788      0xb68 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(atoi.o)
- .debug_info    0x0002b2f0      0xae4 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(atoll.o)
- .debug_info    0x0002bdd4      0x121 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(lldiv.o)
- .debug_info    0x0002bef5      0xb92 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(__strtoul.o)
- .debug_info    0x0002ca87      0xb9f C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(__strtoull.o)
- .debug_info    0x0002d626      0xa86 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(strtoull.o)
- .debug_info    0x0002e0ac      0x12e C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(memcpy.o)
- .debug_info    0x0002e1da      0x125 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(memset.o)
- .debug_info    0x0002e2ff      0x115 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(strcpy.o)
- .debug_info    0x0002e414       0xf0 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(strlen.o)
- .debug_info    0x0002e504      0x1a4 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(strtok.o)
- .debug_info    0x0002e6a8      0x6de C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(fgetwc.o)
- .debug_info    0x0002ed86      0x4c4 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(fwide.o)
- .debug_info    0x0002f24a      0xce0 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(wcstoll.o)
- .debug_info    0x0002ff2a      0xe2b C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(__wcstoull.o)
- .debug_info    0x00030d55      0xcd1 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(wcstoull.o)
- .debug_info    0x00031a26      0x793 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(wctype.o)
- .debug_info    0x000321b9      0xa06 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(__wsread.o)
- .debug_info    0x00032bbf      0x329 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(ctype.o)
- .debug_info    0x00032ee8       0x9c C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(errno.o)
- .debug_info    0x00032f84      0x516 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(ansi_files.o)
- .debug_info    0x0003349a      0x42a C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(fflush.o)
- .debug_info    0x000338c4      0x71e C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(fread.o)
- .debug_info    0x00033fe2      0x170 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(__StringRead.o)
- .debug_info    0x00034152      0x737 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(mbtowc.o)
- .debug_info    0x00034889      0x13b C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(__filll_mem.o)
- .debug_info    0x000349c4      0x11a C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(strcmp.o)
- .debug_info    0x00034ade      0x492 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(__buffer_io.o)
- .debug_info    0x00034f70      0x6dd C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libm.a(math_api.o)
+ .debug_info    0x00007fd0       0xa1 ./Project_Settings/Startup_Code/core0_intc_sw_handlers.o
+ .debug_info    0x00008071       0x9c ./Project_Settings/Startup_Code/interrupt_vectors.o
+ .debug_info    0x0000810d       0x97 ./Project_Settings/Startup_Code/startup_MPC5748G.o
+ .debug_info    0x000081a4     0x16b3 ./SDK/platform/devices/MPC5748G/startup/system_MPC5748G.o
+ .debug_info    0x00009857      0x397 ./SDK/platform/devices/startup.o
+ .debug_info    0x00009bee     0x689c ./SDK/platform/drivers/src/clock/MPC57xx/clock_MPC57xx.o
+ .debug_info    0x0001048a     0x3c90 ./SDK/platform/drivers/src/edma/edma_driver.o
+ .debug_info    0x0001411a     0x1369 ./SDK/platform/drivers/src/edma/edma_hw_access.o
+ .debug_info    0x00015483      0x94f ./SDK/platform/drivers/src/edma/edma_irq.o
+ .debug_info    0x00015dd2     0x18d6 ./SDK/platform/drivers/src/emios/emios_common.o
+ .debug_info    0x000176a8      0x311 ./SDK/platform/drivers/src/emios/emios_hw_access.o
+ .debug_info    0x000179b9     0x1408 ./SDK/platform/drivers/src/emios/emios_mc_driver.o
+ .debug_info    0x00018dc1     0x353c ./SDK/platform/drivers/src/emios/emios_pwm_driver.o
+ .debug_info    0x0001c2fd     0x159a ./SDK/platform/drivers/src/interrupt/interrupt_manager_MPC57xx.o
+ .debug_info    0x0001d897     0x40fe ./SDK/platform/drivers/src/linflexd/linflexd_uart_driver.o
+ .debug_info    0x00021995      0x94c ./SDK/platform/drivers/src/linflexd/linflexd_uart_irq.o
+ .debug_info    0x000222e1     0x14a7 ./SDK/platform/drivers/src/pins/siul2/pins_siul2_driver.o
+ .debug_info    0x00023788      0x8c0 ./SDK/platform/drivers/src/pins/siul2/siul2_hw_access.o
+ .debug_info    0x00024048     0x1b14 ./SDK/rtos/osif/osif_baremetal.o
+ .debug_info    0x00025b5c     0x4692 ./Sources/main.o
+ .debug_info    0x0002a1ee      0x3ff C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(alloc.o)
+ .debug_info    0x0002a5ed      0xb68 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(atoi.o)
+ .debug_info    0x0002b155      0xae4 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(atoll.o)
+ .debug_info    0x0002bc39      0x121 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(lldiv.o)
+ .debug_info    0x0002bd5a      0xb92 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(__strtoul.o)
+ .debug_info    0x0002c8ec      0xb9f C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(__strtoull.o)
+ .debug_info    0x0002d48b      0xa86 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(strtoull.o)
+ .debug_info    0x0002df11      0x12e C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(memcpy.o)
+ .debug_info    0x0002e03f      0x125 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(memset.o)
+ .debug_info    0x0002e164      0x115 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(strcpy.o)
+ .debug_info    0x0002e279       0xf0 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(strlen.o)
+ .debug_info    0x0002e369      0x1a4 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(strtok.o)
+ .debug_info    0x0002e50d      0x6de C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(fgetwc.o)
+ .debug_info    0x0002ebeb      0x4c4 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(fwide.o)
+ .debug_info    0x0002f0af      0xce0 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(wcstoll.o)
+ .debug_info    0x0002fd8f      0xe2b C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(__wcstoull.o)
+ .debug_info    0x00030bba      0xcd1 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(wcstoull.o)
+ .debug_info    0x0003188b      0x793 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(wctype.o)
+ .debug_info    0x0003201e      0xa06 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(__wsread.o)
+ .debug_info    0x00032a24      0x329 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(ctype.o)
+ .debug_info    0x00032d4d       0x9c C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(errno.o)
+ .debug_info    0x00032de9      0x516 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(ansi_files.o)
+ .debug_info    0x000332ff      0x42a C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(fflush.o)
+ .debug_info    0x00033729      0x71e C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(fread.o)
+ .debug_info    0x00033e47      0x170 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(__StringRead.o)
+ .debug_info    0x00033fb7      0x737 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(mbtowc.o)
+ .debug_info    0x000346ee      0x13b C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(__filll_mem.o)
+ .debug_info    0x00034829      0x11a C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(strcmp.o)
+ .debug_info    0x00034943      0x492 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(__buffer_io.o)
+ .debug_info    0x00034dd5      0x6dd C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libm.a(math_api.o)
 
-.debug_abbrev   0x00000000     0x580d
+.debug_abbrev   0x00000000     0x580b
  .debug_abbrev  0x00000000      0x126 ./Generated_Code/clockMan1.o
  .debug_abbrev  0x00000126       0x79 ./Generated_Code/eMIOS_Mc0.o
  .debug_abbrev  0x0000019f       0x79 ./Generated_Code/eMIOS_Mc2.o
@@ -4401,37 +4399,37 @@ OUTPUT(AWAKE3_Z4_0.elf elf32-powerpc)
  .debug_abbrev  0x000024c4      0x2eb ./SDK/platform/drivers/src/pins/siul2/pins_siul2_driver.o
  .debug_abbrev  0x000027af      0x1cd ./SDK/platform/drivers/src/pins/siul2/siul2_hw_access.o
  .debug_abbrev  0x0000297c      0x2e9 ./SDK/rtos/osif/osif_baremetal.o
- .debug_abbrev  0x00002c65      0x391 ./Sources/main.o
- .debug_abbrev  0x00002ff6      0x1e3 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(alloc.o)
- .debug_abbrev  0x000031d9      0x1cd C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(atoi.o)
- .debug_abbrev  0x000033a6      0x1cd C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(atoll.o)
- .debug_abbrev  0x00003573       0x9a C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(lldiv.o)
- .debug_abbrev  0x0000360d      0x203 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(__strtoul.o)
- .debug_abbrev  0x00003810      0x22e C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(__strtoull.o)
- .debug_abbrev  0x00003a3e      0x1c0 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(strtoull.o)
- .debug_abbrev  0x00003bfe       0xa5 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(memcpy.o)
- .debug_abbrev  0x00003ca3       0x98 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(memset.o)
- .debug_abbrev  0x00003d3b       0x81 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(strcpy.o)
- .debug_abbrev  0x00003dbc       0x81 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(strlen.o)
- .debug_abbrev  0x00003e3d       0xfb C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(strtok.o)
- .debug_abbrev  0x00003f38      0x281 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(fgetwc.o)
- .debug_abbrev  0x000041b9      0x1c3 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(fwide.o)
- .debug_abbrev  0x0000437c      0x1b1 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(wcstoll.o)
- .debug_abbrev  0x0000452d      0x22e C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(__wcstoull.o)
- .debug_abbrev  0x0000475b      0x1b1 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(wcstoull.o)
- .debug_abbrev  0x0000490c      0x17c C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(wctype.o)
- .debug_abbrev  0x00004a88      0x1c0 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(__wsread.o)
- .debug_abbrev  0x00004c48       0x8c C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(ctype.o)
- .debug_abbrev  0x00004cd4       0x44 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(errno.o)
- .debug_abbrev  0x00004d18      0x12d C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(ansi_files.o)
- .debug_abbrev  0x00004e45      0x13b C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(fflush.o)
- .debug_abbrev  0x00004f80      0x21d C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(fread.o)
- .debug_abbrev  0x0000519d       0xcb C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(__StringRead.o)
- .debug_abbrev  0x00005268      0x1de C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(mbtowc.o)
- .debug_abbrev  0x00005446       0x7f C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(__filll_mem.o)
- .debug_abbrev  0x000054c5       0x81 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(strcmp.o)
- .debug_abbrev  0x00005546      0x187 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(__buffer_io.o)
- .debug_abbrev  0x000056cd      0x140 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libm.a(math_api.o)
+ .debug_abbrev  0x00002c65      0x38f ./Sources/main.o
+ .debug_abbrev  0x00002ff4      0x1e3 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(alloc.o)
+ .debug_abbrev  0x000031d7      0x1cd C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(atoi.o)
+ .debug_abbrev  0x000033a4      0x1cd C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(atoll.o)
+ .debug_abbrev  0x00003571       0x9a C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(lldiv.o)
+ .debug_abbrev  0x0000360b      0x203 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(__strtoul.o)
+ .debug_abbrev  0x0000380e      0x22e C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(__strtoull.o)
+ .debug_abbrev  0x00003a3c      0x1c0 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(strtoull.o)
+ .debug_abbrev  0x00003bfc       0xa5 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(memcpy.o)
+ .debug_abbrev  0x00003ca1       0x98 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(memset.o)
+ .debug_abbrev  0x00003d39       0x81 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(strcpy.o)
+ .debug_abbrev  0x00003dba       0x81 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(strlen.o)
+ .debug_abbrev  0x00003e3b       0xfb C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(strtok.o)
+ .debug_abbrev  0x00003f36      0x281 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(fgetwc.o)
+ .debug_abbrev  0x000041b7      0x1c3 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(fwide.o)
+ .debug_abbrev  0x0000437a      0x1b1 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(wcstoll.o)
+ .debug_abbrev  0x0000452b      0x22e C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(__wcstoull.o)
+ .debug_abbrev  0x00004759      0x1b1 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(wcstoull.o)
+ .debug_abbrev  0x0000490a      0x17c C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(wctype.o)
+ .debug_abbrev  0x00004a86      0x1c0 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(__wsread.o)
+ .debug_abbrev  0x00004c46       0x8c C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(ctype.o)
+ .debug_abbrev  0x00004cd2       0x44 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(errno.o)
+ .debug_abbrev  0x00004d16      0x12d C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(ansi_files.o)
+ .debug_abbrev  0x00004e43      0x13b C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(fflush.o)
+ .debug_abbrev  0x00004f7e      0x21d C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(fread.o)
+ .debug_abbrev  0x0000519b       0xcb C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(__StringRead.o)
+ .debug_abbrev  0x00005266      0x1de C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(mbtowc.o)
+ .debug_abbrev  0x00005444       0x7f C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(__filll_mem.o)
+ .debug_abbrev  0x000054c3       0x81 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(strcmp.o)
+ .debug_abbrev  0x00005544      0x187 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(__buffer_io.o)
+ .debug_abbrev  0x000056cb      0x140 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libm.a(math_api.o)
 
 .debug_aranges  0x00000000     0x1ad0
  .debug_aranges
@@ -4549,7 +4547,7 @@ OUTPUT(AWAKE3_Z4_0.elf elf32-powerpc)
  .debug_aranges
                 0x00001a00       0xd0 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libm.a(math_api.o)
 
-.debug_macro    0x00000000    0x2b1ae
+.debug_macro    0x00000000    0x2b17e
  .debug_macro   0x00000000      0x255 ./Generated_Code/clockMan1.o
  .debug_macro   0x00000255       0x1c ./Generated_Code/clockMan1.o
  .debug_macro   0x00000271    0x27e8c ./Generated_Code/clockMan1.o
@@ -4584,189 +4582,189 @@ OUTPUT(AWAKE3_Z4_0.elf elf32-powerpc)
  .debug_macro   0x0002a4d3       0x10 ./SDK/platform/drivers/src/pins/siul2/pins_siul2_driver.o
  .debug_macro   0x0002a4e3      0x154 ./SDK/platform/drivers/src/pins/siul2/siul2_hw_access.o
  .debug_macro   0x0002a637      0x185 ./SDK/rtos/osif/osif_baremetal.o
- .debug_macro   0x0002a7bc      0x3c3 ./Sources/main.o
- .debug_macro   0x0002ab7f       0x10 ./Sources/main.o
- .debug_macro   0x0002ab8f       0x16 ./Sources/main.o
- .debug_macro   0x0002aba5       0x8b ./Sources/main.o
- .debug_macro   0x0002ac30       0x22 ./Sources/main.o
- .debug_macro   0x0002ac52       0x10 ./Sources/main.o
- .debug_macro   0x0002ac62       0x20 ./Sources/main.o
- .debug_macro   0x0002ac82       0x2e ./Sources/main.o
- .debug_macro   0x0002acb0       0x28 ./Sources/main.o
- .debug_macro   0x0002acd8       0x16 ./Sources/main.o
- .debug_macro   0x0002acee       0xd6 ./Sources/main.o
- .debug_macro   0x0002adc4      0x194 ./Sources/main.o
- .debug_macro   0x0002af58       0xad ./Sources/main.o
- .debug_macro   0x0002b005       0x16 ./Sources/main.o
- .debug_macro   0x0002b01b      0x193 ./Sources/main.o
+ .debug_macro   0x0002a7bc      0x393 ./Sources/main.o
+ .debug_macro   0x0002ab4f       0x10 ./Sources/main.o
+ .debug_macro   0x0002ab5f       0x16 ./Sources/main.o
+ .debug_macro   0x0002ab75       0x8b ./Sources/main.o
+ .debug_macro   0x0002ac00       0x22 ./Sources/main.o
+ .debug_macro   0x0002ac22       0x10 ./Sources/main.o
+ .debug_macro   0x0002ac32       0x20 ./Sources/main.o
+ .debug_macro   0x0002ac52       0x2e ./Sources/main.o
+ .debug_macro   0x0002ac80       0x28 ./Sources/main.o
+ .debug_macro   0x0002aca8       0x16 ./Sources/main.o
+ .debug_macro   0x0002acbe       0xd6 ./Sources/main.o
+ .debug_macro   0x0002ad94      0x194 ./Sources/main.o
+ .debug_macro   0x0002af28       0xad ./Sources/main.o
+ .debug_macro   0x0002afd5       0x16 ./Sources/main.o
+ .debug_macro   0x0002afeb      0x193 ./Sources/main.o
 
-.debug_line     0x00000000     0xe929
- .debug_line    0x00000000      0x6b7 ./Generated_Code/clockMan1.o
- .debug_line    0x000006b7      0x6b7 ./Generated_Code/eMIOS_Mc0.o
- .debug_line    0x00000d6e      0x6b7 ./Generated_Code/eMIOS_Mc2.o
- .debug_line    0x00001425      0x6b8 ./Generated_Code/eMIOS_Pwm0.o
- .debug_line    0x00001add      0x6b8 ./Generated_Code/eMIOS_Pwm2.o
- .debug_line    0x00002195      0x6bc ./Generated_Code/linflexd_uart1.o
- .debug_line    0x00002851      0x446 ./Generated_Code/pin_mux.o
- .debug_line    0x00002c97      0x160 ./Project_Settings/Startup_Code/core0_intc_sw_handlers.o
- .debug_line    0x00002df7       0x73 ./Project_Settings/Startup_Code/interrupt_vectors.o
- .debug_line    0x00002e6a       0xd5 ./Project_Settings/Startup_Code/startup_MPC5748G.o
- .debug_line    0x00002f3f      0x3ae ./SDK/platform/devices/MPC5748G/startup/system_MPC5748G.o
- .debug_line    0x000032ed      0x34c ./SDK/platform/devices/startup.o
- .debug_line    0x00003639      0xd97 ./SDK/platform/drivers/src/clock/MPC57xx/clock_MPC57xx.o
- .debug_line    0x000043d0      0x8c0 ./SDK/platform/drivers/src/edma/edma_driver.o
- .debug_line    0x00004c90      0x821 ./SDK/platform/drivers/src/edma/edma_hw_access.o
- .debug_line    0x000054b1      0x64b ./SDK/platform/drivers/src/edma/edma_irq.o
- .debug_line    0x00005afc      0x7a0 ./SDK/platform/drivers/src/emios/emios_common.o
- .debug_line    0x0000629c      0x44e ./SDK/platform/drivers/src/emios/emios_hw_access.o
- .debug_line    0x000066ea      0x647 ./SDK/platform/drivers/src/emios/emios_mc_driver.o
- .debug_line    0x00006d31      0xa7d ./SDK/platform/drivers/src/emios/emios_pwm_driver.o
- .debug_line    0x000077ae      0x53e ./SDK/platform/drivers/src/interrupt/interrupt_manager_MPC57xx.o
- .debug_line    0x00007cec      0xb2c ./SDK/platform/drivers/src/linflexd/linflexd_uart_driver.o
- .debug_line    0x00008818      0x901 ./SDK/platform/drivers/src/linflexd/linflexd_uart_irq.o
- .debug_line    0x00009119      0x644 ./SDK/platform/drivers/src/pins/siul2/pins_siul2_driver.o
- .debug_line    0x0000975d      0x437 ./SDK/platform/drivers/src/pins/siul2/siul2_hw_access.o
- .debug_line    0x00009b94      0x5b3 ./SDK/rtos/osif/osif_baremetal.o
- .debug_line    0x0000a147      0xc32 ./Sources/main.o
- .debug_line    0x0000ad79      0x163 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(alloc.o)
- .debug_line    0x0000aedc      0x360 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(atoi.o)
- .debug_line    0x0000b23c      0x35d C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(atoll.o)
- .debug_line    0x0000b599       0x91 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(lldiv.o)
- .debug_line    0x0000b62a      0x3c3 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(__strtoul.o)
- .debug_line    0x0000b9ed      0x3c5 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(__strtoull.o)
- .debug_line    0x0000bdb2      0x334 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(strtoull.o)
- .debug_line    0x0000c0e6       0x94 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(memcpy.o)
- .debug_line    0x0000c17a       0x9e C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(memset.o)
- .debug_line    0x0000c218       0x81 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(strcpy.o)
- .debug_line    0x0000c299       0x88 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(strlen.o)
- .debug_line    0x0000c321       0x99 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(strtok.o)
- .debug_line    0x0000c3ba      0x14d C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(fgetwc.o)
- .debug_line    0x0000c507       0xed C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(fwide.o)
- .debug_line    0x0000c5f4      0x508 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(wcstoll.o)
- .debug_line    0x0000cafc      0x57d C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(__wcstoull.o)
- .debug_line    0x0000d079      0x4f2 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(wcstoull.o)
- .debug_line    0x0000d56b      0x28e C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(wctype.o)
- .debug_line    0x0000d7f9      0x3c7 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(__wsread.o)
- .debug_line    0x0000dbc0      0x1ef C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(ctype.o)
- .debug_line    0x0000ddaf       0x4d C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(errno.o)
- .debug_line    0x0000ddfc       0xe7 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(ansi_files.o)
- .debug_line    0x0000dee3       0xed C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(fflush.o)
- .debug_line    0x0000dfd0      0x1bb C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(fread.o)
- .debug_line    0x0000e18b       0x88 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(__StringRead.o)
- .debug_line    0x0000e213      0x215 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(mbtowc.o)
- .debug_line    0x0000e428       0xe4 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(__filll_mem.o)
- .debug_line    0x0000e50c       0x7f C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(strcmp.o)
- .debug_line    0x0000e58b       0xfb C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(__buffer_io.o)
- .debug_line    0x0000e686      0x2a3 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libm.a(math_api.o)
+.debug_line     0x00000000     0xe8f1
+ .debug_line    0x00000000      0x6b3 ./Generated_Code/clockMan1.o
+ .debug_line    0x000006b3      0x6b3 ./Generated_Code/eMIOS_Mc0.o
+ .debug_line    0x00000d66      0x6b3 ./Generated_Code/eMIOS_Mc2.o
+ .debug_line    0x00001419      0x6b4 ./Generated_Code/eMIOS_Pwm0.o
+ .debug_line    0x00001acd      0x6b4 ./Generated_Code/eMIOS_Pwm2.o
+ .debug_line    0x00002181      0x6b8 ./Generated_Code/linflexd_uart1.o
+ .debug_line    0x00002839      0x446 ./Generated_Code/pin_mux.o
+ .debug_line    0x00002c7f      0x160 ./Project_Settings/Startup_Code/core0_intc_sw_handlers.o
+ .debug_line    0x00002ddf       0x73 ./Project_Settings/Startup_Code/interrupt_vectors.o
+ .debug_line    0x00002e52       0xd5 ./Project_Settings/Startup_Code/startup_MPC5748G.o
+ .debug_line    0x00002f27      0x3ae ./SDK/platform/devices/MPC5748G/startup/system_MPC5748G.o
+ .debug_line    0x000032d5      0x34c ./SDK/platform/devices/startup.o
+ .debug_line    0x00003621      0xd97 ./SDK/platform/drivers/src/clock/MPC57xx/clock_MPC57xx.o
+ .debug_line    0x000043b8      0x8c0 ./SDK/platform/drivers/src/edma/edma_driver.o
+ .debug_line    0x00004c78      0x821 ./SDK/platform/drivers/src/edma/edma_hw_access.o
+ .debug_line    0x00005499      0x64b ./SDK/platform/drivers/src/edma/edma_irq.o
+ .debug_line    0x00005ae4      0x7a0 ./SDK/platform/drivers/src/emios/emios_common.o
+ .debug_line    0x00006284      0x44e ./SDK/platform/drivers/src/emios/emios_hw_access.o
+ .debug_line    0x000066d2      0x647 ./SDK/platform/drivers/src/emios/emios_mc_driver.o
+ .debug_line    0x00006d19      0xa7d ./SDK/platform/drivers/src/emios/emios_pwm_driver.o
+ .debug_line    0x00007796      0x53e ./SDK/platform/drivers/src/interrupt/interrupt_manager_MPC57xx.o
+ .debug_line    0x00007cd4      0xb28 ./SDK/platform/drivers/src/linflexd/linflexd_uart_driver.o
+ .debug_line    0x000087fc      0x8fd ./SDK/platform/drivers/src/linflexd/linflexd_uart_irq.o
+ .debug_line    0x000090f9      0x644 ./SDK/platform/drivers/src/pins/siul2/pins_siul2_driver.o
+ .debug_line    0x0000973d      0x437 ./SDK/platform/drivers/src/pins/siul2/siul2_hw_access.o
+ .debug_line    0x00009b74      0x5b3 ./SDK/rtos/osif/osif_baremetal.o
+ .debug_line    0x0000a127      0xc1a ./Sources/main.o
+ .debug_line    0x0000ad41      0x163 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(alloc.o)
+ .debug_line    0x0000aea4      0x360 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(atoi.o)
+ .debug_line    0x0000b204      0x35d C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(atoll.o)
+ .debug_line    0x0000b561       0x91 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(lldiv.o)
+ .debug_line    0x0000b5f2      0x3c3 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(__strtoul.o)
+ .debug_line    0x0000b9b5      0x3c5 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(__strtoull.o)
+ .debug_line    0x0000bd7a      0x334 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(strtoull.o)
+ .debug_line    0x0000c0ae       0x94 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(memcpy.o)
+ .debug_line    0x0000c142       0x9e C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(memset.o)
+ .debug_line    0x0000c1e0       0x81 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(strcpy.o)
+ .debug_line    0x0000c261       0x88 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(strlen.o)
+ .debug_line    0x0000c2e9       0x99 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(strtok.o)
+ .debug_line    0x0000c382      0x14d C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(fgetwc.o)
+ .debug_line    0x0000c4cf       0xed C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(fwide.o)
+ .debug_line    0x0000c5bc      0x508 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(wcstoll.o)
+ .debug_line    0x0000cac4      0x57d C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(__wcstoull.o)
+ .debug_line    0x0000d041      0x4f2 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(wcstoull.o)
+ .debug_line    0x0000d533      0x28e C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(wctype.o)
+ .debug_line    0x0000d7c1      0x3c7 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(__wsread.o)
+ .debug_line    0x0000db88      0x1ef C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(ctype.o)
+ .debug_line    0x0000dd77       0x4d C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(errno.o)
+ .debug_line    0x0000ddc4       0xe7 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(ansi_files.o)
+ .debug_line    0x0000deab       0xed C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(fflush.o)
+ .debug_line    0x0000df98      0x1bb C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(fread.o)
+ .debug_line    0x0000e153       0x88 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(__StringRead.o)
+ .debug_line    0x0000e1db      0x215 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(mbtowc.o)
+ .debug_line    0x0000e3f0       0xe4 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(__filll_mem.o)
+ .debug_line    0x0000e4d4       0x7f C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(strcmp.o)
+ .debug_line    0x0000e553       0xfb C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(__buffer_io.o)
+ .debug_line    0x0000e64e      0x2a3 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libm.a(math_api.o)
 
-.debug_str      0x00000000   0x115f06
- .debug_str     0x00000000   0x10a5f8 ./Generated_Code/clockMan1.o
-                             0x10cb5d (size before relaxing)
- .debug_str     0x0010a5f8      0x5cb ./Generated_Code/eMIOS_Mc0.o
-                             0x1095b0 (size before relaxing)
- .debug_str     0x0010abc3       0x4c ./Generated_Code/eMIOS_Mc2.o
-                             0x1095b0 (size before relaxing)
- .debug_str     0x0010ac0f      0x2a6 ./Generated_Code/eMIOS_Pwm0.o
-                             0x109439 (size before relaxing)
- .debug_str     0x0010aeb5       0x9c ./Generated_Code/eMIOS_Pwm2.o
-                             0x109484 (size before relaxing)
- .debug_str     0x0010af51      0x3cf ./Generated_Code/linflexd_uart1.o
-                             0x109d6e (size before relaxing)
- .debug_str     0x0010b320      0x85a ./Generated_Code/pin_mux.o
-                             0x1063b7 (size before relaxing)
- .debug_str     0x0010bb7a      0x393 ./SDK/platform/devices/MPC5748G/startup/system_MPC5748G.o
-                             0x107df6 (size before relaxing)
- .debug_str     0x0010bf0d      0x38c ./SDK/platform/devices/startup.o
-                             0x105eef (size before relaxing)
- .debug_str     0x0010c299     0x13fa ./SDK/platform/drivers/src/clock/MPC57xx/clock_MPC57xx.o
-                             0x10be05 (size before relaxing)
- .debug_str     0x0010d693     0x1d95 ./SDK/platform/drivers/src/edma/edma_driver.o
-                             0x10b396 (size before relaxing)
- .debug_str     0x0010f428       0xed ./SDK/platform/drivers/src/edma/edma_hw_access.o
-                             0x106782 (size before relaxing)
- .debug_str     0x0010f515      0x300 ./SDK/platform/drivers/src/edma/edma_irq.o
-                             0x106012 (size before relaxing)
- .debug_str     0x0010f815     0x1119 ./SDK/platform/drivers/src/emios/emios_common.o
-                             0x107789 (size before relaxing)
- .debug_str     0x0011092e      0x120 ./SDK/platform/drivers/src/emios/emios_hw_access.o
-                             0x1066e0 (size before relaxing)
- .debug_str     0x00110a4e      0x32a ./SDK/platform/drivers/src/emios/emios_mc_driver.o
-                             0x1078ac (size before relaxing)
- .debug_str     0x00110d78      0x6f4 ./SDK/platform/drivers/src/emios/emios_pwm_driver.o
-                             0x107d65 (size before relaxing)
- .debug_str     0x0011146c      0x3b5 ./SDK/platform/drivers/src/interrupt/interrupt_manager_MPC57xx.o
-                             0x107f29 (size before relaxing)
- .debug_str     0x00111821      0xf2e ./SDK/platform/drivers/src/linflexd/linflexd_uart_driver.o
-                             0x10b0cd (size before relaxing)
- .debug_str     0x0011274f      0x64b ./SDK/platform/drivers/src/linflexd/linflexd_uart_irq.o
-                             0x107454 (size before relaxing)
- .debug_str     0x00112d9a      0x369 ./SDK/platform/drivers/src/pins/siul2/pins_siul2_driver.o
-                             0x1070aa (size before relaxing)
- .debug_str     0x00113103       0x66 ./SDK/platform/drivers/src/pins/siul2/siul2_hw_access.o
-                             0x106453 (size before relaxing)
- .debug_str     0x00113169      0x248 ./SDK/rtos/osif/osif_baremetal.o
-                             0x109deb (size before relaxing)
- .debug_str     0x001133b1     0x1ca1 ./Sources/main.o
-                             0x110a79 (size before relaxing)
- .debug_str     0x00115052      0x246 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(alloc.o)
+.debug_str      0x00000000   0x115eb1
+ .debug_str     0x00000000   0x10a5f4 ./Generated_Code/clockMan1.o
+                             0x10cb59 (size before relaxing)
+ .debug_str     0x0010a5f4      0x5cb ./Generated_Code/eMIOS_Mc0.o
+                             0x1095ac (size before relaxing)
+ .debug_str     0x0010abbf       0x4c ./Generated_Code/eMIOS_Mc2.o
+                             0x1095ac (size before relaxing)
+ .debug_str     0x0010ac0b      0x2a6 ./Generated_Code/eMIOS_Pwm0.o
+                             0x109435 (size before relaxing)
+ .debug_str     0x0010aeb1       0x9c ./Generated_Code/eMIOS_Pwm2.o
+                             0x109480 (size before relaxing)
+ .debug_str     0x0010af4d      0x3cf ./Generated_Code/linflexd_uart1.o
+                             0x109d6a (size before relaxing)
+ .debug_str     0x0010b31c      0x85a ./Generated_Code/pin_mux.o
+                             0x1063b3 (size before relaxing)
+ .debug_str     0x0010bb76      0x393 ./SDK/platform/devices/MPC5748G/startup/system_MPC5748G.o
+                             0x107df2 (size before relaxing)
+ .debug_str     0x0010bf09      0x38c ./SDK/platform/devices/startup.o
+                             0x105eeb (size before relaxing)
+ .debug_str     0x0010c295     0x13fa ./SDK/platform/drivers/src/clock/MPC57xx/clock_MPC57xx.o
+                             0x10be01 (size before relaxing)
+ .debug_str     0x0010d68f     0x1d95 ./SDK/platform/drivers/src/edma/edma_driver.o
+                             0x10b392 (size before relaxing)
+ .debug_str     0x0010f424       0xed ./SDK/platform/drivers/src/edma/edma_hw_access.o
+                             0x10677e (size before relaxing)
+ .debug_str     0x0010f511      0x300 ./SDK/platform/drivers/src/edma/edma_irq.o
+                             0x10600e (size before relaxing)
+ .debug_str     0x0010f811     0x1119 ./SDK/platform/drivers/src/emios/emios_common.o
+                             0x107785 (size before relaxing)
+ .debug_str     0x0011092a      0x120 ./SDK/platform/drivers/src/emios/emios_hw_access.o
+                             0x1066dc (size before relaxing)
+ .debug_str     0x00110a4a      0x32a ./SDK/platform/drivers/src/emios/emios_mc_driver.o
+                             0x1078a8 (size before relaxing)
+ .debug_str     0x00110d74      0x6f4 ./SDK/platform/drivers/src/emios/emios_pwm_driver.o
+                             0x107d61 (size before relaxing)
+ .debug_str     0x00111468      0x3b5 ./SDK/platform/drivers/src/interrupt/interrupt_manager_MPC57xx.o
+                             0x107f25 (size before relaxing)
+ .debug_str     0x0011181d      0xf2e ./SDK/platform/drivers/src/linflexd/linflexd_uart_driver.o
+                             0x10b0c9 (size before relaxing)
+ .debug_str     0x0011274b      0x64b ./SDK/platform/drivers/src/linflexd/linflexd_uart_irq.o
+                             0x107450 (size before relaxing)
+ .debug_str     0x00112d96      0x369 ./SDK/platform/drivers/src/pins/siul2/pins_siul2_driver.o
+                             0x1070a6 (size before relaxing)
+ .debug_str     0x001130ff       0x66 ./SDK/platform/drivers/src/pins/siul2/siul2_hw_access.o
+                             0x10644f (size before relaxing)
+ .debug_str     0x00113165      0x248 ./SDK/rtos/osif/osif_baremetal.o
+                             0x109de7 (size before relaxing)
+ .debug_str     0x001133ad     0x1c50 ./Sources/main.o
+                             0x1109f5 (size before relaxing)
+ .debug_str     0x00114ffd      0x246 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(alloc.o)
                                 0x342 (size before relaxing)
- .debug_str     0x00115298      0x2cc C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(atoi.o)
+ .debug_str     0x00115243      0x2cc C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(atoi.o)
                                 0x5ec (size before relaxing)
- .debug_str     0x00115564       0x24 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(atoll.o)
+ .debug_str     0x0011550f       0x24 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(atoll.o)
                                 0x5d2 (size before relaxing)
- .debug_str     0x00115588       0x37 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(lldiv.o)
+ .debug_str     0x00115533       0x37 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(lldiv.o)
                                 0x291 (size before relaxing)
- .debug_str     0x001155bf       0x8c C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(__strtoul.o)
+ .debug_str     0x0011556a       0x8c C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(__strtoul.o)
                                 0x62e (size before relaxing)
- .debug_str     0x0011564b       0x1f C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(__strtoull.o)
+ .debug_str     0x001155f6       0x1f C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(__strtoull.o)
                                 0x62f (size before relaxing)
- .debug_str     0x0011566a       0x16 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(strtoull.o)
+ .debug_str     0x00115615       0x16 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(strtoull.o)
                                 0x5c7 (size before relaxing)
- .debug_str     0x00115680       0x15 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(memcpy.o)
+ .debug_str     0x0011562b       0x15 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(memcpy.o)
                                 0x263 (size before relaxing)
- .debug_str     0x00115695       0x20 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(memset.o)
+ .debug_str     0x00115640       0x20 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(memset.o)
                                 0x276 (size before relaxing)
- .debug_str     0x001156b5       0x15 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(strcpy.o)
+ .debug_str     0x00115660       0x15 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(strcpy.o)
                                 0x26d (size before relaxing)
- .debug_str     0x001156ca       0x15 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(strlen.o)
+ .debug_str     0x00115675       0x15 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(strlen.o)
                                 0x26b (size before relaxing)
- .debug_str     0x001156df       0x32 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(strtok.o)
+ .debug_str     0x0011568a       0x32 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(strtok.o)
                                 0x291 (size before relaxing)
- .debug_str     0x00115711      0x15a C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(fgetwc.o)
+ .debug_str     0x001156bc      0x15a C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(fgetwc.o)
                                 0x596 (size before relaxing)
- .debug_str     0x0011586b       0x61 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(fwide.o)
+ .debug_str     0x00115816       0x61 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(fwide.o)
                                 0x4e2 (size before relaxing)
- .debug_str     0x001158cc       0xf6 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(wcstoll.o)
+ .debug_str     0x00115877       0xf6 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(wcstoll.o)
                                 0x67e (size before relaxing)
- .debug_str     0x001159c2       0x6d C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(__wcstoull.o)
+ .debug_str     0x0011596d       0x6d C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(__wcstoull.o)
                                 0x6ef (size before relaxing)
- .debug_str     0x00115a2f       0x15 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(wcstoull.o)
+ .debug_str     0x001159da       0x15 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(wcstoull.o)
                                 0x677 (size before relaxing)
- .debug_str     0x00115a44       0x33 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(wctype.o)
+ .debug_str     0x001159ef       0x33 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(wctype.o)
                                 0x4f2 (size before relaxing)
- .debug_str     0x00115a77       0x36 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(__wsread.o)
+ .debug_str     0x00115a22       0x36 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(__wsread.o)
                                 0x738 (size before relaxing)
- .debug_str     0x00115aad       0x12 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(ctype.o)
+ .debug_str     0x00115a58       0x12 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(ctype.o)
                                 0x2fd (size before relaxing)
- .debug_str     0x00115abf       0x12 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(errno.o)
+ .debug_str     0x00115a6a       0x12 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(errno.o)
                                 0x257 (size before relaxing)
- .debug_str     0x00115ad1      0x147 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(ansi_files.o)
+ .debug_str     0x00115a7c      0x147 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(ansi_files.o)
                                 0x5dc (size before relaxing)
- .debug_str     0x00115c18       0x22 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(fflush.o)
+ .debug_str     0x00115bc3       0x22 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(fflush.o)
                                 0x508 (size before relaxing)
- .debug_str     0x00115c3a       0xf1 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(fread.o)
+ .debug_str     0x00115be5       0xf1 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(fread.o)
                                 0x6d5 (size before relaxing)
- .debug_str     0x00115d2b       0x26 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(__StringRead.o)
+ .debug_str     0x00115cd6       0x26 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(__StringRead.o)
                                 0x2ef (size before relaxing)
- .debug_str     0x00115d51       0xd0 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(mbtowc.o)
+ .debug_str     0x00115cfc       0xd0 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(mbtowc.o)
                                 0x515 (size before relaxing)
- .debug_str     0x00115e21       0x1a C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(__filll_mem.o)
+ .debug_str     0x00115dcc       0x1a C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(__filll_mem.o)
                                 0x27d (size before relaxing)
- .debug_str     0x00115e3b       0x1f C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(strcmp.o)
+ .debug_str     0x00115de6       0x1f C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(strcmp.o)
                                 0x27d (size before relaxing)
- .debug_str     0x00115e5a       0x3d C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(__buffer_io.o)
+ .debug_str     0x00115e05       0x3d C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(__buffer_io.o)
                                 0x4c6 (size before relaxing)
- .debug_str     0x00115e97       0x6f C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libm.a(math_api.o)
+ .debug_str     0x00115e42       0x6f C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libm.a(math_api.o)
                                 0x4a3 (size before relaxing)
 
 .debug_ranges   0x00000000     0x1ca8
@@ -4818,7 +4816,7 @@ OUTPUT(AWAKE3_Z4_0.elf elf32-powerpc)
  .debug_ranges  0x00001bc8       0x20 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(__buffer_io.o)
  .debug_ranges  0x00001be8       0xc0 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libm.a(math_api.o)
 
-.debug_loc      0x00000000    0x146e7
+.debug_loc      0x00000000    0x14682
  .debug_loc     0x00000000      0x1c0 ./SDK/platform/devices/MPC5748G/startup/system_MPC5748G.o
  .debug_loc     0x000001c0      0x181 ./SDK/platform/devices/startup.o
  .debug_loc     0x00000341     0x3c01 ./SDK/platform/drivers/src/clock/MPC57xx/clock_MPC57xx.o
@@ -4834,38 +4832,38 @@ OUTPUT(AWAKE3_Z4_0.elf elf32-powerpc)
  .debug_loc     0x0000d5d2      0x4cb ./SDK/platform/drivers/src/pins/siul2/pins_siul2_driver.o
  .debug_loc     0x0000da9d      0x320 ./SDK/platform/drivers/src/pins/siul2/siul2_hw_access.o
  .debug_loc     0x0000ddbd      0x321 ./SDK/rtos/osif/osif_baremetal.o
- .debug_loc     0x0000e0de      0x7ae ./Sources/main.o
- .debug_loc     0x0000e88c      0x2ca C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(alloc.o)
- .debug_loc     0x0000eb56      0x4c6 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(atoi.o)
- .debug_loc     0x0000f01c      0x4b9 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(atoll.o)
- .debug_loc     0x0000f4d5       0xea C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(lldiv.o)
- .debug_loc     0x0000f5bf      0x80e C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(__strtoul.o)
- .debug_loc     0x0000fdcd      0x8d9 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(__strtoull.o)
- .debug_loc     0x000106a6      0x484 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(strtoull.o)
- .debug_loc     0x00010b2a      0x189 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(memcpy.o)
- .debug_loc     0x00010cb3       0x60 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(memset.o)
- .debug_loc     0x00010d13       0x6e C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(strcpy.o)
- .debug_loc     0x00010d81       0x41 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(strlen.o)
- .debug_loc     0x00010dc2      0x125 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(strtok.o)
- .debug_loc     0x00010ee7      0x173 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(fgetwc.o)
- .debug_loc     0x0001105a       0xae C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(fwide.o)
- .debug_loc     0x00011108      0x666 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(wcstoll.o)
- .debug_loc     0x0001176e      0xaa7 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(__wcstoull.o)
- .debug_loc     0x00012215      0x652 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(wcstoull.o)
- .debug_loc     0x00012867      0x1ec C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(wctype.o)
- .debug_loc     0x00012a53      0x5a9 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(__wsread.o)
- .debug_loc     0x00012ffc      0x1ce C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(ctype.o)
- .debug_loc     0x000131ca      0x11e C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(ansi_files.o)
- .debug_loc     0x000132e8       0x64 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(fflush.o)
- .debug_loc     0x0001334c      0x2a2 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(fread.o)
- .debug_loc     0x000135ee       0xf6 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(__StringRead.o)
- .debug_loc     0x000136e4      0x4f3 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(mbtowc.o)
- .debug_loc     0x00013bd7      0x287 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(__filll_mem.o)
- .debug_loc     0x00013e5e       0xac C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(strcmp.o)
- .debug_loc     0x00013f0a       0xea C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(__buffer_io.o)
- .debug_loc     0x00013ff4      0x6f3 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libm.a(math_api.o)
+ .debug_loc     0x0000e0de      0x749 ./Sources/main.o
+ .debug_loc     0x0000e827      0x2ca C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(alloc.o)
+ .debug_loc     0x0000eaf1      0x4c6 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(atoi.o)
+ .debug_loc     0x0000efb7      0x4b9 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(atoll.o)
+ .debug_loc     0x0000f470       0xea C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(lldiv.o)
+ .debug_loc     0x0000f55a      0x80e C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(__strtoul.o)
+ .debug_loc     0x0000fd68      0x8d9 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(__strtoull.o)
+ .debug_loc     0x00010641      0x484 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(strtoull.o)
+ .debug_loc     0x00010ac5      0x189 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(memcpy.o)
+ .debug_loc     0x00010c4e       0x60 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(memset.o)
+ .debug_loc     0x00010cae       0x6e C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(strcpy.o)
+ .debug_loc     0x00010d1c       0x41 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(strlen.o)
+ .debug_loc     0x00010d5d      0x125 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(strtok.o)
+ .debug_loc     0x00010e82      0x173 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(fgetwc.o)
+ .debug_loc     0x00010ff5       0xae C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(fwide.o)
+ .debug_loc     0x000110a3      0x666 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(wcstoll.o)
+ .debug_loc     0x00011709      0xaa7 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(__wcstoull.o)
+ .debug_loc     0x000121b0      0x652 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(wcstoull.o)
+ .debug_loc     0x00012802      0x1ec C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(wctype.o)
+ .debug_loc     0x000129ee      0x5a9 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(__wsread.o)
+ .debug_loc     0x00012f97      0x1ce C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(ctype.o)
+ .debug_loc     0x00013165      0x11e C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(ansi_files.o)
+ .debug_loc     0x00013283       0x64 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(fflush.o)
+ .debug_loc     0x000132e7      0x2a2 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(fread.o)
+ .debug_loc     0x00013589       0xf6 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(__StringRead.o)
+ .debug_loc     0x0001367f      0x4f3 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(mbtowc.o)
+ .debug_loc     0x00013b72      0x287 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(__filll_mem.o)
+ .debug_loc     0x00013df9       0xac C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(strcmp.o)
+ .debug_loc     0x00013ea5       0xea C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(__buffer_io.o)
+ .debug_loc     0x00013f8f      0x6f3 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libm.a(math_api.o)
 
-.debug_frame    0x00000000     0x4334
+.debug_frame    0x00000000     0x4338
  .debug_frame   0x00000000       0x40 ./SDK/platform/devices/MPC5748G/startup/system_MPC5748G.o
  .debug_frame   0x00000040       0x2c ./SDK/platform/devices/startup.o
  .debug_frame   0x0000006c      0x17c ./SDK/platform/drivers/src/clock/MPC57xx/clock_MPC57xx.o
@@ -4882,39 +4880,39 @@ OUTPUT(AWAKE3_Z4_0.elf elf32-powerpc)
  .debug_frame   0x000020f0      0x148 ./SDK/platform/drivers/src/pins/siul2/pins_siul2_driver.o
  .debug_frame   0x00002238       0x30 ./SDK/platform/drivers/src/pins/siul2/siul2_hw_access.o
  .debug_frame   0x00002268      0x110 ./SDK/rtos/osif/osif_baremetal.o
- .debug_frame   0x00002378      0x2e0 ./Sources/main.o
- .debug_frame   0x00002658       0xa8 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(alloc.o)
- .debug_frame   0x00002700      0x1c4 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(atoi.o)
- .debug_frame   0x000028c4      0x1b8 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(atoll.o)
- .debug_frame   0x00002a7c       0x48 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(lldiv.o)
- .debug_frame   0x00002ac4      0x1d8 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(__strtoul.o)
- .debug_frame   0x00002c9c      0x1dc C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(__strtoull.o)
- .debug_frame   0x00002e78      0x1a4 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(strtoull.o)
- .debug_frame   0x0000301c       0x20 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(memcpy.o)
- .debug_frame   0x0000303c       0x30 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(memset.o)
- .debug_frame   0x0000306c       0x20 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(strcpy.o)
- .debug_frame   0x0000308c       0x20 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(strlen.o)
- .debug_frame   0x000030ac       0x34 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(strtok.o)
- .debug_frame   0x000030e0       0x84 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(fgetwc.o)
- .debug_frame   0x00003164       0x40 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(fwide.o)
- .debug_frame   0x000031a4      0x288 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(wcstoll.o)
- .debug_frame   0x0000342c      0x2bc C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(__wcstoull.o)
- .debug_frame   0x000036e8      0x284 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(wcstoull.o)
- .debug_frame   0x0000396c      0x120 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(wctype.o)
- .debug_frame   0x00003a8c      0x228 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(__wsread.o)
- .debug_frame   0x00003cb4       0xf0 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(ctype.o)
- .debug_frame   0x00003da4       0x60 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(ansi_files.o)
- .debug_frame   0x00003e04       0x3c C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(fflush.o)
- .debug_frame   0x00003e40       0x68 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(fread.o)
- .debug_frame   0x00003ea8       0x20 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(__StringRead.o)
- .debug_frame   0x00003ec8       0xe4 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(mbtowc.o)
- .debug_frame   0x00003fac       0x20 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(__filll_mem.o)
- .debug_frame   0x00003fcc       0x20 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(strcmp.o)
- .debug_frame   0x00003fec       0x64 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(__buffer_io.o)
- .debug_frame   0x00004050      0x1f4 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libm.a(math_api.o)
- .debug_frame   0x00004244       0x20 c:/nxp/s32ds_power_v2.1/s32ds/build_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.4/e200z4/fp\libgcc.a(_lshrdi3.o)
- .debug_frame   0x00004264       0x20 c:/nxp/s32ds_power_v2.1/s32ds/build_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.4/e200z4/fp\libgcc.a(_ashldi3.o)
- .debug_frame   0x00004284       0x38 c:/nxp/s32ds_power_v2.1/s32ds/build_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.4/e200z4/fp\libgcc.a(_gt_df.o)
- .debug_frame   0x000042bc       0x38 c:/nxp/s32ds_power_v2.1/s32ds/build_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.4/e200z4/fp\libgcc.a(_lt_df.o)
- .debug_frame   0x000042f4       0x20 c:/nxp/s32ds_power_v2.1/s32ds/build_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.4/e200z4/fp\libgcc.a(_unpack_df.o)
- .debug_frame   0x00004314       0x20 c:/nxp/s32ds_power_v2.1/s32ds/build_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.4/e200z4/fp\libgcc.a(_fpcmp_parts_df.o)
+ .debug_frame   0x00002378      0x2e4 ./Sources/main.o
+ .debug_frame   0x0000265c       0xa8 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(alloc.o)
+ .debug_frame   0x00002704      0x1c4 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(atoi.o)
+ .debug_frame   0x000028c8      0x1b8 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(atoll.o)
+ .debug_frame   0x00002a80       0x48 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(lldiv.o)
+ .debug_frame   0x00002ac8      0x1d8 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(__strtoul.o)
+ .debug_frame   0x00002ca0      0x1dc C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(__strtoull.o)
+ .debug_frame   0x00002e7c      0x1a4 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(strtoull.o)
+ .debug_frame   0x00003020       0x20 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(memcpy.o)
+ .debug_frame   0x00003040       0x30 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(memset.o)
+ .debug_frame   0x00003070       0x20 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(strcpy.o)
+ .debug_frame   0x00003090       0x20 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(strlen.o)
+ .debug_frame   0x000030b0       0x34 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(strtok.o)
+ .debug_frame   0x000030e4       0x84 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(fgetwc.o)
+ .debug_frame   0x00003168       0x40 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(fwide.o)
+ .debug_frame   0x000031a8      0x288 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(wcstoll.o)
+ .debug_frame   0x00003430      0x2bc C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(__wcstoull.o)
+ .debug_frame   0x000036ec      0x284 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(wcstoull.o)
+ .debug_frame   0x00003970      0x120 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(wctype.o)
+ .debug_frame   0x00003a90      0x228 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(__wsread.o)
+ .debug_frame   0x00003cb8       0xf0 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(ctype.o)
+ .debug_frame   0x00003da8       0x60 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(ansi_files.o)
+ .debug_frame   0x00003e08       0x3c C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(fflush.o)
+ .debug_frame   0x00003e44       0x68 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(fread.o)
+ .debug_frame   0x00003eac       0x20 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(__StringRead.o)
+ .debug_frame   0x00003ecc       0xe4 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(mbtowc.o)
+ .debug_frame   0x00003fb0       0x20 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(__filll_mem.o)
+ .debug_frame   0x00003fd0       0x20 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(strcmp.o)
+ .debug_frame   0x00003ff0       0x64 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libc99.a(__buffer_io.o)
+ .debug_frame   0x00004054      0x1f4 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/lib/e200z4/fp\libm.a(math_api.o)
+ .debug_frame   0x00004248       0x20 c:/nxp/s32ds_power_v2.1/s32ds/build_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.4/e200z4/fp\libgcc.a(_lshrdi3.o)
+ .debug_frame   0x00004268       0x20 c:/nxp/s32ds_power_v2.1/s32ds/build_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.4/e200z4/fp\libgcc.a(_ashldi3.o)
+ .debug_frame   0x00004288       0x38 c:/nxp/s32ds_power_v2.1/s32ds/build_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.4/e200z4/fp\libgcc.a(_gt_df.o)
+ .debug_frame   0x000042c0       0x38 c:/nxp/s32ds_power_v2.1/s32ds/build_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.4/e200z4/fp\libgcc.a(_lt_df.o)
+ .debug_frame   0x000042f8       0x20 c:/nxp/s32ds_power_v2.1/s32ds/build_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.4/e200z4/fp\libgcc.a(_unpack_df.o)
+ .debug_frame   0x00004318       0x20 c:/nxp/s32ds_power_v2.1/s32ds/build_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.4/e200z4/fp\libgcc.a(_fpcmp_parts_df.o)

@@ -1,0 +1,13 @@
+# Ignore everything
+*
+
+# But not these files...
+!.gitignore
+!TestSD/
+!AWAKE3/
+!AWAKE3_V2_Z4_0/
+!AWAKE3_SINGLE_Z4_0/
+!Test_Dual_Core/
+
+# ...even if they are in subdirectories
+!*/

@@ -2,7 +2,7 @@
 <GenerationInfo_G_C>
   <Options>
     <ProjectName>AWAKE3_Z4_0</ProjectName>
-    <ProjectDirectory>C:\Users\Work\workspaceS32DS.Power.2.1\AWAKE3\AWAKE3_Z4_0\</ProjectDirectory>
+    <ProjectDirectory>C:\Users\Public\S32DS_NXP_Workspace\AWAKE3\AWAKE3_Z4_0\</ProjectDirectory>
     <ProjectMainModuleName>main</ProjectMainModuleName>
     <DestEventsDirectory>Sources\</DestEventsDirectory>
     <DestDriversSubDirectory>..\Generated_Code\</DestDriversSubDirectory>
@@ -523,7 +523,7 @@
     </GenFiles>
     <SignalListFile />
     <DestinationCompiler>GNUC</DestinationCompiler>
-    <ProjectModificationStamp>6</ProjectModificationStamp>
+    <ProjectModificationStamp>8</ProjectModificationStamp>
   </Options>
   <CpuID_1>
     <Generated>true</Generated>
@@ -569,8 +569,8 @@
     <GenComponentVersion>1.2.0</GenComponentVersion>
     <GenDriverVersion>1.4</GenDriverVersion>
     <GenEventModule />
-    <HeaderAge>1353452804</HeaderAge>
-    <CodeAge>1353452804</CodeAge>
+    <HeaderAge>1357747329</HeaderAge>
+    <CodeAge>1357747329</CodeAge>
     <AsemblAge>-1</AsemblAge>
     <GenNumMethods>17</GenNumMethods>
     <PINS_DRV_Init>true</PINS_DRV_Init>

@@ -7,7 +7,7 @@
 **     Version     : Component 1.2.0, Driver 1.4, CPU db: 3.00.000
 **     Repository  : SDK_S32_PA_11
 **     Compiler    : GNU C Compiler
-**     Date/Time   : 2020-05-12, 01:39, # CodeGen: 2
+**     Date/Time   : 2020-07-13, 18:35, # CodeGen: 28
 **     Abstract    :
 **
 **     Settings    :
@@ -699,28 +699,28 @@
 **                  GPI 57                                 : <Automatic>
 **                  GPI 58                                 : <Automatic>
 **                  GPI 59                                 : <Automatic>
-**                  GPIO 0                                 : PA[0]
-**                  Direction                              : Output
+**                  GPIO 0                                 : <Automatic>
+**                  Direction                              : <Automatic>
 **                  GPIO 1                                 : <Automatic>
 **                  Direction                              : <Automatic>
 **                  GPIO 2                                 : <Automatic>
 **                  Direction                              : <Automatic>
 **                  GPIO 3                                 : <Automatic>
 **                  Direction                              : <Automatic>
-**                  GPIO 4                                 : PA[4]
-**                  Direction                              : Output
+**                  GPIO 4                                 : <Automatic>
+**                  Direction                              : <Automatic>
 **                  GPIO 5                                 : <Automatic>
 **                  Direction                              : <Automatic>
 **                  GPIO 6                                 : <Automatic>
 **                  Direction                              : <Automatic>
-**                  GPIO 7                                 : PA[7]
-**                  Direction                              : Output
+**                  GPIO 7                                 : <Automatic>
+**                  Direction                              : <Automatic>
 **                  GPIO 8                                 : <Automatic>
 **                  Direction                              : <Automatic>
 **                  GPIO 9                                 : <Automatic>
 **                  Direction                              : <Automatic>
-**                  GPIO 10                                : PA[10]
-**                  Direction                              : Output
+**                  GPIO 10                                : <Automatic>
+**                  Direction                              : <Automatic>
 **                  GPIO 11                                : <Automatic>
 **                  Direction                              : <Automatic>
 **                  GPIO 12                                : <Automatic>
@@ -4951,7 +4951,7 @@
 
 
 /*! @brief User number of configured pins */
-#define NUM_OF_CONFIGURED_PINS 15
+#define NUM_OF_CONFIGURED_PINS 11
 
 /*! @brief User configuration structure */
 extern pin_settings_config_t g_pin_mux_InitConfigArr[NUM_OF_CONFIGURED_PINS];
