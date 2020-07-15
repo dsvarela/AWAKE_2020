@@ -7,7 +7,7 @@
 **     Version     : Component SDK_S32_PA_11, Driver 01.00, CPU db: 3.00.000
 **     Repository  : SDK_S32_PA_11
 **     Compiler    : GNU C Compiler
-**     Date/Time   : 2020-07-15, 12:41, # CodeGen: 5
+**     Date/Time   : 2020-07-15, 19:22, # CodeGen: 16
 **
 **     Copyright 1997 - 2015 Freescale Semiconductor, Inc. 
 **     Copyright 2016-2017 NXP 
@@ -60,14 +60,14 @@ const emios_common_param_t eMIOS_Mc2_InitConfig0 =
     .allowDebugMode         = false,        /*!< If true, all channel in eMIOS group can enter debug mode                   */
     .lowPowerMode           = false,        /*!< Low power mode or normal mode                                              */
     .clkDivVal              = 250U,         /*!< Select the clock divider value for the global prescaler in range(1-256)    */
-    .enableGlobalPrescaler  = false,        /*!< Enable or disable global prescaler                                         */
+    .enableGlobalPrescaler  = true,         /*!< Enable or disable global prescaler                                         */
     .enableGlobalTimeBase   = true,         /*!< Enable or disable global timebase                                          */
 };
 
 /* eMIOS counter mode configuration structure for eMIOS_Mc2_CntChnConfig0 */
 const emios_mc_mode_param_t eMIOS_Mc2_CntChnConfig0 =
 {
-    .mode                = EMIOS_MODE_MCB_UP_COUNTER_INT_CLK,   /*!< Sub-mode selected                                                    */
+    .mode                = EMIOS_MODE_MC_UP_CNT_CLR_START_INT_CLK, /*!< Sub-mode selected                                                    */
     .period              = 60000UL,                             /*!< Period value                                                         */
     .internalPrescaler   = EMIOS_CLOCK_DIVID_BY_10,             /*!< Internal prescaler value                                             */
     .internalPrescalerEn = true,                                /*!< Enable/disable internal prescaler                                    */

@@ -32,7 +32,7 @@ SDK/platform/drivers/src/linflexd/linflexd_uart_driver.o: \
  C:/NXP/S32DS_Power_v2.1/S32DS/software/S32_SDK_S32PA_RTM_3.0.0/platform/devices/status.h \
  C:/NXP/S32DS_Power_v2.1/S32DS/software/S32_SDK_S32PA_RTM_3.0.0/platform/drivers/inc/../src/clock/MPC57xx/clock_MPC57xx.h \
  C:/NXP/S32DS_Power_v2.1/S32DS/software/S32_SDK_S32PA_RTM_3.0.0/platform/drivers/inc/interrupt_manager.h \
- C:/Users/Work/workspaceS32DS.Power.2.1/3.AWAKE/AWAKE_SINGLE_Z4_0/SDK/rtos/osif/osif.h \
+ C:/Users/Public/S32DS_NXP_Workspace/AWAKE_SINGLE_Z4_0/SDK/rtos/osif/osif.h \
  C:/NXP/S32DS_Power_v2.1/S32DS/software/S32_SDK_S32PA_RTM_3.0.0/platform/drivers/inc/edma_driver.h \
  C:/NXP/S32DS_Power_v2.1/S32DS/software/S32_SDK_S32PA_RTM_3.0.0/platform/devices/callbacks.h
 
@@ -100,7 +100,7 @@ C:/NXP/S32DS_Power_v2.1/S32DS/software/S32_SDK_S32PA_RTM_3.0.0/platform/drivers/
 
 C:/NXP/S32DS_Power_v2.1/S32DS/software/S32_SDK_S32PA_RTM_3.0.0/platform/drivers/inc/interrupt_manager.h:
 
-C:/Users/Work/workspaceS32DS.Power.2.1/3.AWAKE/AWAKE_SINGLE_Z4_0/SDK/rtos/osif/osif.h:
+C:/Users/Public/S32DS_NXP_Workspace/AWAKE_SINGLE_Z4_0/SDK/rtos/osif/osif.h:
 
 C:/NXP/S32DS_Power_v2.1/S32DS/software/S32_SDK_S32PA_RTM_3.0.0/platform/drivers/inc/edma_driver.h:
 

@@ -3,6 +3,9 @@
 <listAttribute key="com.pemicro.debug.gdbjtag.ppc.ELVES">
 <listEntry value="${project_loc:Test_Dual_Core_Z4_0}/../Test_Dual_Core_Z4_1/Debug_RAM/Test_Dual_Core_Z4_1.elf"/>
 </listAttribute>
+<listAttribute key="com.pemicro.debug.gdbjtag.ppc.ELVES_OFFSET">
+<listEntry value=""/>
+</listAttribute>
 <intAttribute key="com.pemicro.debug.gdbjtag.ppc.NUMBER_ELVES" value="1"/>
 <stringAttribute key="com.pemicro.debug.gdbjtag.ppc.PE.DEVICE_NAME" value="MPC5748G"/>
 <stringAttribute key="com.pemicro.debug.gdbjtag.ppc.PE.GDB_OPTIONS" value=""/>

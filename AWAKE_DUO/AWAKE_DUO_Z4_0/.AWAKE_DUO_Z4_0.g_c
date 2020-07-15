@@ -2,7 +2,7 @@
 <GenerationInfo_G_C>
   <Options>
     <ProjectName>AWAKE_DUO_Z4_0</ProjectName>
-    <ProjectDirectory>C:\Users\Work\workspaceS32DS.Power.2.1\3.AWAKE\AWAKE_DUO\AWAKE_DUO_Z4_0\</ProjectDirectory>
+    <ProjectDirectory>C:\Users\Public\S32DS_NXP_Workspace\AWAKE_DUO\AWAKE_DUO_Z4_0\</ProjectDirectory>
     <ProjectMainModuleName>main</ProjectMainModuleName>
     <DestEventsDirectory>Sources\</DestEventsDirectory>
     <DestDriversSubDirectory>..\Generated_Code\</DestDriversSubDirectory>
@@ -233,6 +233,123 @@
         <NotCreatedByDefault>false</NotCreatedByDefault>
       </SynchronizedStaticFile>
       <SynchronizedStaticFile>
+        <SrcFileName>C:\NXP\S32DS_Power_v2.1\eclipse\ProcessorExpert\..\..\S32DS\software\S32_SDK_S32PA_RTM_3.0.0\platform\drivers\src\linflexd\linflexd_uart_driver.c</SrcFileName>
+        <OrigSrcFileHash>{hash-not-available}</OrigSrcFileHash>
+        <ReviewedSrcFileHash>{hash-not-available}</ReviewedSrcFileHash>
+        <PrjFileName>SDK\platform\drivers\src\linflexd\linflexd_uart_driver.c</PrjFileName>
+        <PrjFileHash>{hash-not-available}</PrjFileHash>
+        <NoMoreGenerated>false</NoMoreGenerated>
+        <NotCreatedByDefault>false</NotCreatedByDefault>
+      </SynchronizedStaticFile>
+      <SynchronizedStaticFile>
+        <SrcFileName>C:\NXP\S32DS_Power_v2.1\eclipse\ProcessorExpert\..\..\S32DS\software\S32_SDK_S32PA_RTM_3.0.0\platform\drivers\src\linflexd\linflexd_uart_irq.c</SrcFileName>
+        <OrigSrcFileHash>{hash-not-available}</OrigSrcFileHash>
+        <ReviewedSrcFileHash>{hash-not-available}</ReviewedSrcFileHash>
+        <PrjFileName>SDK\platform\drivers\src\linflexd\linflexd_uart_irq.c</PrjFileName>
+        <PrjFileHash>{hash-not-available}</PrjFileHash>
+        <NoMoreGenerated>false</NoMoreGenerated>
+        <NotCreatedByDefault>false</NotCreatedByDefault>
+      </SynchronizedStaticFile>
+      <SynchronizedStaticFile>
+        <SrcFileName>C:\NXP\S32DS_Power_v2.1\eclipse\ProcessorExpert\..\..\S32DS\software\S32_SDK_S32PA_RTM_3.0.0\platform\drivers\inc\linflexd_uart_driver.h</SrcFileName>
+        <OrigSrcFileHash>{hash-not-available}</OrigSrcFileHash>
+        <ReviewedSrcFileHash>{hash-not-available}</ReviewedSrcFileHash>
+        <PrjFileName>SDK\platform\drivers\inc\linflexd_uart_driver.h</PrjFileName>
+        <PrjFileHash>{hash-not-available}</PrjFileHash>
+        <NoMoreGenerated>false</NoMoreGenerated>
+        <NotCreatedByDefault>false</NotCreatedByDefault>
+      </SynchronizedStaticFile>
+      <SynchronizedStaticFile>
+        <SrcFileName>C:\NXP\S32DS_Power_v2.1\eclipse\ProcessorExpert\..\..\S32DS\software\S32_SDK_S32PA_RTM_3.0.0\platform\drivers\src\linflexd\linflexd_hw_access.h</SrcFileName>
+        <OrigSrcFileHash>{hash-not-available}</OrigSrcFileHash>
+        <ReviewedSrcFileHash>{hash-not-available}</ReviewedSrcFileHash>
+        <PrjFileName>SDK\platform\drivers\src\linflexd\linflexd_hw_access.h</PrjFileName>
+        <PrjFileHash>{hash-not-available}</PrjFileHash>
+        <NoMoreGenerated>false</NoMoreGenerated>
+        <NotCreatedByDefault>false</NotCreatedByDefault>
+      </SynchronizedStaticFile>
+      <SynchronizedStaticFile>
+        <SrcFileName>C:\NXP\S32DS_Power_v2.1\eclipse\ProcessorExpert\..\..\S32DS\software\S32_SDK_S32PA_RTM_3.0.0\platform\drivers\src\linflexd\linflexd_uart_irq.h</SrcFileName>
+        <OrigSrcFileHash>{hash-not-available}</OrigSrcFileHash>
+        <ReviewedSrcFileHash>{hash-not-available}</ReviewedSrcFileHash>
+        <PrjFileName>SDK\platform\drivers\src\linflexd\linflexd_uart_irq.h</PrjFileName>
+        <PrjFileHash>{hash-not-available}</PrjFileHash>
+        <NoMoreGenerated>false</NoMoreGenerated>
+        <NotCreatedByDefault>false</NotCreatedByDefault>
+      </SynchronizedStaticFile>
+      <SynchronizedStaticFile>
+        <SrcFileName>C:\NXP\S32DS_Power_v2.1\eclipse\ProcessorExpert\..\..\S32DS\software\S32_SDK_S32PA_RTM_3.0.0\platform\drivers\src\edma\edma_driver.c</SrcFileName>
+        <OrigSrcFileHash>{hash-not-available}</OrigSrcFileHash>
+        <ReviewedSrcFileHash>{hash-not-available}</ReviewedSrcFileHash>
+        <PrjFileName>SDK\platform\drivers\src\edma\edma_driver.c</PrjFileName>
+        <PrjFileHash>{hash-not-available}</PrjFileHash>
+        <NoMoreGenerated>false</NoMoreGenerated>
+        <NotCreatedByDefault>false</NotCreatedByDefault>
+      </SynchronizedStaticFile>
+      <SynchronizedStaticFile>
+        <SrcFileName>C:\NXP\S32DS_Power_v2.1\eclipse\ProcessorExpert\..\..\S32DS\software\S32_SDK_S32PA_RTM_3.0.0\platform\drivers\src\edma\edma_hw_access.c</SrcFileName>
+        <OrigSrcFileHash>{hash-not-available}</OrigSrcFileHash>
+        <ReviewedSrcFileHash>{hash-not-available}</ReviewedSrcFileHash>
+        <PrjFileName>SDK\platform\drivers\src\edma\edma_hw_access.c</PrjFileName>
+        <PrjFileHash>{hash-not-available}</PrjFileHash>
+        <NoMoreGenerated>false</NoMoreGenerated>
+        <NotCreatedByDefault>false</NotCreatedByDefault>
+      </SynchronizedStaticFile>
+      <SynchronizedStaticFile>
+        <SrcFileName>C:\NXP\S32DS_Power_v2.1\eclipse\ProcessorExpert\..\..\S32DS\software\S32_SDK_S32PA_RTM_3.0.0\platform\drivers\src\edma\edma_irq.c</SrcFileName>
+        <OrigSrcFileHash>{hash-not-available}</OrigSrcFileHash>
+        <ReviewedSrcFileHash>{hash-not-available}</ReviewedSrcFileHash>
+        <PrjFileName>SDK\platform\drivers\src\edma\edma_irq.c</PrjFileName>
+        <PrjFileHash>{hash-not-available}</PrjFileHash>
+        <NoMoreGenerated>false</NoMoreGenerated>
+        <NotCreatedByDefault>false</NotCreatedByDefault>
+      </SynchronizedStaticFile>
+      <SynchronizedStaticFile>
+        <SrcFileName>C:\NXP\S32DS_Power_v2.1\eclipse\ProcessorExpert\..\..\S32DS\software\S32_SDK_S32PA_RTM_3.0.0\platform\drivers\src\edma\edma_hw_access.h</SrcFileName>
+        <OrigSrcFileHash>{hash-not-available}</OrigSrcFileHash>
+        <ReviewedSrcFileHash>{hash-not-available}</ReviewedSrcFileHash>
+        <PrjFileName>SDK\platform\drivers\src\edma\edma_hw_access.h</PrjFileName>
+        <PrjFileHash>{hash-not-available}</PrjFileHash>
+        <NoMoreGenerated>false</NoMoreGenerated>
+        <NotCreatedByDefault>false</NotCreatedByDefault>
+      </SynchronizedStaticFile>
+      <SynchronizedStaticFile>
+        <SrcFileName>C:\NXP\S32DS_Power_v2.1\eclipse\ProcessorExpert\..\..\S32DS\software\S32_SDK_S32PA_RTM_3.0.0\platform\drivers\src\edma\edma_irq.h</SrcFileName>
+        <OrigSrcFileHash>{hash-not-available}</OrigSrcFileHash>
+        <ReviewedSrcFileHash>{hash-not-available}</ReviewedSrcFileHash>
+        <PrjFileName>SDK\platform\drivers\src\edma\edma_irq.h</PrjFileName>
+        <PrjFileHash>{hash-not-available}</PrjFileHash>
+        <NoMoreGenerated>false</NoMoreGenerated>
+        <NotCreatedByDefault>false</NotCreatedByDefault>
+      </SynchronizedStaticFile>
+      <SynchronizedStaticFile>
+        <SrcFileName>C:\NXP\S32DS_Power_v2.1\eclipse\ProcessorExpert\..\..\S32DS\software\S32_SDK_S32PA_RTM_3.0.0\platform\drivers\inc\edma_driver.h</SrcFileName>
+        <OrigSrcFileHash>{hash-not-available}</OrigSrcFileHash>
+        <ReviewedSrcFileHash>{hash-not-available}</ReviewedSrcFileHash>
+        <PrjFileName>SDK\platform\drivers\inc\edma_driver.h</PrjFileName>
+        <PrjFileHash>{hash-not-available}</PrjFileHash>
+        <NoMoreGenerated>false</NoMoreGenerated>
+        <NotCreatedByDefault>false</NotCreatedByDefault>
+      </SynchronizedStaticFile>
+      <SynchronizedStaticFile>
+        <SrcFileName>C:\NXP\S32DS_Power_v2.1\eclipse\ProcessorExpert\..\..\S32DS\software\S32_SDK_S32PA_RTM_3.0.0\rtos\osif\osif.h</SrcFileName>
+        <OrigSrcFileHash>{hash-not-available}</OrigSrcFileHash>
+        <ReviewedSrcFileHash>{hash-not-available}</ReviewedSrcFileHash>
+        <PrjFileName>SDK\rtos\osif\osif.h</PrjFileName>
+        <PrjFileHash>{hash-not-available}</PrjFileHash>
+        <NoMoreGenerated>false</NoMoreGenerated>
+        <NotCreatedByDefault>false</NotCreatedByDefault>
+      </SynchronizedStaticFile>
+      <SynchronizedStaticFile>
+        <SrcFileName>C:\NXP\S32DS_Power_v2.1\eclipse\ProcessorExpert\..\..\S32DS\software\S32_SDK_S32PA_RTM_3.0.0\rtos\osif\osif_baremetal.c</SrcFileName>
+        <OrigSrcFileHash>{hash-not-available}</OrigSrcFileHash>
+        <ReviewedSrcFileHash>{hash-not-available}</ReviewedSrcFileHash>
+        <PrjFileName>SDK\rtos\osif\osif_baremetal.c</PrjFileName>
+        <PrjFileHash>{hash-not-available}</PrjFileHash>
+        <NoMoreGenerated>false</NoMoreGenerated>
+        <NotCreatedByDefault>false</NotCreatedByDefault>
+      </SynchronizedStaticFile>
+      <SynchronizedStaticFile>
         <SrcFileName>C:\NXP\S32DS_Power_v2.1\eclipse\ProcessorExpert\..\..\S32DS\software\S32_SDK_S32PA_RTM_3.0.0\platform\devices\devassert.h</SrcFileName>
         <OrigSrcFileHash>{hash-not-available}</OrigSrcFileHash>
         <ReviewedSrcFileHash>{hash-not-available}</ReviewedSrcFileHash>
@@ -380,25 +497,29 @@
         <Line>Events</Line>
       </GenEventModules>
       <GenMethodsInEvents lines_count="0" />
-      <GenAllModules lines_count="6">
+      <GenAllModules lines_count="8">
         <Line>clockMan1</Line>
         <Line>Cpu</Line>
+        <Line>dmaController1</Line>
         <Line>eMIOS_Mc2</Line>
         <Line>eMIOS_Pwm2</Line>
         <Line>Events</Line>
+        <Line>linflexd_uart1</Line>
         <Line>pin_mux</Line>
       </GenAllModules>
       <GenExternModules lines_count="0" />
-      <GenBeanModules lines_count="4">
+      <GenBeanModules lines_count="6">
         <Line>pin_mux</Line>
         <Line>clockMan1</Line>
-        <Line>eMIOS_Mc2</Line>
         <Line>eMIOS_Pwm2</Line>
+        <Line>eMIOS_Mc2</Line>
+        <Line>linflexd_uart1</Line>
+        <Line>dmaController1</Line>
       </GenBeanModules>
     </GenFiles>
     <SignalListFile />
     <DestinationCompiler>GNUC</DestinationCompiler>
-    <ProjectModificationStamp>9</ProjectModificationStamp>
+    <ProjectModificationStamp>12</ProjectModificationStamp>
   </Options>
   <CpuID_1>
     <Generated>true</Generated>
@@ -406,8 +527,8 @@
     <GenComponentVersion>01.197</GenComponentVersion>
     <GenDriverVersion>01.00</GenDriverVersion>
     <GenEventModule>Events</GenEventModule>
-    <HeaderAge>1357865809</HeaderAge>
-    <CodeAge>1357865574</CodeAge>
+    <HeaderAge>1357880213</HeaderAge>
+    <CodeAge>1357871586</CodeAge>
     <AsemblAge>-1</AsemblAge>
     <GenNumMethods>3</GenNumMethods>
     <SystemInit>true</SystemInit>
@@ -444,8 +565,8 @@
     <GenComponentVersion>1.2.0</GenComponentVersion>
     <GenDriverVersion>1.4</GenDriverVersion>
     <GenEventModule />
-    <HeaderAge>1357866123</HeaderAge>
-    <CodeAge>1357866123</CodeAge>
+    <HeaderAge>1357880213</HeaderAge>
+    <CodeAge>1357880213</CodeAge>
     <AsemblAge>-1</AsemblAge>
     <GenNumMethods>17</GenNumMethods>
     <PINS_DRV_Init>true</PINS_DRV_Init>
@@ -483,8 +604,8 @@
     <GenComponentVersion>SDK_S32_PA_11</GenComponentVersion>
     <GenDriverVersion>01.00</GenDriverVersion>
     <GenEventModule />
-    <HeaderAge>1357865369</HeaderAge>
-    <CodeAge>1357865574</CodeAge>
+    <HeaderAge>1357871586</HeaderAge>
+    <CodeAge>1357880213</CodeAge>
     <AsemblAge>-1</AsemblAge>
     <GenNumMethods>2</GenNumMethods>
     <CLOCK_DRV_Init>true</CLOCK_DRV_Init>
@@ -539,14 +660,56 @@
     <ExtraFile0>SDK\platform\drivers\inc\interrupt_manager.h</ExtraFile0>
     <ExtraFile1>SDK\platform\drivers\src\interrupt\interrupt_manager_MPC57xx.c</ExtraFile1>
   </ComponentID_4>
-  <ComponentID_5>
+  <ComponentID_6>
+    <Generated>true</Generated>
+    <GenCompName>eMIOS_Pwm2</GenCompName>
+    <GenComponentVersion>SDK_S32_PA_11</GenComponentVersion>
+    <GenDriverVersion>01.00</GenDriverVersion>
+    <GenEventModule />
+    <HeaderAge>1357871586</HeaderAge>
+    <CodeAge>1357871586</CodeAge>
+    <AsemblAge>-1</AsemblAge>
+    <GenNumMethods>17</GenNumMethods>
+    <EMIOS_DRV_PWM_InitMode>true</EMIOS_DRV_PWM_InitMode>
+    <EMIOS_DRV_PWM_ForcePWMMatchLeadingEdge>true</EMIOS_DRV_PWM_ForcePWMMatchLeadingEdge>
+    <EMIOS_DRV_PWM_ForcePWMMatchTrailingEdge>true</EMIOS_DRV_PWM_ForcePWMMatchTrailingEdge>
+    <EMIOS_DRV_PWM_GetPeriod>true</EMIOS_DRV_PWM_GetPeriod>
+    <EMIOS_DRV_PWM_SetPeriod>true</EMIOS_DRV_PWM_SetPeriod>
+    <EMIOS_DRV_PWM_GetDutyCycle>true</EMIOS_DRV_PWM_GetDutyCycle>
+    <EMIOS_DRV_PWM_SetDutyCycle>true</EMIOS_DRV_PWM_SetDutyCycle>
+    <EMIOS_DRV_PWM_GetLeadingEdgePlacement>true</EMIOS_DRV_PWM_GetLeadingEdgePlacement>
+    <EMIOS_DRV_PWM_SetLeadingEdgePlacement>true</EMIOS_DRV_PWM_SetLeadingEdgePlacement>
+    <EMIOS_DRV_PWM_GetTrailingEdgePlacement>true</EMIOS_DRV_PWM_GetTrailingEdgePlacement>
+    <EMIOS_DRV_PWM_SetTrailingEdgePlacement>true</EMIOS_DRV_PWM_SetTrailingEdgePlacement>
+    <EMIOS_DRV_PWM_SetCenterAlignDeadTime>true</EMIOS_DRV_PWM_SetCenterAlignDeadTime>
+    <EMIOS_DRV_PWM_GetCenterAlignDeadTime>true</EMIOS_DRV_PWM_GetCenterAlignDeadTime>
+    <EMIOS_DRV_PWM_SetCenterAlignIdealDutyCycle>true</EMIOS_DRV_PWM_SetCenterAlignIdealDutyCycle>
+    <EMIOS_DRV_PWM_GetCenterAlignIdealDutyCycle>true</EMIOS_DRV_PWM_GetCenterAlignIdealDutyCycle>
+    <EMIOS_DRV_PWM_SetTriggerPlacement>true</EMIOS_DRV_PWM_SetTriggerPlacement>
+    <EMIOS_DRV_PWM_GetTriggerPlacement>true</EMIOS_DRV_PWM_GetTriggerPlacement>
+    <GenNumEvents>0</GenNumEvents>
+    <GenSmartUserChangesDetected_Header>false</GenSmartUserChangesDetected_Header>
+    <GenSmartUserChangesDetected_Code>false</GenSmartUserChangesDetected_Code>
+    <GenSmartUserChangesDetected_Asembl>false</GenSmartUserChangesDetected_Asembl>
+    <GenMethodPos>0</GenMethodPos>
+    <GenExtraFilesCount>8</GenExtraFilesCount>
+    <ExtraFile0>SDK\platform\drivers\inc\emios_pwm_driver.h</ExtraFile0>
+    <ExtraFile1>SDK\platform\drivers\inc\emios_mc_driver.h</ExtraFile1>
+    <ExtraFile2>SDK\platform\drivers\inc\emios_common.h</ExtraFile2>
+    <ExtraFile3>SDK\platform\drivers\src\emios\emios_mc_driver.c</ExtraFile3>
+    <ExtraFile4>SDK\platform\drivers\src\emios\emios_pwm_driver.c</ExtraFile4>
+    <ExtraFile5>SDK\platform\drivers\src\emios\emios_hw_access.h</ExtraFile5>
+    <ExtraFile6>SDK\platform\drivers\src\emios\emios_hw_access.c</ExtraFile6>
+    <ExtraFile7>SDK\platform\drivers\src\emios\emios_common.c</ExtraFile7>
+  </ComponentID_6>
+  <ComponentID_7>
     <Generated>true</Generated>
     <GenCompName>eMIOS_Mc2</GenCompName>
     <GenComponentVersion>SDK_S32_PA_11</GenComponentVersion>
     <GenDriverVersion>01.00</GenDriverVersion>
     <GenEventModule />
-    <HeaderAge>1357866612</HeaderAge>
-    <CodeAge>1357866293</CodeAge>
+    <HeaderAge>1357871586</HeaderAge>
+    <CodeAge>1357880039</CodeAge>
     <AsemblAge>-1</AsemblAge>
     <GenNumMethods>25</GenNumMethods>
     <EMIOS_DRV_InitGlobal>true</EMIOS_DRV_InitGlobal>
@@ -587,95 +750,185 @@
     <ExtraFile4>SDK\platform\drivers\src\emios\emios_hw_access.h</ExtraFile4>
     <ExtraFile5>SDK\platform\drivers\src\emios\emios_hw_access.c</ExtraFile5>
     <ExtraFile6>SDK\platform\drivers\src\emios\emios_common.c</ExtraFile6>
-  </ComponentID_5>
-  <ComponentID_6>
+  </ComponentID_7>
+  <ComponentID_8>
     <Generated>true</Generated>
-    <GenCompName>eMIOS_Pwm2</GenCompName>
+    <GenCompName>linflexd_uart1</GenCompName>
     <GenComponentVersion>SDK_S32_PA_11</GenComponentVersion>
     <GenDriverVersion>01.00</GenDriverVersion>
     <GenEventModule />
-    <HeaderAge>1357867631</HeaderAge>
-    <CodeAge>1357867631</CodeAge>
+    <HeaderAge>1357880213</HeaderAge>
+    <CodeAge>1357880213</CodeAge>
     <AsemblAge>-1</AsemblAge>
     <GenNumMethods>17</GenNumMethods>
-    <EMIOS_DRV_PWM_InitMode>true</EMIOS_DRV_PWM_InitMode>
-    <EMIOS_DRV_PWM_ForcePWMMatchLeadingEdge>true</EMIOS_DRV_PWM_ForcePWMMatchLeadingEdge>
-    <EMIOS_DRV_PWM_ForcePWMMatchTrailingEdge>true</EMIOS_DRV_PWM_ForcePWMMatchTrailingEdge>
-    <EMIOS_DRV_PWM_GetPeriod>true</EMIOS_DRV_PWM_GetPeriod>
-    <EMIOS_DRV_PWM_SetPeriod>true</EMIOS_DRV_PWM_SetPeriod>
-    <EMIOS_DRV_PWM_GetDutyCycle>true</EMIOS_DRV_PWM_GetDutyCycle>
-    <EMIOS_DRV_PWM_SetDutyCycle>true</EMIOS_DRV_PWM_SetDutyCycle>
-    <EMIOS_DRV_PWM_GetLeadingEdgePlacement>true</EMIOS_DRV_PWM_GetLeadingEdgePlacement>
-    <EMIOS_DRV_PWM_SetLeadingEdgePlacement>true</EMIOS_DRV_PWM_SetLeadingEdgePlacement>
-    <EMIOS_DRV_PWM_GetTrailingEdgePlacement>true</EMIOS_DRV_PWM_GetTrailingEdgePlacement>
-    <EMIOS_DRV_PWM_SetTrailingEdgePlacement>true</EMIOS_DRV_PWM_SetTrailingEdgePlacement>
-    <EMIOS_DRV_PWM_SetCenterAlignDeadTime>true</EMIOS_DRV_PWM_SetCenterAlignDeadTime>
-    <EMIOS_DRV_PWM_GetCenterAlignDeadTime>true</EMIOS_DRV_PWM_GetCenterAlignDeadTime>
-    <EMIOS_DRV_PWM_SetCenterAlignIdealDutyCycle>true</EMIOS_DRV_PWM_SetCenterAlignIdealDutyCycle>
-    <EMIOS_DRV_PWM_GetCenterAlignIdealDutyCycle>true</EMIOS_DRV_PWM_GetCenterAlignIdealDutyCycle>
-    <EMIOS_DRV_PWM_SetTriggerPlacement>true</EMIOS_DRV_PWM_SetTriggerPlacement>
-    <EMIOS_DRV_PWM_GetTriggerPlacement>true</EMIOS_DRV_PWM_GetTriggerPlacement>
+    <LINFLEXD_UART_DRV_SetBaudRate>true</LINFLEXD_UART_DRV_SetBaudRate>
+    <LINFLEXD_UART_DRV_GetBaudRate>true</LINFLEXD_UART_DRV_GetBaudRate>
+    <LINFLEXD_UART_DRV_Init>true</LINFLEXD_UART_DRV_Init>
+    <LINFLEXD_UART_DRV_Deinit>true</LINFLEXD_UART_DRV_Deinit>
+    <LINFLEXD_UART_DRV_InstallRxCallback>true</LINFLEXD_UART_DRV_InstallRxCallback>
+    <LINFLEXD_UART_DRV_InstallTxCallback>true</LINFLEXD_UART_DRV_InstallTxCallback>
+    <LINFLEXD_UART_DRV_InstallErrorCallback>true</LINFLEXD_UART_DRV_InstallErrorCallback>
+    <LINFLEXD_UART_DRV_SendDataBlocking>true</LINFLEXD_UART_DRV_SendDataBlocking>
+    <LINFLEXD_UART_DRV_SendData>true</LINFLEXD_UART_DRV_SendData>
+    <LINFLEXD_UART_DRV_GetTransmitStatus>true</LINFLEXD_UART_DRV_GetTransmitStatus>
+    <LINFLEXD_UART_DRV_AbortSendingData>true</LINFLEXD_UART_DRV_AbortSendingData>
+    <LINFLEXD_UART_DRV_ReceiveDataBlocking>true</LINFLEXD_UART_DRV_ReceiveDataBlocking>
+    <LINFLEXD_UART_DRV_ReceiveData>true</LINFLEXD_UART_DRV_ReceiveData>
+    <LINFLEXD_UART_DRV_GetReceiveStatus>true</LINFLEXD_UART_DRV_GetReceiveStatus>
+    <LINFLEXD_UART_DRV_AbortReceivingData>true</LINFLEXD_UART_DRV_AbortReceivingData>
+    <LINFLEXD_UART_DRV_SetTxBuffer>true</LINFLEXD_UART_DRV_SetTxBuffer>
+    <LINFLEXD_UART_DRV_SetRxBuffer>true</LINFLEXD_UART_DRV_SetRxBuffer>
     <GenNumEvents>0</GenNumEvents>
     <GenSmartUserChangesDetected_Header>false</GenSmartUserChangesDetected_Header>
     <GenSmartUserChangesDetected_Code>false</GenSmartUserChangesDetected_Code>
     <GenSmartUserChangesDetected_Asembl>false</GenSmartUserChangesDetected_Asembl>
     <GenMethodPos>0</GenMethodPos>
-    <GenExtraFilesCount>8</GenExtraFilesCount>
-    <ExtraFile0>SDK\platform\drivers\inc\emios_pwm_driver.h</ExtraFile0>
-    <ExtraFile1>SDK\platform\drivers\inc\emios_mc_driver.h</ExtraFile1>
-    <ExtraFile2>SDK\platform\drivers\inc\emios_common.h</ExtraFile2>
-    <ExtraFile3>SDK\platform\drivers\src\emios\emios_mc_driver.c</ExtraFile3>
-    <ExtraFile4>SDK\platform\drivers\src\emios\emios_pwm_driver.c</ExtraFile4>
-    <ExtraFile5>SDK\platform\drivers\src\emios\emios_hw_access.h</ExtraFile5>
-    <ExtraFile6>SDK\platform\drivers\src\emios\emios_hw_access.c</ExtraFile6>
-    <ExtraFile7>SDK\platform\drivers\src\emios\emios_common.c</ExtraFile7>
-  </ComponentID_6>
+    <GenExtraFilesCount>5</GenExtraFilesCount>
+    <ExtraFile0>SDK\platform\drivers\src\linflexd\linflexd_uart_irq.h</ExtraFile0>
+    <ExtraFile1>SDK\platform\drivers\src\linflexd\linflexd_hw_access.h</ExtraFile1>
+    <ExtraFile2>SDK\platform\drivers\inc\linflexd_uart_driver.h</ExtraFile2>
+    <ExtraFile3>SDK\platform\drivers\src\linflexd\linflexd_uart_irq.c</ExtraFile3>
+    <ExtraFile4>SDK\platform\drivers\src\linflexd\linflexd_uart_driver.c</ExtraFile4>
+  </ComponentID_8>
+  <ComponentID_9>
+    <Generated>true</Generated>
+    <GenCompName>dmaController1</GenCompName>
+    <GenComponentVersion>SDK_S32_PA_11</GenComponentVersion>
+    <GenDriverVersion>01.00</GenDriverVersion>
+    <GenEventModule />
+    <HeaderAge>1357880213</HeaderAge>
+    <CodeAge>1357880213</CodeAge>
+    <AsemblAge>-1</AsemblAge>
+    <GenNumMethods>32</GenNumMethods>
+    <EDMA_DRV_Init>true</EDMA_DRV_Init>
+    <EDMA_DRV_Deinit>true</EDMA_DRV_Deinit>
+    <EDMA_DRV_ChannelInit>true</EDMA_DRV_ChannelInit>
+    <EDMA_DRV_ReleaseChannel>true</EDMA_DRV_ReleaseChannel>
+    <EDMA_DRV_StartChannel>true</EDMA_DRV_StartChannel>
+    <EDMA_DRV_StopChannel>true</EDMA_DRV_StopChannel>
+    <EDMA_DRV_InstallCallback>true</EDMA_DRV_InstallCallback>
+    <EDMA_DRV_GetChannelStatus>true</EDMA_DRV_GetChannelStatus>
+    <EDMA_DRV_PushConfigToReg>true</EDMA_DRV_PushConfigToReg>
+    <EDMA_DRV_PushConfigToSTCD>true</EDMA_DRV_PushConfigToSTCD>
+    <EDMA_DRV_ConfigSingleBlockTransfer>true</EDMA_DRV_ConfigSingleBlockTransfer>
+    <EDMA_DRV_ConfigLoopTransfer>true</EDMA_DRV_ConfigLoopTransfer>
+    <EDMA_DRV_ConfigScatterGatherTransfer>true</EDMA_DRV_ConfigScatterGatherTransfer>
+    <EDMA_DRV_ConfigMultiBlockTransfer>true</EDMA_DRV_ConfigMultiBlockTransfer>
+    <EDMA_DRV_CancelTransfer>true</EDMA_DRV_CancelTransfer>
+    <EDMA_DRV_SetChannelRequestAndTrigger>true</EDMA_DRV_SetChannelRequestAndTrigger>
+    <EDMA_DRV_ClearTCD>true</EDMA_DRV_ClearTCD>
+    <EDMA_DRV_SetSrcAddr>true</EDMA_DRV_SetSrcAddr>
+    <EDMA_DRV_SetSrcOffset>true</EDMA_DRV_SetSrcOffset>
+    <EDMA_DRV_SetSrcReadChunkSize>true</EDMA_DRV_SetSrcReadChunkSize>
+    <EDMA_DRV_SetDestAddr>true</EDMA_DRV_SetDestAddr>
+    <EDMA_DRV_SetDestOffset>true</EDMA_DRV_SetDestOffset>
+    <EDMA_DRV_SetDestWriteChunkSize>true</EDMA_DRV_SetDestWriteChunkSize>
+    <EDMA_DRV_SetMinorLoopBlockSize>true</EDMA_DRV_SetMinorLoopBlockSize>
+    <EDMA_DRV_SetMajorLoopIterationCount>true</EDMA_DRV_SetMajorLoopIterationCount>
+    <EDMA_DRV_GetRemainingMajorIterationsCount>true</EDMA_DRV_GetRemainingMajorIterationsCount>
+    <EDMA_DRV_SetScatterGatherLink>true</EDMA_DRV_SetScatterGatherLink>
+    <EDMA_DRV_DisableRequestsOnTransferComplete>true</EDMA_DRV_DisableRequestsOnTransferComplete>
+    <EDMA_DRV_SetSrcLastAddrAdjustment>true</EDMA_DRV_SetSrcLastAddrAdjustment>
+    <EDMA_DRV_SetDestLastAddrAdjustment>true</EDMA_DRV_SetDestLastAddrAdjustment>
+    <EDMA_DRV_ConfigureInterrupt>true</EDMA_DRV_ConfigureInterrupt>
+    <EDMA_DRV_TriggerSwRequest>true</EDMA_DRV_TriggerSwRequest>
+    <GenNumEvents>0</GenNumEvents>
+    <GenSmartUserChangesDetected_Header>false</GenSmartUserChangesDetected_Header>
+    <GenSmartUserChangesDetected_Code>false</GenSmartUserChangesDetected_Code>
+    <GenSmartUserChangesDetected_Asembl>false</GenSmartUserChangesDetected_Asembl>
+    <GenMethodPos>0</GenMethodPos>
+    <GenExtraFilesCount>6</GenExtraFilesCount>
+    <ExtraFile0>SDK\platform\drivers\inc\edma_driver.h</ExtraFile0>
+    <ExtraFile1>SDK\platform\drivers\src\edma\edma_irq.h</ExtraFile1>
+    <ExtraFile2>SDK\platform\drivers\src\edma\edma_hw_access.h</ExtraFile2>
+    <ExtraFile3>SDK\platform\drivers\src\edma\edma_irq.c</ExtraFile3>
+    <ExtraFile4>SDK\platform\drivers\src\edma\edma_hw_access.c</ExtraFile4>
+    <ExtraFile5>SDK\platform\drivers\src\edma\edma_driver.c</ExtraFile5>
+  </ComponentID_9>
+  <ComponentID_11>
+    <Generated>true</Generated>
+    <GenCompName>osif1</GenCompName>
+    <GenComponentVersion>SDK_S32_PA_11</GenComponentVersion>
+    <GenDriverVersion>01.00</GenDriverVersion>
+    <GenEventModule />
+    <HeaderAge>-1</HeaderAge>
+    <CodeAge>-1</CodeAge>
+    <AsemblAge>-1</AsemblAge>
+    <GenNumMethods>10</GenNumMethods>
+    <OSIF_TimeDelay>true</OSIF_TimeDelay>
+    <OSIF_MutexLock>true</OSIF_MutexLock>
+    <OSIF_MutexUnlock>true</OSIF_MutexUnlock>
+    <OSIF_MutexCreate>true</OSIF_MutexCreate>
+    <OSIF_MutexDestroy>true</OSIF_MutexDestroy>
+    <OSIF_SemaWait>true</OSIF_SemaWait>
+    <OSIF_SemaPost>true</OSIF_SemaPost>
+    <OSIF_SemaCreate>true</OSIF_SemaCreate>
+    <OSIF_SemaDestroy>true</OSIF_SemaDestroy>
+    <OSIF_GetMilliseconds>true</OSIF_GetMilliseconds>
+    <GenNumEvents>0</GenNumEvents>
+    <GenSmartUserChangesDetected_Header>false</GenSmartUserChangesDetected_Header>
+    <GenSmartUserChangesDetected_Code>false</GenSmartUserChangesDetected_Code>
+    <GenSmartUserChangesDetected_Asembl>false</GenSmartUserChangesDetected_Asembl>
+    <GenMethodPos>0</GenMethodPos>
+    <GenExtraFilesCount>2</GenExtraFilesCount>
+    <ExtraFile0>SDK\rtos\osif\osif_baremetal.c</ExtraFile0>
+    <ExtraFile1>SDK\rtos\osif\osif.h</ExtraFile1>
+  </ComponentID_11>
   <UsedSrcFiles>
     <SrcFile0>Drivers\C55\StaticSdk_C55.drv=1333501368</SrcFile0>
     <SrcFile1>Drivers\interrupt_manager.src=-1</SrcFile1>
     <SrcFile2>Drivers\C55\S32_SDK_C55\emios_mc.drv=-1</SrcFile2>
-    <SrcFile3>Drivers\C55\StaticSdk_C55_V4.drv=1333501368</SrcFile3>
-    <SrcFile4>Drivers\C55\S32_SDK_C55\emios_pwm_code.drv=-1</SrcFile4>
+    <SrcFile3>Drivers\osifcommon\osif.drv=-1</SrcFile3>
+    <SrcFile4>Drivers\C55\StaticSdk_C55_V4.drv=1333501368</SrcFile4>
     <SrcFile5>Drivers\C55\PinSettings_MPC5748G_324.prg=-1</SrcFile5>
-    <SrcFile6>Drivers\Common\Header.h=1333501368</SrcFile6>
-    <SrcFile7>Drivers\C55\HAL_Port_Bridge_V2.prg=1333501368</SrcFile7>
-    <SrcFile8>Beans\_SDK\SdkOptions.chg=1333501212</SrcFile8>
-    <SrcFile9>Drivers\sw\RTOSAdaptor\Common_RTOSAdaptor.prg=1322821159</SrcFile9>
-    <SrcFile10>Drivers\emios_pwm.src=-1</SrcFile10>
-    <SrcFile11>Drivers\Common\EBGNSupport\StringLib.prg=1333501368</SrcFile11>
-    <SrcFile12>Drivers\Common\Header.c=1333501368</SrcFile12>
-    <SrcFile13>Drivers\sw\RTOSAdaptor\Default_RTOSAdaptor.prg=1322821159</SrcFile13>
-    <SrcFile14>Drivers\PEx_C55.src=1333501368</SrcFile14>
-    <SrcFile15>Drivers\Common\HeaderFreescale.C=1333501368</SrcFile15>
-    <SrcFile16>Drivers\Common\RTOSAdaptor.prg=1333501368</SrcFile16>
-    <SrcFile17>Drivers\Common\WriteBlock_NotRst.prg=1333501368</SrcFile17>
-    <SrcFile18>Drivers\C55\S32_SDK_C55\interrupt_manager.drv=-1</SrcFile18>
-    <SrcFile19>Drivers\sw\PinSettings.drv=-1</SrcFile19>
-    <SrcFile20>Drivers\Common\Header.doxy=1322821159</SrcFile20>
-    <SrcFile21>Drivers\Common\GenInitConfigSequence.prg=1333501368</SrcFile21>
-    <SrcFile22>Drivers\Common\C55Abstract.inc=1333501368</SrcFile22>
-    <SrcFile23>Drivers\Common\C55Settings.inc=1333501368</SrcFile23>
-    <SrcFile24>Drivers\Common\InitRegBlock.prg=1333501368</SrcFile24>
-    <SrcFile25>Drivers\PinSettings.src=-1</SrcFile25>
-    <SrcFile26>Drivers\Common\PinSettingsAbstract.inc=-1</SrcFile26>
-    <SrcFile27>Drivers\Common\CoreInfo.inc=1333501368</SrcFile27>
-    <SrcFile28>Drivers\C55\S32_SDK_C55\emios_mc_code.drv=-1</SrcFile28>
-    <SrcFile29>Drivers\Common\InitReg32Block.prg=1333501368</SrcFile29>
-    <SrcFile30>Drivers\C55\C55_Repository\HAL_Port_Bridge.prg=1333501368</SrcFile30>
-    <SrcFile31>Drivers\Common\Static_SupportSubroutines.prg=1333501368</SrcFile31>
-    <SrcFile32>Drivers\Common\ToolChain_Settings.prg=1333501368</SrcFile32>
-    <SrcFile33>Drivers\C55\S32_SDK_C55\clock_manager.drv=-1</SrcFile33>
-    <SrcFile34>Drivers\emios_mc.src=-1</SrcFile34>
-    <SrcFile35>Drivers\C55\C55_Repository\StaticSdk_C55.prg=1333501368</SrcFile35>
-    <SrcFile36>Drivers\Common\HeaderCopyright.inc=1333501368</SrcFile36>
-    <SrcFile37>Drivers\C55\S32_SDK_C55\clock_manager_code.drv=-1</SrcFile37>
-    <SrcFile38>Drivers\GlobalConfigFiles.drv=1333501368</SrcFile38>
-    <SrcFile39>Drivers\Common\HeaderFreescale.h=1333501368</SrcFile39>
-    <SrcFile40>Drivers\Common\Header.end=1333501368</SrcFile40>
-    <SrcFile41>Drivers\clock_manager.src=-1</SrcFile41>
-    <SrcFile42>Drivers\Common\EBGNSupport\TimingLib.prg=1333501368</SrcFile42>
-    <SrcFile43>Drivers\Common\InitReg16Block.prg=1333501368</SrcFile43>
-    <SrcFile44>Drivers\C55\S32_SDK_C55\emios_pwm.drv=-1</SrcFile44>
+    <SrcFile6>Beans\_SDK\SdkOptions.chg=1333501212</SrcFile6>
+    <SrcFile7>Drivers\Common\EBGNSupport\StringLib.prg=1333501368</SrcFile7>
+    <SrcFile8>Drivers\linflexd_uart.src=-1</SrcFile8>
+    <SrcFile9>Drivers\PEx_C55.src=1333501368</SrcFile9>
+    <SrcFile10>Drivers\Common\HeaderFreescale.C=1333501368</SrcFile10>
+    <SrcFile11>Drivers\S32_SDK_LINFLEXD_UART_DMA\linflexd_uart.drv=-1</SrcFile11>
+    <SrcFile12>Drivers\Common\RTOSAdaptor.prg=1333501368</SrcFile12>
+    <SrcFile13>Drivers\C55\S32_SDK_C55\interrupt_manager.drv=-1</SrcFile13>
+    <SrcFile14>Drivers\sw\PinSettings.drv=-1</SrcFile14>
+    <SrcFile15>Drivers\Common\Header.doxy=1322821159</SrcFile15>
+    <SrcFile16>Drivers\Common\GenInitConfigSequence.prg=1333501368</SrcFile16>
+    <SrcFile17>Drivers\Common\C55Abstract.inc=1333501368</SrcFile17>
+    <SrcFile18>Drivers\Common\C55Settings.inc=1333501368</SrcFile18>
+    <SrcFile19>Drivers\S32_SDK_DMA_32CH\edma_code.drv=-1</SrcFile19>
+    <SrcFile20>Drivers\PinSettings.src=-1</SrcFile20>
+    <SrcFile21>Drivers\Common\PinSettingsAbstract.inc=-1</SrcFile21>
+    <SrcFile22>Drivers\Common\CoreInfo.inc=1333501368</SrcFile22>
+    <SrcFile23>Drivers\C55\S32_SDK_C55\emios_mc_code.drv=-1</SrcFile23>
+    <SrcFile24>Drivers\S32_SDK_LINFLEXD_UART_DMA\linflexd_uart_code.drv=-1</SrcFile24>
+    <SrcFile25>Drivers\Common\InitReg32Block.prg=1333501368</SrcFile25>
+    <SrcFile26>Drivers\C55\C55_Repository\HAL_Port_Bridge.prg=1333501368</SrcFile26>
+    <SrcFile27>Drivers\Common\ToolChain_Settings.prg=1333501368</SrcFile27>
+    <SrcFile28>Drivers\C55\S32_SDK_C55\clock_manager.drv=-1</SrcFile28>
+    <SrcFile29>Drivers\C55\C55_Repository\StaticSdk_C55.prg=1333501368</SrcFile29>
+    <SrcFile30>Drivers\Common\linflexd_uart_Abstract.inc=-1</SrcFile30>
+    <SrcFile31>Drivers\C55\S32_SDK_C55\clock_manager_code.drv=-1</SrcFile31>
+    <SrcFile32>Drivers\Common\HeaderFreescale.h=1333501368</SrcFile32>
+    <SrcFile33>Drivers\Common\EBGNSupport\TimingLib.prg=1333501368</SrcFile33>
+    <SrcFile34>Drivers\C55\S32_SDK_C55\emios_pwm.drv=-1</SrcFile34>
+    <SrcFile35>Drivers\C55\S32_SDK_C55\emios_pwm_code.drv=-1</SrcFile35>
+    <SrcFile36>Drivers\Common\Header.h=1333501368</SrcFile36>
+    <SrcFile37>Drivers\C55\HAL_Port_Bridge_V2.prg=1333501368</SrcFile37>
+    <SrcFile38>Drivers\sw\RTOSAdaptor\Common_RTOSAdaptor.prg=1322821159</SrcFile38>
+    <SrcFile39>Drivers\emios_pwm.src=-1</SrcFile39>
+    <SrcFile40>Drivers\Common\Header.c=1333501368</SrcFile40>
+    <SrcFile41>Drivers\osif.src=-1</SrcFile41>
+    <SrcFile42>Drivers\sw\RTOSAdaptor\Default_RTOSAdaptor.prg=1322821159</SrcFile42>
+    <SrcFile43>Drivers\Common\WriteBlock_NotRst.prg=1333501368</SrcFile43>
+    <SrcFile44>Drivers\Common\InitRegBlock.prg=1333501368</SrcFile44>
+    <SrcFile45>Drivers\Common\Static_SupportSubroutines.prg=1333501368</SrcFile45>
+    <SrcFile46>Drivers\emios_mc.src=-1</SrcFile46>
+    <SrcFile47>Drivers\edma.src=-1</SrcFile47>
+    <SrcFile48>Drivers\S32_SDK_DMA_32CH\edma.drv=-1</SrcFile48>
+    <SrcFile49>Drivers\Common\HeaderCopyright.inc=1333501368</SrcFile49>
+    <SrcFile50>Drivers\GlobalConfigFiles.drv=1333501368</SrcFile50>
+    <SrcFile51>Drivers\Common\Header.end=1333501368</SrcFile51>
+    <SrcFile52>Drivers\clock_manager.src=-1</SrcFile52>
+    <SrcFile53>Drivers\Common\InitReg16Block.prg=1333501368</SrcFile53>
   </UsedSrcFiles>
 </GenerationInfo_G_C>
 

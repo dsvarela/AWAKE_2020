@@ -1,4 +1,4 @@
-com.nxp.s32ds.cle.runtime.component.registry.archetype.id=application
+com.nxp.s32ds.cle.runtime.component.registry.archetype.id=
 com.nxp.s32ds.cle.runtime.component.registry.archetype.platform.id=
 com.nxp.s32ds.cle.runtime.hardware.registry.core.id=Z4
 com.nxp.s32ds.cle.runtime.hardware.registry.device.id=MPC5748G

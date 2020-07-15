@@ -72,11 +72,10 @@
       <EmptySection_DummyValue />
     </Events>
   </Bean>
-  <Bean name="eMIOS_Mc2" type="emios_mc">
+  <Bean name="eMIOS_Pwm2" type="emios_pwm">
     <Enabled v="Y" />
     <Properties>
-      <Component_name v="eMIOS_Mc2" />
-      <Device v="eMIOS_0" />
+      <Component_name v="eMIOS_Pwm2" />
       <Component_version v="S32_SDK_C55" />
     </Properties>
     <Methods>
@@ -86,10 +85,11 @@
       <EmptySection_DummyValue />
     </Events>
   </Bean>
-  <Bean name="eMIOS_Pwm2" type="emios_pwm">
+  <Bean name="eMIOS_Mc2" type="emios_mc">
     <Enabled v="Y" />
     <Properties>
-      <Component_name v="eMIOS_Pwm2" />
+      <Component_name v="eMIOS_Mc2" />
+      <Device v="eMIOS_2" />
       <Component_version v="S32_SDK_C55" />
     </Properties>
     <Methods>

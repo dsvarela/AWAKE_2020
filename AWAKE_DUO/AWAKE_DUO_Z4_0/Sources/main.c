@@ -39,7 +39,6 @@
  */
 /* MODULE main */
 
-
 /* Including necessary module. Cpu.h contains other modules needed for compiling.*/
 #include "Cpu.h"
 
@@ -53,54 +52,66 @@ volatile int exit_code = 0;
 #include <stdio.h>
 #include <stdlib.h>
 
-void sysInit(void)
-{
+//Values at the memory addresses where the status of each eMIOS channel is stored
+#define J13_4_status *(__IO*)0xffc3c290 //eMIOS 2, Channel 19
+#define J13_6_status *(__IO*)0xffc3c3f0 //eMIOS 2, Channel 30
+#define J13_8_status *(__IO*)0xffc381f0 //eMIOS 0, Channel 14
+#define J13_10_status *(__IO*)0xffc382f0 //eMIOS 0, Channel 22
+#define J13_14_status *(__IO*)0xffc3c210 //eMIOS 2, Channel 15
+#define J13_16_status *(__IO*)0xffc3c1f0 //eMIOS 2, Channel 14
+
+void print(const char *sourceStr){
+	uint32_t bytesRemaining = 0U;
+	/* Send data via LINFLEXD */
+	LINFLEXD_UART_DRV_SendData(INST_LINFLEXD_UART1,(uint8_t *) sourceStr, strlen(sourceStr));
+	while(LINFLEXD_UART_DRV_GetTransmitStatus(INST_LINFLEXD_UART1,&bytesRemaining) != STATUS_SUCCESS){}
+}
+
+void sysInit(void) {
 	/* Initialize and configure pins */
 	PINS_DRV_Init(NUM_OF_CONFIGURED_PINS, g_pin_mux_InitConfigArr);
 
 	/* Initialize clocks */
-	CLOCK_SYS_Init(g_clockManConfigsArr,   CLOCK_MANAGER_CONFIG_CNT,
+	CLOCK_SYS_Init(g_clockManConfigsArr, CLOCK_MANAGER_CONFIG_CNT,
 			g_clockManCallbacksArr, CLOCK_MANAGER_CALLBACK_CNT);
 	CLOCK_SYS_UpdateConfiguration(0U, CLOCK_MANAGER_POLICY_AGREEMENT);
 
 	/* Initialize LINFlexD module for UART usage */
-	//LINFLEXD_UART_DRV_Init(INST_LINFLEXD_UART1, &linflexd_uart1_State, &linflexd_uart1_InitConfig0);
+	LINFLEXD_UART_DRV_Init(INST_LINFLEXD_UART1, &linflexd_uart1_State, &linflexd_uart1_InitConfig0);
 
 	EMIOS_DRV_InitGlobal(INST_EMIOS_MC2, &eMIOS_Mc2_InitConfig0);
-	EMIOS_DRV_MC_InitCounterMode(INST_EMIOS_MC2, EMIOS_CNT_BUSA_DRIVEN, &eMIOS_Mc2_CntChnConfig0);
-	EMIOS_DRV_PWM_InitMode(INST_EMIOS_MC2, EMIOS_PWM2_CHANNEL20, &eMIOS_Pwm2_PWMChnConfig0);
+	EMIOS_DRV_MC_InitCounterMode(INST_EMIOS_MC2, EMIOS_CNT_BUSA_DRIVEN,
+			&eMIOS_Mc2_CntChnConfig0);
+	EMIOS_DRV_PWM_InitMode(INST_EMIOS_MC2, EMIOS_PWM2_CHANNEL20,
+			&eMIOS_Pwm2_PWMChnConfig0);
 	EMIOS_DRV_PWM_InitMode(INST_EMIOS_MC2, 24, &eMIOS_Pwm2_PWMChnConfig0);
 
 	EMIOS_DRV_EnableGlobalEmios(INST_EMIOS_MC2);
 }
 
 /*! 
-  \brief The main function for the project.
-  \details The startup initialization sequence is the following:
+ \brief The main function for the project.
+ \details The startup initialization sequence is the following:
  * - startup asm routine
  * - main()
  */
-int main(void)
-{
+int main(void) {
 	/* Write your local variable definition here */
 
 	/*** Processor Expert internal initialization. DON'T REMOVE THIS CODE!!! ***/
 #ifdef PEX_RTOS_INIT
-	PEX_RTOS_INIT();                   /* Initialization of the selected RTOS. Macro is defined by the RTOS component. */
+	PEX_RTOS_INIT(); /* Initialization of the selected RTOS. Macro is defined by the RTOS component. */
 #endif
 	/*** End of Processor Expert internal initialization.                    ***/
 
 	sysInit();
 
-	char buff1[5] = {0,};
-	int retValue1 = 0;
-	for(;;){
-		retValue1 = 2;
-		/* Capture value in interrupt */
-		retValue1 = EMIOS_DRV_ReadOutputPinState(INST_EMIOS_MC2, EMIOS_PWM2_CHANNEL20);
-		sprintf(buff1, "%d", retValue1);
-		retValue1 = EMIOS_DRV_ReadOutputPinState(INST_EMIOS_MC2, 24);
-		sprintf(buff1, "%d", retValue1);
+	char buff1[5] = { 0, };
+	__IO * J13_2_status = 0xffc3c2b0; //eMIOS 2, Channel 20
+	for (;;) {
+		//retValue1 = EMIOS_DRV_ReadOutputPinState(INST_EMIOS_MC2, 24);
+		sprintf(buff1, "%d", * J13_2_status);
+		print(buff1);
 	}
 	/*** Don't write any code pass this line, or it will be deleted during code generation. ***/
   /*** RTOS startup code. Macro PEX_RTOS_START is defined by the RTOS component. DON'T MODIFY THIS CODE!!! ***/

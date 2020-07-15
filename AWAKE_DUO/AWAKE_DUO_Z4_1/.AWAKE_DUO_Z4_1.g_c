@@ -2,7 +2,7 @@
 <GenerationInfo_G_C>
   <Options>
     <ProjectName>AWAKE_DUO_Z4_1</ProjectName>
-    <ProjectDirectory>C:\Users\Work\workspaceS32DS.Power.2.1\3.AWAKE\AWAKE_DUO\AWAKE_DUO_Z4_1\</ProjectDirectory>
+    <ProjectDirectory>C:\Users\Public\S32DS_NXP_Workspace\AWAKE_DUO\AWAKE_DUO_Z4_1\</ProjectDirectory>
     <ProjectMainModuleName>main</ProjectMainModuleName>
     <DestEventsDirectory>Sources\</DestEventsDirectory>
     <DestDriversSubDirectory>..\Generated_Code\</DestDriversSubDirectory>
@@ -321,8 +321,8 @@
     <GenComponentVersion>01.197</GenComponentVersion>
     <GenDriverVersion>01.00</GenDriverVersion>
     <GenEventModule>Events</GenEventModule>
-    <HeaderAge>1357865382</HeaderAge>
-    <CodeAge>1357865382</CodeAge>
+    <HeaderAge>1357871586</HeaderAge>
+    <CodeAge>1357871586</CodeAge>
     <AsemblAge>-1</AsemblAge>
     <GenNumMethods>3</GenNumMethods>
     <SystemInit>true</SystemInit>
@@ -359,8 +359,8 @@
     <GenComponentVersion>1.2.0</GenComponentVersion>
     <GenDriverVersion>1.4</GenDriverVersion>
     <GenEventModule />
-    <HeaderAge>1357865382</HeaderAge>
-    <CodeAge>1357865382</CodeAge>
+    <HeaderAge>1357871586</HeaderAge>
+    <CodeAge>1357871586</CodeAge>
     <AsemblAge>-1</AsemblAge>
     <GenNumMethods>17</GenNumMethods>
     <PINS_DRV_Init>true</PINS_DRV_Init>
@@ -398,8 +398,8 @@
     <GenComponentVersion>SDK_S32_PA_11</GenComponentVersion>
     <GenDriverVersion>01.00</GenDriverVersion>
     <GenEventModule />
-    <HeaderAge>1357865382</HeaderAge>
-    <CodeAge>1357865382</CodeAge>
+    <HeaderAge>1357871586</HeaderAge>
+    <CodeAge>1357871586</CodeAge>
     <AsemblAge>-1</AsemblAge>
     <GenNumMethods>2</GenNumMethods>
     <CLOCK_DRV_Init>true</CLOCK_DRV_Init>
