@@ -7,7 +7,7 @@
 **     Version     : Component 1.2.0, Driver 1.4, CPU db: 3.00.000
 **     Repository  : SDK_S32_PA_11
 **     Compiler    : GNU C Compiler
-**     Date/Time   : 2020-06-24, 22:21, # CodeGen: 11
+**     Date/Time   : 2020-07-15, 12:04, # CodeGen: 19
 **     Abstract    :
 **
 **
@@ -132,36 +132,6 @@ pin_settings_config_t g_pin_mux_InitConfigArr[NUM_OF_CONFIGURED_PINS] =
     },
     {
         .base              = SIUL2,
-        .pinPortIdx        = 10u,
-        .mux               = PORT_MUX_AS_GPIO,
-        .outputBuffer      = PORT_OUTPUT_BUFFER_ENABLED,
-        .openDrain         = PORT_OPEN_DRAIN_DISABLED,
-        .slewRateCtrlSel   = HALF_STRENGTH_WITH_SLEWRATE_CONTROL,
-        .hysteresisSelect  = PORT_HYSTERESYS_DISABLED,
-        .safeMode          = PORT_SAFE_MODE_DISABLED,
-        .analogPadCtrlSel  = PORT_ANALOG_PAD_CONTROL_DISABLED,
-        .inputBuffer       = PORT_INPUT_BUFFER_DISABLED,
-        .pullConfig        = PORT_INTERNAL_PULL_NOT_ENABLED,
-        .gpioBase          = PTA,
-        .initValue         = 0u,
-    },
-    {
-        .base              = SIUL2,
-        .pinPortIdx        = 7u,
-        .mux               = PORT_MUX_AS_GPIO,
-        .outputBuffer      = PORT_OUTPUT_BUFFER_ENABLED,
-        .openDrain         = PORT_OPEN_DRAIN_DISABLED,
-        .slewRateCtrlSel   = HALF_STRENGTH_WITH_SLEWRATE_CONTROL,
-        .hysteresisSelect  = PORT_HYSTERESYS_DISABLED,
-        .safeMode          = PORT_SAFE_MODE_DISABLED,
-        .analogPadCtrlSel  = PORT_ANALOG_PAD_CONTROL_DISABLED,
-        .inputBuffer       = PORT_INPUT_BUFFER_DISABLED,
-        .pullConfig        = PORT_INTERNAL_PULL_NOT_ENABLED,
-        .gpioBase          = PTA,
-        .initValue         = 0u,
-    },
-    {
-        .base              = SIUL2,
         .pinPortIdx        = 135u,
         .mux               = PORT_MUX_ALT1,
         .outputBuffer      = PORT_OUTPUT_BUFFER_ENABLED,
@@ -203,21 +173,6 @@ pin_settings_config_t g_pin_mux_InitConfigArr[NUM_OF_CONFIGURED_PINS] =
     },
     {
         .base              = SIUL2,
-        .pinPortIdx        = 0u,
-        .mux               = PORT_MUX_AS_GPIO,
-        .outputBuffer      = PORT_OUTPUT_BUFFER_ENABLED,
-        .openDrain         = PORT_OPEN_DRAIN_DISABLED,
-        .slewRateCtrlSel   = HALF_STRENGTH_WITH_SLEWRATE_CONTROL,
-        .hysteresisSelect  = PORT_HYSTERESYS_DISABLED,
-        .safeMode          = PORT_SAFE_MODE_DISABLED,
-        .analogPadCtrlSel  = PORT_ANALOG_PAD_CONTROL_DISABLED,
-        .inputBuffer       = PORT_INPUT_BUFFER_DISABLED,
-        .pullConfig        = PORT_INTERNAL_PULL_NOT_ENABLED,
-        .gpioBase          = PTA,
-        .initValue         = 0u,
-    },
-    {
-        .base              = SIUL2,
         .pinPortIdx        = 84u,
         .mux               = PORT_MUX_ALT1,
         .outputBuffer      = PORT_OUTPUT_BUFFER_ENABLED,
@@ -243,21 +198,6 @@ pin_settings_config_t g_pin_mux_InitConfigArr[NUM_OF_CONFIGURED_PINS] =
         .inputBuffer       = PORT_INPUT_BUFFER_DISABLED,
         .pullConfig        = PORT_INTERNAL_PULL_NOT_ENABLED,
         .gpioBase          = PTF,
-    },
-    {
-        .base              = SIUL2,
-        .pinPortIdx        = 4u,
-        .mux               = PORT_MUX_AS_GPIO,
-        .outputBuffer      = PORT_OUTPUT_BUFFER_ENABLED,
-        .openDrain         = PORT_OPEN_DRAIN_DISABLED,
-        .slewRateCtrlSel   = HALF_STRENGTH_WITH_SLEWRATE_CONTROL,
-        .hysteresisSelect  = PORT_HYSTERESYS_DISABLED,
-        .safeMode          = PORT_SAFE_MODE_DISABLED,
-        .analogPadCtrlSel  = PORT_ANALOG_PAD_CONTROL_DISABLED,
-        .inputBuffer       = PORT_INPUT_BUFFER_DISABLED,
-        .pullConfig        = PORT_INTERNAL_PULL_NOT_ENABLED,
-        .gpioBase          = PTA,
-        .initValue         = 0u,
     },
     {
         .base              = SIUL2,

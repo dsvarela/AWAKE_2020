@@ -42,7 +42,7 @@
       <File Name="SDK/platform/drivers/inc/emios_oc_driver.h" FileDate="2020-06-15, 15:49:07" FileAge="1592232547086" FileType="1048576" CompNumb="11" />
       <File Name="SDK/platform/drivers/src/emios/emios_ic_driver.c" FileDate="1970-01-01, 00:59:59" FileAge="-1" FileType="1048576" />
       <File Name="SDK/platform/devices/startup.h" FileDate="2020-06-15, 15:49:08" FileAge="1592232548971" FileType="1048576" CompNumb="1" />
-      <File Name="Sources/main.c" FileDate="2020-06-29, 23:10:38" FileAge="1593468638029" FileType="128" />
+      <File Name="Sources/main.c" FileDate="2020-07-15, 12:28:43" FileAge="1594812523147" FileType="128" />
       <File Name="Generated_Code/linflexd_uart1.h" FileDate="2020-06-15, 15:49:09" FileAge="1592232549230" FileType="45637" CompNumb="12" />
       <File Name="SDK/platform/drivers/src/edma/edma_irq.h" FileDate="2020-06-15, 15:49:08" FileAge="1592232548176" FileType="1048576" CompNumb="13" />
       <File Name="SDK/platform/devices/startup.c" FileDate="2020-06-15, 15:49:08" FileAge="1592232548999" FileType="1048576" CompNumb="1" />
@@ -89,9 +89,9 @@
       <File Name="SDK/platform/drivers/src/edma/edma_hw_access.h" FileDate="2020-06-15, 15:49:08" FileAge="1592232548148" FileType="1048576" CompNumb="13" />
       <File Name="SDK/platform/drivers/src/edma/edma_hw_access.c" FileDate="2020-06-15, 15:49:08" FileAge="1592232548059" FileType="1048576" CompNumb="13" />
       <File Name="SDK/platform/devices/MPC5748G/startup/system_MPC5748G.h" FileDate="2020-06-15, 15:49:09" FileAge="1592232549022" FileType="1048576" CompNumb="1" />
-      <File Name="Generated_Code/pin_mux.h" FileDate="2020-06-24, 22:22:00" FileAge="1593033720775" FileType="45637" CompNumb="2" />
+      <File Name="Generated_Code/pin_mux.h" FileDate="2020-07-15, 12:04:41" FileAge="1594811081188" FileType="45637" CompNumb="2" />
       <File Name="SDK/platform/devices/MPC5748G/startup/system_MPC5748G.c" FileDate="2020-06-15, 15:49:09" FileAge="1592232549047" FileType="1048576" CompNumb="1" />
-      <File Name="Generated_Code/pin_mux.c" FileDate="2020-06-24, 22:22:00" FileAge="1593033720797" FileType="45637" CompNumb="2" />
+      <File Name="Generated_Code/pin_mux.c" FileDate="2020-07-15, 12:04:41" FileAge="1594811081204" FileType="45637" CompNumb="2" />
       <File Name="SDK/platform/drivers/src/clock/MPC57xx/cgmcs_hw_access.h" FileDate="2020-06-15, 15:49:05" FileAge="1592232545697" FileType="1048576" CompNumb="3" />
       <File Name="Generated_Code/Cpu.h" FileDate="2020-06-30, 00:43:58" FileAge="1593474238790" FileType="45637" CompNumb="1" />
       <File Name="Documentation/AWAKE_SINGLE_Z4_0.txt" FileDate="2020-06-30, 00:43:58" FileAge="1593474238913" FileType="3072" />
@@ -101,5 +101,5 @@
       <File Name="SDK/platform/drivers/src/clock/MPC57xx/cmu_hw_access.h" FileDate="2020-06-15, 15:49:06" FileAge="1592232546204" FileType="1048576" CompNumb="3" />
     </GeneratedByPE>
   </GeneratedFilesList>
-  <CodeGenReference>18</CodeGenReference>
+  <CodeGenReference>21</CodeGenReference>
 </CodeGenerationInfo>

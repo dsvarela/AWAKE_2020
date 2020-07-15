@@ -48,11 +48,8 @@ Sources/main.o: ../Sources/main.c \
  C:/NXP/S32DS_Power_v2.1/S32DS/software/S32_SDK_S32PA_RTM_3.0.0/platform/drivers/inc/emios_common.h \
  C:/NXP/S32DS_Power_v2.1/S32DS/software/S32_SDK_S32PA_RTM_3.0.0/platform/drivers/inc/emios_pwm_driver.h \
  C:/Users/Work/workspaceS32DS.Power.2.1/3.AWAKE/AWAKE_SINGLE_Z4_0/Generated_Code/eMIOS_Mc2.h \
- C:/Users/Work/workspaceS32DS.Power.2.1/3.AWAKE/AWAKE_SINGLE_Z4_0/Generated_Code/eMIOS_Mc1.h \
  C:/Users/Work/workspaceS32DS.Power.2.1/3.AWAKE/AWAKE_SINGLE_Z4_0/Generated_Code/linflexd_uart1.h \
  C:/Users/Work/workspaceS32DS.Power.2.1/3.AWAKE/AWAKE_SINGLE_Z4_0/Generated_Code/dmaController1.h \
- C:/Users/Work/workspaceS32DS.Power.2.1/3.AWAKE/AWAKE_SINGLE_Z4_0/Generated_Code/eMIOS_Ic1.h \
- C:/NXP/S32DS_Power_v2.1/S32DS/software/S32_SDK_S32PA_RTM_3.0.0/platform/drivers/inc/emios_ic_driver.h \
  C:/NXP/S32DS_Power_v2.1/S32DS/software/S32_SDK_S32PA_RTM_3.0.0/platform/drivers/src/emios/emios_hw_access.h \
  C:/NXP/S32DS_Power_v2.1/S32DS/software/S32_SDK_S32PA_RTM_3.0.0/platform/drivers/src/pins/siul2/siul2_hw_access.h \
  C:/NXP/S32DS_Power_v2.1/S32DS/software/S32_SDK_S32PA_RTM_3.0.0/platform/drivers/src/pins/siul2/pins_siul2_driver.h \
@@ -70,16 +67,7 @@ Sources/main.o: ../Sources/main.c \
  C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/EWL_C/include/pa/stdarg.EPPC.h \
  C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/EWL_C/include/stdlib.h \
  C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/EWL_C/include/cstdlib \
- C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/EWL_C/include/div_t.h \
- C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/EWL_C/include/math.h \
- C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/EWL_C/include/cmath \
- C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/EWL_C/include/cfloat \
- C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/EWL_C/include/ewl_t.h \
- C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/EWL_C/include/math_api.h \
- C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/EWL_C/include/ewl_misra_types.h \
- C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/EWL_C/include/math_inlines.h \
- C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/EWL_C/include/math_config.h \
- C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/EWL_C/include/pa/math.ppc.h
+ C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/EWL_C/include/div_t.h
 
 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/EWL_C/include/lib_c99.prefix:
 
@@ -179,15 +167,9 @@ C:/NXP/S32DS_Power_v2.1/S32DS/software/S32_SDK_S32PA_RTM_3.0.0/platform/drivers/
 
 C:/Users/Work/workspaceS32DS.Power.2.1/3.AWAKE/AWAKE_SINGLE_Z4_0/Generated_Code/eMIOS_Mc2.h:
 
-C:/Users/Work/workspaceS32DS.Power.2.1/3.AWAKE/AWAKE_SINGLE_Z4_0/Generated_Code/eMIOS_Mc1.h:
-
 C:/Users/Work/workspaceS32DS.Power.2.1/3.AWAKE/AWAKE_SINGLE_Z4_0/Generated_Code/linflexd_uart1.h:
 
 C:/Users/Work/workspaceS32DS.Power.2.1/3.AWAKE/AWAKE_SINGLE_Z4_0/Generated_Code/dmaController1.h:
-
-C:/Users/Work/workspaceS32DS.Power.2.1/3.AWAKE/AWAKE_SINGLE_Z4_0/Generated_Code/eMIOS_Ic1.h:
-
-C:/NXP/S32DS_Power_v2.1/S32DS/software/S32_SDK_S32PA_RTM_3.0.0/platform/drivers/inc/emios_ic_driver.h:
 
 C:/NXP/S32DS_Power_v2.1/S32DS/software/S32_SDK_S32PA_RTM_3.0.0/platform/drivers/src/emios/emios_hw_access.h:
 
@@ -224,21 +206,3 @@ C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/EWL_C/include/stdlib.h:
 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/EWL_C/include/cstdlib:
 
 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/EWL_C/include/div_t.h:
-
-C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/EWL_C/include/math.h:
-
-C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/EWL_C/include/cmath:
-
-C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/EWL_C/include/cfloat:
-
-C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/EWL_C/include/ewl_t.h:
-
-C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/EWL_C/include/math_api.h:
-
-C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/EWL_C/include/ewl_misra_types.h:
-
-C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/EWL_C/include/math_inlines.h:
-
-C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/EWL_C/include/math_config.h:
-
-C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/EWL_C/include/pa/math.ppc.h:

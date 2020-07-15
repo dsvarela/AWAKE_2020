@@ -46,9 +46,7 @@ Generated_Code/linflexd_uart1.o: ../Generated_Code/linflexd_uart1.c \
  C:/NXP/S32DS_Power_v2.1/S32DS/software/S32_SDK_S32PA_RTM_3.0.0/platform/drivers/inc/emios_mc_driver.h \
  C:/NXP/S32DS_Power_v2.1/S32DS/software/S32_SDK_S32PA_RTM_3.0.0/platform/drivers/inc/emios_common.h \
  C:/NXP/S32DS_Power_v2.1/S32DS/software/S32_SDK_S32PA_RTM_3.0.0/platform/drivers/inc/emios_pwm_driver.h \
- ../Generated_Code/eMIOS_Mc2.h ../Generated_Code/eMIOS_Mc1.h \
- ../Generated_Code/dmaController1.h ../Generated_Code/eMIOS_Ic1.h \
- C:/NXP/S32DS_Power_v2.1/S32DS/software/S32_SDK_S32PA_RTM_3.0.0/platform/drivers/inc/emios_ic_driver.h
+ ../Generated_Code/eMIOS_Mc2.h ../Generated_Code/dmaController1.h
 
 C:/NXP/S32DS_Power_v2.1/S32DS/build_tools/e200_ewl2/EWL_C/include/lib_c99.prefix:
 
@@ -148,10 +146,4 @@ C:/NXP/S32DS_Power_v2.1/S32DS/software/S32_SDK_S32PA_RTM_3.0.0/platform/drivers/
 
 ../Generated_Code/eMIOS_Mc2.h:
 
-../Generated_Code/eMIOS_Mc1.h:
-
 ../Generated_Code/dmaController1.h:
-
-../Generated_Code/eMIOS_Ic1.h:
-
-C:/NXP/S32DS_Power_v2.1/S32DS/software/S32_SDK_S32PA_RTM_3.0.0/platform/drivers/inc/emios_ic_driver.h:

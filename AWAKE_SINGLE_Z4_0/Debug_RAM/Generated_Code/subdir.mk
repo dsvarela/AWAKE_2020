@@ -7,8 +7,6 @@ C_SRCS += \
 ../Generated_Code/Cpu.c \
 ../Generated_Code/clockMan1.c \
 ../Generated_Code/dmaController1.c \
-../Generated_Code/eMIOS_Ic1.c \
-../Generated_Code/eMIOS_Mc1.c \
 ../Generated_Code/eMIOS_Mc2.c \
 ../Generated_Code/eMIOS_Pwm2.c \
 ../Generated_Code/linflexd_uart1.c \
@@ -18,8 +16,6 @@ OBJS += \
 ./Generated_Code/Cpu.o \
 ./Generated_Code/clockMan1.o \
 ./Generated_Code/dmaController1.o \
-./Generated_Code/eMIOS_Ic1.o \
-./Generated_Code/eMIOS_Mc1.o \
 ./Generated_Code/eMIOS_Mc2.o \
 ./Generated_Code/eMIOS_Pwm2.o \
 ./Generated_Code/linflexd_uart1.o \
@@ -29,8 +25,6 @@ C_DEPS += \
 ./Generated_Code/Cpu.d \
 ./Generated_Code/clockMan1.d \
 ./Generated_Code/dmaController1.d \
-./Generated_Code/eMIOS_Ic1.d \
-./Generated_Code/eMIOS_Mc1.d \
 ./Generated_Code/eMIOS_Mc2.d \
 ./Generated_Code/eMIOS_Pwm2.d \
 ./Generated_Code/linflexd_uart1.d \

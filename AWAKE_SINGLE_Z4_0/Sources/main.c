@@ -52,16 +52,6 @@ volatile int exit_code = 0;
 #include <string.h>
 #include <stdio.h>
 #include <stdlib.h>
-#include <math.h>
-
-#define RED 			10
-#define RED_PORT 		PTA
-#define GREEN 			7
-#define GREEN_PORT 		PTA
-#define BEG				0
-#define BEG_PORT 		PTA
-#define END 			4
-#define END_PORT 		PTA
 
 /* Global Variables */
 int config = 0;  // Assert whether the configurations have already been uploaded by the user.
@@ -70,18 +60,12 @@ int Count = 0;
 // {J13.2, J13.4, J13.6, J13.8, J13.\0, J13.14, J13.16}
 int Module = 2;
 int Channel = 20;
-uint32_t retValue1 = 0;
 
 
 void sysInit(void)
 {
 	/* Initialize and configure pins */
 	PINS_DRV_Init(NUM_OF_CONFIGURED_PINS, g_pin_mux_InitConfigArr);
-
-	PINS_DRV_TogglePins(RED_PORT, (1<<RED));
-	PINS_DRV_TogglePins(GREEN_PORT, (1<<GREEN));
-	PINS_DRV_TogglePins(BEG_PORT, (1<<BEG));
-	PINS_DRV_TogglePins(END_PORT, (1<<END));
 
 	/* Initialize clocks */
 	CLOCK_SYS_Init(g_clockManConfigsArr,   CLOCK_MANAGER_CONFIG_CNT,
@@ -90,29 +74,12 @@ void sysInit(void)
 
 	/* Initialize LINFlexD module for UART usage */
 	LINFLEXD_UART_DRV_Init(INST_LINFLEXD_UART1, &linflexd_uart1_State, &linflexd_uart1_InitConfig0);
+
+	eMIOS_MCR_SET_GPREN(2, 1UL);  // Enable eMIOS2
 }
 
-void eMIOSInit(void){
-	/* eMIOS counter BUS A (MCB Mode) initialized on eMIOS 2 Module. */
-	EMIOS_DRV_MC_InitCounterMode(INST_EMIOS_MC2, EMIOS_CNT_BUSA_DRIVEN, &eMIOS_Mc2_CntChnConfig0);  // Drive J13.2, J13.4, J13.6, J13.14, J13.16
-
-	/* eMIOS PWM mode Initialization for eMIOS2 */
-	EMIOS_DRV_PWM_InitMode(INST_EMIOS_MC2, EMIOS_PWM2_CHANNEL20, &eMIOS_Pwm2_PWMChnConfig3);  // J13.2 - PF[20]
-
-	/* If you want initialize eMIOS Global */
-	EMIOS_DRV_InitGlobal(INST_EMIOS_MC2, &eMIOS_Mc2_InitConfig0);  // Init eMIOS2 with initial configurations
-
-	eMIOS_MCR_SET_GTBE(2, 0UL);  // Enable eMIOS2
-}
 
 void eMIOSConfig(int *Loop, int *Period, int *LEdge, int *TEdge){
-
-	eMIOS_MCR_SET_GPREN(2, 0UL);  // Enable eMIOS2
-	eMIOS_MCR_SET_GTBE(2, 0UL);  // Enable eMIOS2
-
-	/* If you want initialize eMIOS Global */
-	//eMIOS_Mc1_InitConfig0.clkDivVal = *Global;
-	EMIOS_DRV_InitGlobal(INST_EMIOS_MC2, &eMIOS_Mc2_InitConfig0);  // Init eMIOS2 with initial configurations
 
 	// Drive J13.2
 	eMIOS_Mc2_CntChnConfig0.period = *Period;
@@ -127,25 +94,6 @@ void eMIOSConfig(int *Loop, int *Period, int *LEdge, int *TEdge){
 	// Loop to set Leading and Trailing Edge Positions on every pin.
 	EMIOS_DRV_PWM_SetLeadingEdgePlacement(Module,  Channel, *LEdge + 1UL);
 	EMIOS_DRV_PWM_SetTrailingEdgePlacement(Module, Channel, *TEdge + 1UL);
-
-	eMIOS_MCR_SET_GPREN(2, 1UL);  // Enable eMIOS2
-	/* Enable global timebase */
-	eMIOS_MCR_SET_GTBE(2, 0UL);  // Disable Global Timebase on eMIOS2
-}
-
-void eMIOSReset(void){
-	/* Enable global prescaler */
-	eMIOS_MCR_SET_GPREN(2, 0UL);  // Disable eMIOS2
-	/* Enable global timebase */
-	eMIOS_MCR_SET_GTBE(2, 0UL);  // Disable Global Timebase on eMIOS2
-
-	/* eMIOS Counter mode Initialization for eMIOS_Mc_CntChnConfig0 */
-	EMIOS_DRV_MC_InitCounterMode(INST_EMIOS_MC2, EMIOS_CNT_BUSA_DRIVEN, &eMIOS_Mc2_CntChnConfig0);
-
-	/* Enable global prescaler */
-	eMIOS_MCR_SET_GPREN(2, 1UL);  // Disable eMIOS2
-	/* Enable global timebase */
-	eMIOS_MCR_SET_GTBE(2, 0UL);  // Disable Global Timebase on eMIOS2
 }
 
 /*
@@ -173,10 +121,10 @@ int readOption(){
 		while(LINFLEXD_UART_DRV_GetReceiveStatus(INST_LINFLEXD_UART1,&byteRemaining) != STATUS_SUCCESS){}
 		strReceived = 1U;
 	}
-	if (buffer[0] == 's'){
+	if (buffer[0] == 'u'){
 		return 1;
 	}
-	else if (buffer[0] == 'i'){
+	else if (buffer[0] == 's'){
 		return 2;
 	}
 	else return 0;
@@ -274,10 +222,8 @@ int main(void)
 			}
 		}
 		print((const char *)".");  //Send confirmation receipt.
-		PINS_DRV_TogglePins(BEG_PORT, (1<<BEG));
 
 		if (Button == 2){
-			PINS_DRV_TogglePins(RED_PORT, (1<<RED));
 			if (config == 1){
 				if (enable == 0){
 					enable=1;  // Use variable to remember the eMIOS channels are on.
@@ -287,9 +233,11 @@ int main(void)
 		}
 
 		if (Button == 1){
-			PINS_DRV_TogglePins(GREEN_PORT, (1<<GREEN));
 			PNum = readCycles(&Loop, &Period, &LEdge, &TEdge);
 			print((const char *)".");  //Send confirmation receipt.
+
+			// Disable Interrupt Request on Channel with the Maximum Trailing Edge
+			EMIOS_SetUCRegCFen(Module, Channel, 0UL);
 
 			// Write Received Parameters to the respective pins.
 			eMIOSConfig(&Loop, &Period, &LEdge, &TEdge);
@@ -301,7 +249,6 @@ int main(void)
 		}
 
 		if (enable == 1){
-			PINS_DRV_TogglePins(END_PORT, (1<<END));
 			// eMIOS_MCR_SET_GPREN(0, 1UL);  // Enable eMIOS0
 			// eMIOS_MCR_SET_GPREN(2, 1UL);  // Enable eMIOS2
 			eMIOS_MCR_SET_GTBE(2, 1UL);  // Enable Global Timebase on eMIOS1 (so eMIOS0 and eMIOS2 sync with eMIOS1)
@@ -311,11 +258,6 @@ int main(void)
 				while(!((EMIOS_GET_REG(eMIOS[Module]->GFLAG, EMIOS_REGISTER_F31_F0_MASK, EMIOS_REGISTER_F31_F0_SHIFT) >> Channel) & 0x01UL)){
 					// Do nothing while this flag isn't set.
 				}
-
-			    retValue1 = 0;
-			    /* Capture value in interrupt */
-			    EMIOS_DRV_IC_GetLastMeasurement(INST_EMIOS_MC1, EMIOS_IC1_CHANNEL11, &retValue1);
-			    //sprintf(buff1, '%d', retValue1);
 
 				// Set Register B (Trailing Edge) in all Pins to be the same as Register A (Leading Edge), disabling the Pulse.
 				REG_RMW32(&eMIOS[INST_EMIOS_MC2]->UC[EMIOS_PWM2_CHANNEL20].B, eMIOS_B_B_MASK, eMIOS_B_B(LEdge + 1UL));
@@ -333,11 +275,6 @@ int main(void)
 					REG_RMW32(&eMIOS[Module]->UC[Channel].S, (eMIOS_S_FLAG_MASK & eMIOS_S_OVFL_MASK) & eMIOS_S_OVR_MASK, eMIOS_S_FLAG(1UL));
 				}
 
-			    retValue1 = 0;
-			    /* Capture value in interrupt */
-			    EMIOS_DRV_IC_GetLastMeasurement(INST_EMIOS_MC1, EMIOS_IC1_CHANNEL11, &retValue1);
-			    //sprintf(buff1, '%d', retValue1);
-
 				// Set Register B back to calculated value, Re-enabling the pulse.
 				REG_RMW32(&eMIOS[INST_EMIOS_MC2]->UC[EMIOS_PWM2_CHANNEL20].B, eMIOS_B_B_MASK, eMIOS_B_B(TEdge + 1UL));
 
@@ -345,15 +282,14 @@ int main(void)
 				REG_RMW32(&eMIOS[Module]->UC[Channel].S, (eMIOS_S_FLAG_MASK & eMIOS_S_OVFL_MASK) & eMIOS_S_OVR_MASK, eMIOS_S_FLAG(1UL));
 			}
 
-			// Stop clock, reset them and set everything for the next loop.
-			eMIOSReset();
-			// Disable Interrupt Request on Channel with the Maximum Trailing Edge
-			EMIOS_SetUCRegCFen(Module, Channel, 0UL);
+			/* Enable global timebase */
+			eMIOS_MCR_SET_GTBE(2, 0UL);  // Disable Global Timebase on eMIOS2
+
+			/* eMIOS Counter mode Initialization for eMIOS_Mc_CntChnConfig0 */
+			EMIOS_DRV_MC_InitCounterMode(INST_EMIOS_MC2, EMIOS_CNT_BUSA_DRIVEN, &eMIOS_Mc2_CntChnConfig0);
+
 			enable = 0;
 			print((const char *)".");  //Send confirmation receipt.
-			PINS_DRV_TogglePins(BEG_PORT, (1<<BEG));
-			PINS_DRV_TogglePins(END_PORT, (1<<END));
-			PINS_DRV_TogglePins(RED_PORT, (1<<RED));
 		}
 	}
 

@@ -2,7 +2,7 @@
 <GenerationInfo_G_C>
   <Options>
     <ProjectName>AWAKE3_Z4_0</ProjectName>
-    <ProjectDirectory>C:\Users\Public\S32DS_NXP_Workspace\AWAKE3\AWAKE3_Z4_0\</ProjectDirectory>
+    <ProjectDirectory>C:\Users\Work\workspaceS32DS.Power.2.1\3.AWAKE\AWAKE3\AWAKE3_Z4_0\</ProjectDirectory>
     <ProjectMainModuleName>main</ProjectMainModuleName>
     <DestEventsDirectory>Sources\</DestEventsDirectory>
     <DestDriversSubDirectory>..\Generated_Code\</DestDriversSubDirectory>
