@@ -83,8 +83,8 @@ void sysInit(void) {
 	EMIOS_DRV_MC_InitCounterMode(INST_EMIOS_MC2, EMIOS_CNT_BUSA_DRIVEN,
 			&eMIOS_Mc2_CntChnConfig0);
 	EMIOS_DRV_PWM_InitMode(INST_EMIOS_MC2, EMIOS_PWM2_CHANNEL20,
-			&eMIOS_Pwm2_PWMChnConfig0);
-	EMIOS_DRV_PWM_InitMode(INST_EMIOS_MC2, 24, &eMIOS_Pwm2_PWMChnConfig0);
+			&eMIOS_Pwm2_PWMChnConfig3);
+	EMIOS_DRV_PWM_InitMode(INST_EMIOS_MC2, 24, &eMIOS_Pwm2_PWMChnConfig3);
 
 	EMIOS_DRV_EnableGlobalEmios(INST_EMIOS_MC2);
 }

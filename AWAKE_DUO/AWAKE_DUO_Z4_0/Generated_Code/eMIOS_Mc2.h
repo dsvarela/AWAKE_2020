@@ -7,7 +7,7 @@
 **     Version     : Component SDK_S32_PA_11, Driver 01.00, CPU db: 3.00.000
 **     Repository  : SDK_S32_PA_11
 **     Compiler    : GNU C Compiler
-**     Date/Time   : 2020-07-15, 12:51, # CodeGen: 6
+**     Date/Time   : 2020-07-17, 18:39, # CodeGen: 19
 **     Contents    :
 **         EMIOS_DRV_InitGlobal                    - void EMIOS_DRV_InitGlobal(uint8_t emiosGroup, emios_common_param_t...
 **         EMIOS_DRV_EnableGlobalEmios             - void EMIOS_DRV_EnableGlobalEmios(uint8_t emiosGroup);
@@ -83,10 +83,10 @@
 
 
 /* eMIOS global configuration structure for eMIOS_2 */
-extern const emios_common_param_t eMIOS_Mc2_InitConfig0;
+extern emios_common_param_t eMIOS_Mc2_InitConfig0;
 
 /* eMIOS counter mode configuration structure for eMIOS_2 */
-extern const emios_mc_mode_param_t eMIOS_Mc2_CntChnConfig0;
+extern emios_mc_mode_param_t eMIOS_Mc2_CntChnConfig0;
 
 #endif /* ifndef eMIOS_Mc2_H */
 

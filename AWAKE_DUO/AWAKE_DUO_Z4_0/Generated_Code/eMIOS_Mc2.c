@@ -7,7 +7,7 @@
 **     Version     : Component SDK_S32_PA_11, Driver 01.00, CPU db: 3.00.000
 **     Repository  : SDK_S32_PA_11
 **     Compiler    : GNU C Compiler
-**     Date/Time   : 2020-07-15, 19:22, # CodeGen: 16
+**     Date/Time   : 2020-07-17, 18:39, # CodeGen: 19
 **
 **     Copyright 1997 - 2015 Freescale Semiconductor, Inc. 
 **     Copyright 2016-2017 NXP 
@@ -55,21 +55,21 @@
 
 
 /* eMIOS global configuration structure for eMIOS_Mc2_InitConfig0 */
-const emios_common_param_t eMIOS_Mc2_InitConfig0 =
+emios_common_param_t eMIOS_Mc2_InitConfig0 =
 {
     .allowDebugMode         = false,        /*!< If true, all channel in eMIOS group can enter debug mode                   */
     .lowPowerMode           = false,        /*!< Low power mode or normal mode                                              */
-    .clkDivVal              = 250U,         /*!< Select the clock divider value for the global prescaler in range(1-256)    */
+    .clkDivVal              = 1U,           /*!< Select the clock divider value for the global prescaler in range(1-256)    */
     .enableGlobalPrescaler  = true,         /*!< Enable or disable global prescaler                                         */
     .enableGlobalTimeBase   = true,         /*!< Enable or disable global timebase                                          */
 };
 
 /* eMIOS counter mode configuration structure for eMIOS_Mc2_CntChnConfig0 */
-const emios_mc_mode_param_t eMIOS_Mc2_CntChnConfig0 =
+emios_mc_mode_param_t eMIOS_Mc2_CntChnConfig0 =
 {
-    .mode                = EMIOS_MODE_MC_UP_CNT_CLR_START_INT_CLK, /*!< Sub-mode selected                                                    */
-    .period              = 60000UL,                             /*!< Period value                                                         */
-    .internalPrescaler   = EMIOS_CLOCK_DIVID_BY_10,             /*!< Internal prescaler value                                             */
+    .mode                = EMIOS_MODE_MCB_UP_COUNTER_INT_CLK,   /*!< Sub-mode selected                                                    */
+    .period              = 65535UL,                             /*!< Period value                                                         */
+    .internalPrescaler   = EMIOS_CLOCK_DIVID_BY_1,              /*!< Internal prescaler value                                             */
     .internalPrescalerEn = true,                                /*!< Enable/disable internal prescaler                                    */
     .filterInput         = EMIOS_INPUT_FILTER_BYPASS,           /*!< Filter value, ignore if not select external clock mode               */
     .filterEn            = false,                               /*!< Input capture filter state, ignore if not select external clock mode */

@@ -7,7 +7,7 @@
 **     Version     : Component 01.197, Driver 01.00, CPU db: 3.00.000
 **     Datasheet   : MPC5748G RM Rev. 6, 10/2017
 **     Compiler    : GNU C Compiler
-**     Date/Time   : 2020-07-15, 12:12, # CodeGen: 0
+**     Date/Time   : 2020-07-17, 18:39, # CodeGen: 5
 **     Abstract    :
 **
 **     Settings    :
@@ -56,11 +56,19 @@
 #include "device_registers.h"
 #include "interrupt_manager.h"
 #include "clock.h"
+#include "emios_common.h"
+#include "linflexd_uart_driver.h"
+#include "edma_driver.h"
+#include "osif.h"
 #include "system_MPC5748G.h"
 
 /* Including needed modules to compile this module/procedure */
 #include "pin_mux.h"
 #include "clockMan1.h"
+#include "eMIOS_Pwm2.h"
+#include "eMIOS_Mc2.h"
+#include "linflexd_uart1.h"
+#include "dmaController1.h"
 #ifdef __cplusplus
 extern "C" {
 #endif

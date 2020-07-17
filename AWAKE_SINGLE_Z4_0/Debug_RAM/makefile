@@ -41,7 +41,7 @@ AWAKE_SINGLE_Z4_0.siz \
 all: AWAKE_SINGLE_Z4_0.elf secondary-outputs
 
 # Tool invocations
-AWAKE_SINGLE_Z4_0.elf: $(OBJS) C:/Users/Public/S32DS_NXP_Workspace/AWAKE_SINGLE_Z4_0/Project_Settings/Linker_Files/linker_ram.ld $(OSPT) $(USER_OBJS)
+AWAKE_SINGLE_Z4_0.elf: $(OBJS) C:/Users/Work/workspaceS32DS.Power.2.1/3.AWAKE/AWAKE_SINGLE_Z4_0/Project_Settings/Linker_Files/linker_ram.ld $(OSPT) $(USER_OBJS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: Standard S32DS C Linker'
 	powerpc-eabivle-gcc -o "AWAKE_SINGLE_Z4_0.elf" "@AWAKE_SINGLE_Z4_0.args"  $(USER_OBJS) $(LIBS) $(OSPT)

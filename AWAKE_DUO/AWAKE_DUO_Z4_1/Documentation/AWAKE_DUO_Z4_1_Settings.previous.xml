@@ -7,7 +7,7 @@
     <Properties>
       <Component_name v="Cpu" />
       <CPU_type v="MPC5748G_324" />
-      <Core v="Z4_0" />
+      <Core v="Z4_1" />
     </Properties>
     <Methods>
       <EmptySection_DummyValue />
@@ -64,61 +64,6 @@
     <Properties>
       <Component_name v="intMan1" />
       <Component_version v="S32_SDK_C55" />
-    </Properties>
-    <Methods>
-      <EmptySection_DummyValue />
-    </Methods>
-    <Events>
-      <EmptySection_DummyValue />
-    </Events>
-  </Bean>
-  <Bean name="eMIOS_Mc2" type="emios_mc">
-    <Enabled v="Y" />
-    <Properties>
-      <Component_name v="eMIOS_Mc2" />
-      <Device v="eMIOS_2" />
-      <Component_version v="S32_SDK_C55" />
-    </Properties>
-    <Methods>
-      <EmptySection_DummyValue />
-    </Methods>
-    <Events>
-      <EmptySection_DummyValue />
-    </Events>
-  </Bean>
-  <Bean name="linflexd_uart1" type="linflexd_uart">
-    <Enabled v="Y" />
-    <Properties>
-      <Component_name v="linflexd_uart1" />
-      <Device v="LINFlexD_2" />
-      <Component_version v="S32_SDK_LINFLEXD_UART_DMA" />
-    </Properties>
-    <Methods>
-      <EmptySection_DummyValue />
-    </Methods>
-    <Events>
-      <EmptySection_DummyValue />
-    </Events>
-  </Bean>
-  <Bean name="dmaController1" type="edma">
-    <Enabled v="Y" />
-    <Properties>
-      <Component_name v="dmaController1" />
-      <Device v="DMA" />
-      <Component_version v="S32_SDK_DMA_32CH" />
-    </Properties>
-    <Methods>
-      <EmptySection_DummyValue />
-    </Methods>
-    <Events>
-      <EmptySection_DummyValue />
-    </Events>
-  </Bean>
-  <Bean name="osif1" type="osif">
-    <Enabled v="Y" />
-    <Properties>
-      <Component_name v="osif1" />
-      <Component_version v="osifcommon" />
     </Properties>
     <Methods>
       <EmptySection_DummyValue />

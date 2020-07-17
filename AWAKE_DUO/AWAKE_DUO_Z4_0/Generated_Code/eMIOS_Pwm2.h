@@ -7,7 +7,7 @@
 **     Version     : Component SDK_S32_PA_11, Driver 01.00, CPU db: 3.00.000
 **     Repository  : SDK_S32_PA_11
 **     Compiler    : GNU C Compiler
-**     Date/Time   : 2020-07-15, 13:19, # CodeGen: 9
+**     Date/Time   : 2020-07-17, 18:39, # CodeGen: 19
 **     Contents    :
 **         EMIOS_DRV_PWM_InitMode                     - status_t EMIOS_DRV_PWM_InitMode(uint8_t emiosGroup, uint8_t channel,...
 **         EMIOS_DRV_PWM_ForcePWMMatchLeadingEdge     - void EMIOS_DRV_PWM_ForcePWMMatchLeadingEdge(uint8_t emiosGroup, uint8_t...
@@ -74,7 +74,7 @@
 #define EMIOS_PWM2_CHANNEL20    (20U)
 
 /* eMIOS PWM mode configuration structure for eMIOS_2 */
-extern const emios_pwm_param_t eMIOS_Pwm2_PWMChnConfig0;
+extern emios_pwm_param_t eMIOS_Pwm2_PWMChnConfig3;
 
 #endif /* ifndef eMIOS_Pwm2_H */
 

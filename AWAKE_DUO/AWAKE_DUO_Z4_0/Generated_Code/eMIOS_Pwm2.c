@@ -7,7 +7,7 @@
 **     Version     : Component SDK_S32_PA_11, Driver 01.00, CPU db: 3.00.000
 **     Repository  : SDK_S32_PA_11
 **     Compiler    : GNU C Compiler
-**     Date/Time   : 2020-07-15, 13:19, # CodeGen: 9
+**     Date/Time   : 2020-07-17, 18:39, # CodeGen: 19
 **
 **     Copyright 1997 - 2015 Freescale Semiconductor, Inc. 
 **     Copyright 2016-2017 NXP 
@@ -54,15 +54,15 @@
 
 
 /* eMIOS PWM mode configuration structure */
-/* eMIOS PWM mode configuration structure for eMIOS_Pwm2_PWMChnConfig0 */
-const emios_pwm_param_t eMIOS_Pwm2_PWMChnConfig0 =
+/* eMIOS PWM mode configuration structure for eMIOS_Pwm2_PWMChnConfig3 */
+emios_pwm_param_t eMIOS_Pwm2_PWMChnConfig3 =
 {
     .mode                  = EMIOS_MODE_OPWMT,             /*!< Sub-mode selected             */
     .internalPrescaler     = EMIOS_CLOCK_DIVID_BY_1,       /*!< Internal prescaler value      */
     .internalPrescalerEn   = true,                         /*!< Internal prescaler is enabled */
     .outputActiveMode      = EMIOS_POSITIVE_PULSE,         /*!< Output active value, active low or high level */
-    .periodCount           = 60000UL,                      /*!< Period count         */
-    .dutyCycleCount        = 30000UL,                      /*!< Duty cycle count     */
+    .periodCount           = 65535UL,                      /*!< Period count         */
+    .dutyCycleCount        = 0UL,                          /*!< Duty cycle count     */
     .timebase              = EMIOS_BUS_SEL_A,              /*!< Counter bus selected */
     .idealDutyCycle        = 1UL,                          /*!< Ideal duty cycle value using to compare with the selected time base */
     .triggerEventPlacement = 0UL,                          /*!< Trigger Event placement */
