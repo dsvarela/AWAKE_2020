@@ -12,7 +12,7 @@ from tkinter import messagebox as m_box
 import threading
 import serial.tools.list_ports
 import serial
-from CalcV2 import calc
+from Calculations import getClockValues
 from wslFix import in_wsl, serial_ports
 
 open_port = 0

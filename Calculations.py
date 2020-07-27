@@ -17,7 +17,7 @@ loop_vec = [125, 160, 200, 250, 320, 400, 500, 625, 640, 800, 1000, 1250, 1600,
             20800, 22400, 24000]
 
 
-def calc(millis, f_lead, f_duty):
+def getClockValues(millis, f_lead, f_duty):
     """Calculate Count Values From Input Times."""
     # Values For The Millis Counter
     cnt = int(millis * (10 ** 6) / 12.5)
