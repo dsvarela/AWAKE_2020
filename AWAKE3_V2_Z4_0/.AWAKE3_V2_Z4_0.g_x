@@ -103,5 +103,5 @@
       <File Name="SDK/platform/devices/status.h" FileDate="2020-07-15, 15:08:30" FileAge="1594822110872" FileType="1048576" CompNumb="1" />
     </GeneratedByPE>
   </GeneratedFilesList>
-  <CodeGenReference>4</CodeGenReference>
+  <CodeGenReference>7</CodeGenReference>
 </CodeGenerationInfo>

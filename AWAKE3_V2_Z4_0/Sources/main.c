@@ -211,7 +211,7 @@ int readCycles(int *Loop, int *Period, int **LEdge, int **TEdge, int length)
 	(*Period) = atoi(temp);
 	memset(temp, '\0', 5);
 
-	for(int j = 0; j < 6; j++)
+	for(int j = 0; j < 7; j++)
 	{
 		strcpy(temp, strtok(NULL, ","));
 		(*LEdge)[j] = atoi(temp);
