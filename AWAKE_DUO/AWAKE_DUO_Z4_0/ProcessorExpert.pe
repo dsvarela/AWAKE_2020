@@ -9914,7 +9914,7 @@
         <ItemSymbol>eMIOS_0_emios_0_14_h_14</ItemSymbol>
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
-        <Value>&lt;Automatic&gt;</Value>
+        <Value>PF[4]</Value>
         <SharedPrphMode>false</SharedPrphMode>
       </ItemState>
       <ItemState>
@@ -10103,7 +10103,7 @@
         <ItemSymbol>eMIOS_0_emios_0_22_x_22</ItemSymbol>
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
-        <Value>&lt;Automatic&gt;</Value>
+        <Value>PF[5]</Value>
         <SharedPrphMode>false</SharedPrphMode>
       </ItemState>
       <ItemState>
@@ -10542,7 +10542,7 @@
         <ItemSymbol>eMIOS_1_emios_1_11_h_in_11</ItemSymbol>
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
-        <Value>&lt;Automatic&gt;</Value>
+        <Value>PG[2]</Value>
         <SharedPrphMode>false</SharedPrphMode>
       </ItemState>
       <ItemState>
@@ -10550,7 +10550,7 @@
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
         <PropertyModelIsAutomatic>true</PropertyModelIsAutomatic>
-        <Index>0</Index>
+        <Index>2</Index>
       </ItemState>
       <ItemState>
         <ItemSymbol>eMIOS_1_emios_1_12_h_12</ItemSymbol>
@@ -10997,7 +10997,7 @@
         <ItemSymbol>eMIOS_1_emios_1_31_y_31</ItemSymbol>
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
-        <Value>&lt;Automatic&gt;</Value>
+        <Value>PI[7]</Value>
         <SharedPrphMode>false</SharedPrphMode>
       </ItemState>
       <ItemState>
@@ -11081,7 +11081,7 @@
         <ItemSymbol>eMIOS_1_emios_1_6_h_6</ItemSymbol>
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
-        <Value>&lt;Automatic&gt;</Value>
+        <Value>PH[4]</Value>
         <SharedPrphMode>false</SharedPrphMode>
       </ItemState>
       <ItemState>
@@ -11282,7 +11282,7 @@
         <ItemSymbol>eMIOS_2_emios_2_14_y_14</ItemSymbol>
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
-        <Value>&lt;Automatic&gt;</Value>
+        <Value>PF[9]</Value>
         <SharedPrphMode>false</SharedPrphMode>
       </ItemState>
       <ItemState>
@@ -11303,7 +11303,7 @@
         <ItemSymbol>eMIOS_2_emios_2_15_y_15</ItemSymbol>
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
-        <Value>&lt;Automatic&gt;</Value>
+        <Value>PF[8]</Value>
         <SharedPrphMode>false</SharedPrphMode>
       </ItemState>
       <ItemState>
@@ -11387,7 +11387,7 @@
         <ItemSymbol>eMIOS_2_emios_2_19_y_19</ItemSymbol>
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
-        <Value>&lt;Automatic&gt;</Value>
+        <Value>PF[10]</Value>
         <SharedPrphMode>false</SharedPrphMode>
       </ItemState>
       <ItemState>
@@ -11513,7 +11513,7 @@
         <ItemSymbol>eMIOS_2_emios_2_24_x_24</ItemSymbol>
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
-        <Value>PA[4]</Value>
+        <Value>&lt;Automatic&gt;</Value>
         <SharedPrphMode>false</SharedPrphMode>
       </ItemState>
       <ItemState>
@@ -11660,7 +11660,7 @@
         <ItemSymbol>eMIOS_2_emios_2_30_y_30</ItemSymbol>
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
-        <Value>&lt;Automatic&gt;</Value>
+        <Value>PF[6]</Value>
         <SharedPrphMode>false</SharedPrphMode>
       </ItemState>
       <ItemState>
@@ -48468,15 +48468,15 @@
         <ItemSymbol>c_eMIOSPWMCfg_NAME0</ItemSymbol>
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
-        <Value>eMIOS_Pwm2_PWMChnConfig0</Value>
+        <Value>eMIOS_Pwm2_PWMChnConfig3</Value>
       </ItemState>
       <ItemState>
         <ItemSymbol>c_eMIOSPWMCfg_READONLY0</ItemSymbol>
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
         <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
-        <Index>0</Index>
-        <Value>true</Value>
+        <Index>1</Index>
+        <Value>false</Value>
       </ItemState>
       <ItemState>
         <ItemSymbol>c_eMIOSPWMSubMode0</ItemSymbol>
@@ -48539,7 +48539,7 @@
         <ReadOnly>true</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
         <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
-        <Value>60000</Value>
+        <Value>65535</Value>
         <Base>DEC</Base>
       </ItemState>
       <ItemState>
@@ -48547,7 +48547,7 @@
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
         <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
-        <Value>30000</Value>
+        <Value>0</Value>
         <Base>DEC</Base>
       </ItemState>
       <ItemState>
@@ -48980,7 +48980,7 @@
     <CompEnabled>true</CompEnabled>
     <GenCodeMode>ALWAYS_WRITE</GenCodeMode>
     <IconName>CLOCKS_LDD</IconName>
-    <UserFolderName />
+    <UserFolderName>Referenced_Components</UserFolderName>
     <Comment lines_count="0" />
     <Template />
     <BeanVersion>SDK_S32_PA_11</BeanVersion>
@@ -49056,8 +49056,8 @@
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
         <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
-        <Index>0</Index>
-        <Value>true</Value>
+        <Index>1</Index>
+        <Value>false</Value>
       </ItemState>
       <ItemState>
         <ItemSymbol>g_eMIOSGlobalConfig_DEBUGMODE0</ItemSymbol>
@@ -49088,7 +49088,7 @@
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
         <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
-        <Value>250</Value>
+        <Value>1</Value>
         <Base>DEC</Base>
       </ItemState>
       <ItemState>
@@ -49150,22 +49150,22 @@
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
         <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
-        <Index>0</Index>
-        <Value>true</Value>
+        <Index>1</Index>
+        <Value>false</Value>
       </ItemState>
       <ItemState>
         <ItemSymbol>c_eMIOSCounterSubMode0</ItemSymbol>
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
-        <Value>EMIOS_MODE_MC_UP_CNT_CLR_START_INT_CLK</Value>
+        <Value>EMIOS_MODE_MCB_UP_COUNTER_INT_CLK</Value>
       </ItemState>
       <ItemState>
         <ItemSymbol>c_eMIOSCounterSubMode_Base0</ItemSymbol>
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
         <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
-        <Index>0</Index>
-        <EnumSymbVal>EMIOS_MODE_MC_UP_CNT</EnumSymbVal>
+        <Index>2</Index>
+        <EnumSymbVal>EMIOS_MODE_MCB_UP_COUNTER</EnumSymbVal>
       </ItemState>
       <ItemState>
         <ItemSymbol>c_eMIOSCounterBus0</ItemSymbol>
@@ -49189,7 +49189,7 @@
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
         <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
-        <Value>60000</Value>
+        <Value>65535</Value>
         <Base>DEC</Base>
       </ItemState>
       <ItemState>
@@ -49205,8 +49205,8 @@
         <UserReadOnly>false</UserReadOnly>
         <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
         <TypeSpecNameState>common_emios_clock_internal_ps_4bits_t</TypeSpecNameState>
-        <Index>9</Index>
-        <EnumSymbVal>EMIOS_CLOCK_DIVID_BY_10</EnumSymbVal>
+        <Index>0</Index>
+        <EnumSymbVal>EMIOS_CLOCK_DIVID_BY_1</EnumSymbVal>
       </ItemState>
       <ItemState>
         <ItemSymbol>c_eMIOSCounterFilterEnable0</ItemSymbol>
@@ -49241,7 +49241,7 @@
       </ItemState>
       <ItemState>
         <ItemSymbol>c_eMIOSCounterClrState0</ItemSymbol>
-        <ReadOnly>false</ReadOnly>
+        <ReadOnly>true</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
         <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
         <Index>0</Index>

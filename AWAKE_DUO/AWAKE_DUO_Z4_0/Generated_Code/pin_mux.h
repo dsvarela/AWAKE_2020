@@ -7,7 +7,7 @@
 **     Version     : Component 1.2.0, Driver 1.4, CPU db: 3.00.000
 **     Repository  : SDK_S32_PA_11
 **     Compiler    : GNU C Compiler
-**     Date/Time   : 2020-07-15, 19:28, # CodeGen: 17
+**     Date/Time   : 2020-07-17, 18:39, # CodeGen: 19
 **     Abstract    :
 **
 **     Settings    :
@@ -1412,7 +1412,7 @@
 **                  eMIOS0 ch13 type H                     : <Automatic>
 **                  eMIOS0 ch13 type H                     : <Automatic>
 **                  eMIOS_0: eMIOS0 ch13 type H            : <Automatic>
-**                  eMIOS0 ch14 type H                     : <Automatic>
+**                  eMIOS0 ch14 type H                     : PF[4]
 **                  eMIOS0 ch14 type H                     : <Automatic>
 **                  eMIOS_0: eMIOS0 ch14 type H            : <Automatic>
 **                  eMIOS0 ch15 type H                     : <Automatic>
@@ -1439,7 +1439,7 @@
 **                  eMIOS0 ch21 type Y                     : <Automatic>
 **                  eMIOS0 ch21 type Y                     : <Automatic>
 **                  eMIOS_0: eMIOS0 ch21 type Y            : <Automatic>
-**                  eMIOS0 ch22 type X                     : <Automatic>
+**                  eMIOS0 ch22 type X                     : PF[5]
 **                  eMIOS0 ch22 type X                     : <Automatic>
 **                  eMIOS_0: eMIOS0 ch22 type X            : <Automatic>
 **                  eMIOS0 ch23 type X                     : <Automatic>
@@ -1502,7 +1502,7 @@
 **                  eMIOS1 ch10 type H                     : <Automatic>
 **                  eMIOS_1: eMIOS1 ch10 type H            : <Automatic>
 **                  eMIOS1 ch11 type H                     : <Automatic>
-**                  eMIOS1 ch11 type H                     : <Automatic>
+**                  eMIOS1 ch11 type H                     : PG[2]
 **                  eMIOS_1: eMIOS1 ch11 type H            : <Automatic>
 **                  eMIOS1 ch12 type H                     : <Automatic>
 **                  eMIOS1 ch12 type H                     : <Automatic>
@@ -1567,7 +1567,7 @@
 **                  eMIOS1 ch30 type Y                     : <Automatic>
 **                  eMIOS1 ch30 type Y                     : <Automatic>
 **                  eMIOS_1: eMIOS1 ch30 type Y            : <Automatic>
-**                  eMIOS1 ch31 type Y                     : <Automatic>
+**                  eMIOS1 ch31 type Y                     : PI[7]
 **                  eMIOS1 ch31 type Y                     : <Automatic>
 **                  eMIOS_1: eMIOS1 ch31 type Y            : <Automatic>
 **                  eMIOS1 ch3 type H                      : <Automatic>
@@ -1579,7 +1579,7 @@
 **                  eMIOS1 ch5 type H                      : <Automatic>
 **                  eMIOS1 ch5 type H                      : <Automatic>
 **                  eMIOS_1: eMIOS1 ch5 type H             : <Automatic>
-**                  eMIOS1 ch6 type H                      : <Automatic>
+**                  eMIOS1 ch6 type H                      : PH[4]
 **                  eMIOS1 ch6 type H                      : <Automatic>
 **                  eMIOS_1: eMIOS1 ch6 type H             : <Automatic>
 **                  eMIOS1 ch7 type H                      : <Automatic>
@@ -1608,10 +1608,10 @@
 **                  eMIOS2 ch13 type Y                     : <Automatic>
 **                  eMIOS2 ch13 type Y                     : <Automatic>
 **                  eMIOS_2: eMIOS2 ch13 type Y            : <Automatic>
-**                  eMIOS2 ch14 type Y                     : <Automatic>
+**                  eMIOS2 ch14 type Y                     : PF[9]
 **                  eMIOS2 ch14 type Y                     : <Automatic>
 **                  eMIOS_2: eMIOS2 ch14 type Y            : <Automatic>
-**                  eMIOS2 ch15 type Y                     : <Automatic>
+**                  eMIOS2 ch15 type Y                     : PF[8]
 **                  eMIOS2 ch15 type Y                     : <Automatic>
 **                  eMIOS_2: eMIOS2 ch15 type Y            : <Automatic>
 **                  eMIOS2 ch16 type X                     : <Automatic>
@@ -1623,7 +1623,7 @@
 **                  eMIOS2 ch18 type Y                     : <Automatic>
 **                  eMIOS2 ch18 type Y                     : <Automatic>
 **                  eMIOS_2: eMIOS2 ch18 type Y            : <Automatic>
-**                  eMIOS2 ch19 type Y                     : <Automatic>
+**                  eMIOS2 ch19 type Y                     : PF[10]
 **                  eMIOS2 ch19 type Y                     : <Automatic>
 **                  eMIOS_2: eMIOS2 ch19 type Y            : <Automatic>
 **                  eMIOS2 ch1 type Y                      : <Automatic>
@@ -1641,7 +1641,7 @@
 **                  eMIOS2 ch23 type X                     : <Automatic>
 **                  eMIOS2 ch23 type X                     : <Automatic>
 **                  eMIOS_2: eMIOS2 ch23 type X            : <Automatic>
-**                  eMIOS2 ch24 type X                     : PA[4]
+**                  eMIOS2 ch24 type X                     : <Automatic>
 **                  eMIOS2 ch24 type X                     : <Automatic>
 **                  eMIOS_2: eMIOS2 ch24 type X            : <Automatic>
 **                  eMIOS2 ch25 type Y                     : <Automatic>
@@ -1662,7 +1662,7 @@
 **                  eMIOS2 ch2 type Y                      : <Automatic>
 **                  eMIOS2 ch2 type Y                      : <Automatic>
 **                  eMIOS_2: eMIOS2 ch2 type Y             : <Automatic>
-**                  eMIOS2 ch30 type Y                     : <Automatic>
+**                  eMIOS2 ch30 type Y                     : PF[6]
 **                  eMIOS2 ch30 type Y                     : <Automatic>
 **                  eMIOS_2: eMIOS2 ch30 type Y            : <Automatic>
 **                  eMIOS2 ch31 type Y                     : <Automatic>
@@ -4951,7 +4951,7 @@
 
 
 /*! @brief User number of configured pins */
-#define NUM_OF_CONFIGURED_PINS 4
+#define NUM_OF_CONFIGURED_PINS 12
 
 /*! @brief User configuration structure */
 extern pin_settings_config_t g_pin_mux_InitConfigArr[NUM_OF_CONFIGURED_PINS];

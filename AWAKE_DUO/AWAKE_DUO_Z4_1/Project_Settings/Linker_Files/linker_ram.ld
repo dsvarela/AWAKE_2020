@@ -35,7 +35,7 @@ __HEAP_SIZE = DEFINED(__heap_size__) ? __heap_size__ : 0x00000000;
 __STACK_SIZE = DEFINED(__stack_size__) ? __stack_size__ : 0x00001000;
 
 /* Define SRAM */
-SRAM_BASE_ADDR = DEFINED(__sram_base_addr__) ? __sram_base_addr__ : 0x40040000;
+SRAM_BASE_ADDR = DEFINED(__sram_base_addr__) ? __sram_base_addr__ : 0x40000000;
 SRAM_SIZE = DEFINED(__sram_size__) ? __sram_size__ : 256K;
 
 MEMORY

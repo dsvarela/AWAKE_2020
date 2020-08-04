@@ -1,5 +1,5 @@
 ;#* ###################################################################
-;#*  @file:    core1_intc_sw_handlers.s
+;#*  @file:    core0_intc_sw_handlers.s
 ;#*  @purpose: creates prolog, epilog for C ISR and enables nested interrupts.
 ;#*
 ;#*     Copyright 2017, 2019 NXP
@@ -41,8 +41,8 @@
     .extern  IVOR34_Exception_Handler
     .extern  IVOR35_Exception_Handler
 
-    .equ  INTC_IACKR, 0xfc040024  ;# Interrupt Acknowledge Register address for core 1
-    .equ  INTC_EOIR,  0xfc040034  ;# End Of Interrupt Register address for core 1
+    .equ  INTC_IACKR, 0xfc040020  ;# Interrupt Acknowledge Register address for core 0
+    .equ  INTC_EOIR,  0xfc040030  ;# End Of Interrupt Register address for core 0
 
     .align 4
 
