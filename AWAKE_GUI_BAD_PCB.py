@@ -96,8 +96,8 @@ class TextBox(tk.Frame):
     def __init__(self, parent, var, h_txt, l_txt, col, stt):
         tk.Frame.__init__(self, parent)
 
-        ttk.Label(parent, text=h_txt).grid(column=col, row=0,
-                                           sticky='w', padx=20, ipadx=48)
+        self.title = ttk.Label(parent, text=h_txt, foreground='black')
+        self.title.grid(column=col, row=0, sticky='w', padx=20, ipadx=48)
         self.entry = ttk.Entry(parent, width=15, textvariable=var)
         self.entry.grid(column=col, row=1, padx=20, sticky='w')
         self.label = tk.Label(parent, text=l_txt, fg='black')
@@ -227,16 +227,30 @@ class MainPage(tk.Frame):
         # Loop to create and draw Fiber Parameter Frames to Run Tab.
         for pin in range(self.num_fibers):
 
-            lbfr.append(LblFrm(parent, " Fiber " + str(pin + 1) + " "))
+            if pin <= 4:
+                lbfr.append(LblFrm(parent, " Fiber " + str(pin + 1) + " "))
+
+            if pin == 5:
+                lbfr.append(LblFrm(parent, " Fiber " + str(pin + 2) + " "))
+
+            if pin == 6:
+                lbfr.append(LblFrm(parent, " Fiber " + str(pin) + " "))
 
             lead.append(TextBox(lbfr[pin], self.LEdge[pin], "Lead Edge:",
                                 "Range=[12.5 - 500,000] ns", 0, "disabled"))
 
             duty.append(TextBox(lbfr[pin], self.DutyT[pin], "Duty Cycle:",
                                 "Range=[12.5 - 500,000] ns", 1, "disabled"))
+            if pin != 5:
+                chk_btn.append(self.check_button(lbfr[pin],
+                               self.FiberCheck[pin], chk_comm, 3, 1))
 
-            chk_btn.append(self.check_button(lbfr[pin], self.FiberCheck[pin],
-                                             chk_comm, 3, 1))
+        lbfr[5].config(fg="red")
+        lead[5].title.config(foreground="grey")
+        lead[5].label.config(fg="grey")
+        duty[5].title.config(foreground="grey")
+        duty[5].label.config(fg="grey")
+        
         # Draw a Progress Bar on the GUI.
         run_progress = self.prog_bar(parent)
 
@@ -607,7 +621,7 @@ class MainGUI(tk.Tk):
     def __init__(self):
         # initializing tkinter within initialization function
         tk.Tk.__init__(self)  # Instanciate Window
-        self.title("AWAKE GUI")  # Window Title
+        self.title("AWAKE GUI BAD PCB")  # Window Title
 
         # Main Tab Create and Add.
         self.note_book = ttk.Notebook(self)  # Create Tabs Frame
