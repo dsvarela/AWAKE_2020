@@ -34,23 +34,23 @@ endif
 
 # Add inputs and outputs from these tool invocations to the build variables 
 SECONDARY_SIZE += \
-AWAKE3_Z4_0.siz \
+AWAKE3_V2_Z4_0.siz \
 
 
 # All Target
-all: AWAKE3_Z4_0.elf secondary-outputs
+all: AWAKE3_V2_Z4_0.elf secondary-outputs
 
 # Tool invocations
-AWAKE3_Z4_0.elf: $(OBJS) C:/Users/danie/workspaceS32DS.Power.2.1/AWAKE3/AWAKE3_Z4_0/Project_Settings/Linker_Files/linker_flash.ld $(OSPT) $(USER_OBJS)
+AWAKE3_V2_Z4_0.elf: $(OBJS) C:/Users/Public/S32DS_NXP_Workspace/AWAKE3_V2_Z4_0/Project_Settings/Linker_Files/linker_flash.ld $(OSPT) $(USER_OBJS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: Standard S32DS C Linker'
-	powerpc-eabivle-gcc -o "AWAKE3_Z4_0.elf" "@AWAKE3_Z4_0.args"  $(USER_OBJS) $(LIBS) $(OSPT)
+	powerpc-eabivle-gcc -o "AWAKE3_V2_Z4_0.elf" "@AWAKE3_V2_Z4_0.args"  $(USER_OBJS) $(LIBS) $(OSPT)
 	@echo 'Finished building target: $@'
 	@echo ' '
 
-AWAKE3_Z4_0.siz: AWAKE3_Z4_0.elf
+AWAKE3_V2_Z4_0.siz: AWAKE3_V2_Z4_0.elf
 	@echo 'Invoking: Standard S32DS Print Size'
-	powerpc-eabivle-size --format=berkeley AWAKE3_Z4_0.elf
+	powerpc-eabivle-size --format=berkeley AWAKE3_V2_Z4_0.elf
 	@echo 'Finished building: $@'
 	@echo ' '
 

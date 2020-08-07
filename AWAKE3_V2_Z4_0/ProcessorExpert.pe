@@ -3,7 +3,7 @@
   <Header>
     <Name>AWAKE3_V2_Z4_0</Name>
     <SavedBy>danie</SavedBy>
-    <ModificationStamp>9</ModificationStamp>
+    <ModificationStamp>10</ModificationStamp>
     <Date>2020-02-16</Date>
     <IDE>Eclipse IDE</IDE>
     <PEversion>1.12.2.RT7_b1743-0713</PEversion>
@@ -50358,7 +50358,7 @@
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
         <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
-        <Value>true</Value>
+        <Value>false</Value>
       </ItemState>
       <ItemState>
         <ItemSymbol>c_eMIOSPWMInternalPrescaler3</ItemSymbol>

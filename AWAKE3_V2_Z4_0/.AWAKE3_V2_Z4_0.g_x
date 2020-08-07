@@ -36,7 +36,7 @@
       <File Name="SDK/platform/drivers/inc/edma_driver.h" FileDate="2020-07-15, 15:08:30" FileAge="1594822110872" FileType="1048576" CompNumb="13" />
       <File Name="SDK/platform/drivers/src/edma/edma_hw_access.h" FileDate="2020-07-15, 15:08:30" FileAge="1594822110882" FileType="1048576" CompNumb="13" />
       <File Name="Project_Settings/Startup_Code/core0_intc_sw_handlers.S" FileDate="2020-07-15, 15:08:30" FileAge="1594822110711" FileType="1048576" CompNumb="1" />
-      <File Name="Sources/main.c" FileDate="2020-07-15, 15:08:30" FileAge="1594822110890" FileType="128" />
+      <File Name="Sources/main.c" FileDate="2020-08-07, 18:08:40" FileAge="1596820120979" FileType="128" />
       <File Name="SDK/platform/drivers/src/edma/edma_hw_access.c" FileDate="2020-07-15, 15:08:30" FileAge="1594822110882" FileType="1048576" CompNumb="13" />
       <File Name="SDK/platform/drivers/inc/interrupt_manager.h" FileDate="2020-07-15, 15:08:30" FileAge="1594822110872" FileType="1048576" CompNumb="4" />
       <File Name="SDK/platform/drivers/src/clock/MPC57xx/mc_me_hw_access.h" FileDate="2020-07-15, 15:08:30" FileAge="1594822110880" FileType="1048576" CompNumb="3" />
@@ -72,7 +72,7 @@
       <File Name="SDK/platform/drivers/inc/clock_manager.h" FileDate="2020-07-15, 15:08:30" FileAge="1594822110872" FileType="1048576" CompNumb="3" />
       <File Name="Generated_Code/eMIOS_Pwm2.h" FileDate="2020-07-15, 15:08:30" FileAge="1594822110701" FileType="45637" CompNumb="10" />
       <File Name="SDK/platform/drivers/src/linflexd/linflexd_uart_driver.c" FileDate="2020-07-15, 15:08:30" FileAge="1594822110882" FileType="1048576" CompNumb="12" />
-      <File Name="Generated_Code/eMIOS_Pwm2.c" FileDate="2020-07-15, 15:08:30" FileAge="1594822110701" FileType="45637" CompNumb="10" />
+      <File Name="Generated_Code/eMIOS_Pwm2.c" FileDate="2020-08-05, 17:38:22" FileAge="1596645502082" FileType="45637" CompNumb="10" />
       <File Name="SDK/platform/drivers/inc/pins_driver.h" FileDate="2020-07-15, 15:08:30" FileAge="1594822110872" FileType="1048576" CompNumb="2" />
       <File Name="SDK/platform/drivers/src/clock/MPC57xx/cgmcs_hw_access.h" FileDate="2020-07-15, 15:08:30" FileAge="1594822110872" FileType="1048576" CompNumb="3" />
       <File Name="Generated_Code/eMIOS_Pwm0.h" FileDate="2020-07-15, 15:08:30" FileAge="1594822110701" FileType="45637" CompNumb="5" />
@@ -103,5 +103,5 @@
       <File Name="SDK/platform/devices/status.h" FileDate="2020-07-15, 15:08:30" FileAge="1594822110872" FileType="1048576" CompNumb="1" />
     </GeneratedByPE>
   </GeneratedFilesList>
-  <CodeGenReference>7</CodeGenReference>
+  <CodeGenReference>11</CodeGenReference>
 </CodeGenerationInfo>

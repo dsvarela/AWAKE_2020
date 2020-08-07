@@ -7,7 +7,7 @@
 **     Version     : Component SDK_S32_PA_11, Driver 01.00, CPU db: 3.00.000
 **     Repository  : SDK_S32_PA_11
 **     Compiler    : GNU C Compiler
-**     Date/Time   : 2020-07-14, 16:25, # CodeGen: 0
+**     Date/Time   : 2020-08-05, 17:38, # CodeGen: 8
 **
 **     Copyright 1997 - 2015 Freescale Semiconductor, Inc. 
 **     Copyright 2016-2017 NXP 
@@ -101,7 +101,7 @@ emios_pwm_param_t eMIOS_Pwm2_PWMChnConfig3 =
 {
     .mode                  = EMIOS_MODE_OPWMT,             /*!< Sub-mode selected             */
     .internalPrescaler     = EMIOS_CLOCK_DIVID_BY_1,       /*!< Internal prescaler value      */
-    .internalPrescalerEn   = true,                         /*!< Internal prescaler is enabled */
+    .internalPrescalerEn   = false,                        /*!< Internal prescaler is disabled, this mode does not run after initialization */
     .outputActiveMode      = EMIOS_POSITIVE_PULSE,         /*!< Output active value, active low or high level */
     .periodCount           = 65535UL,                      /*!< Period count         */
     .dutyCycleCount        = 0UL,                          /*!< Duty cycle count     */

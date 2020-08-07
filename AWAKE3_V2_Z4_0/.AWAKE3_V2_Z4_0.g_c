@@ -523,7 +523,7 @@
     </GenFiles>
     <SignalListFile />
     <DestinationCompiler>GNUC</DestinationCompiler>
-    <ProjectModificationStamp>9</ProjectModificationStamp>
+    <ProjectModificationStamp>10</ProjectModificationStamp>
   </Options>
   <CpuID_1>
     <Generated>true</Generated>
@@ -762,7 +762,7 @@
     <GenDriverVersion>01.00</GenDriverVersion>
     <GenEventModule />
     <HeaderAge>1357871375</HeaderAge>
-    <CodeAge>1357871375</CodeAge>
+    <CodeAge>1359318219</CodeAge>
     <AsemblAge>-1</AsemblAge>
     <GenNumMethods>17</GenNumMethods>
     <EMIOS_DRV_PWM_InitMode>true</EMIOS_DRV_PWM_InitMode>
