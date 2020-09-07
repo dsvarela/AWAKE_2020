@@ -22,6 +22,7 @@ class popupWindow(tk.Frame):
     """Add Popup Window."""
 
     def __init__(self, parent):
+        """Initialize necessary modules."""
         tk.Frame.__init__(self, parent)
 
         self.port_name = ""
